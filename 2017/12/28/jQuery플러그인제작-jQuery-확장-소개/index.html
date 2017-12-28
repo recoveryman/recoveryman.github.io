@@ -3,24 +3,24 @@
 <head>
     <meta charset="utf-8">
     
-    <title>클래스정의 3가지 비교 | 회복맨</title>
+    <title>[jQuery플러그인제작] jQuery 확장 소개 | 회복맨</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="" />
     
-    <meta name="description" content="특징   방식 특징     프로토타입방식 일반적인 클래스 제작 방법인스턴스마다 공통된 메서드를 공유해서 사용하는 장점이 있음jQuery도 prototype방식으로 만들어져 있음   함수 방식 간단한 클래스 제작 시 사용인스탄스마다 메서드가 독립적으로 만들어지는 단점이 있음   리터럴 방">
+    <meta name="description" content="jQuery 확장에는 유틸리티와 플러그인 두 가지가 있습니다. jQuery 확장이란123456// 자바스크립트 방식var tabMenu1 = new TabMenu(&apos;.tabMenu1&apos;);TabMenuenu.setSelectAt(1);// jQuery 플러그인 방식$(&">
 <meta property="og:type" content="article">
-<meta property="og:title" content="클래스정의 3가지 비교">
-<meta property="og:url" content="https://recoveryman.github.io/2017/12/10/클래스정의-3가지-비교/index.html">
+<meta property="og:title" content="[jQuery플러그인제작] jQuery 확장 소개">
+<meta property="og:url" content="https://recoveryman.github.io/2017/12/28/jQuery플러그인제작-jQuery-확장-소개/index.html">
 <meta property="og:site_name" content="회복맨">
-<meta property="og:description" content="특징   방식 특징     프로토타입방식 일반적인 클래스 제작 방법인스턴스마다 공통된 메서드를 공유해서 사용하는 장점이 있음jQuery도 prototype방식으로 만들어져 있음   함수 방식 간단한 클래스 제작 시 사용인스탄스마다 메서드가 독립적으로 만들어지는 단점이 있음   리터럴 방식 클래스 만드는 용도는 아니며 주로 여러개의 매개변수를 그룹으로 묶어">
+<meta property="og:description" content="jQuery 확장에는 유틸리티와 플러그인 두 가지가 있습니다. jQuery 확장이란123456// 자바스크립트 방식var tabMenu1 = new TabMenu(&apos;.tabMenu1&apos;);TabMenuenu.setSelectAt(1);// jQuery 플러그인 방식$(&quot;.tabMenu1&quot;).setSelectAt(1);  jQuery 확장 요소 종류1.유틸리티">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://recoveryman.github.io/img/all/js.jpg">
-<meta property="og:updated_time" content="2017-12-28T04:24:42.328Z">
+<meta property="og:updated_time" content="2017-12-28T08:00:19.305Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="클래스정의 3가지 비교">
-<meta name="twitter:description" content="특징   방식 특징     프로토타입방식 일반적인 클래스 제작 방법인스턴스마다 공통된 메서드를 공유해서 사용하는 장점이 있음jQuery도 prototype방식으로 만들어져 있음   함수 방식 간단한 클래스 제작 시 사용인스탄스마다 메서드가 독립적으로 만들어지는 단점이 있음   리터럴 방식 클래스 만드는 용도는 아니며 주로 여러개의 매개변수를 그룹으로 묶어">
+<meta name="twitter:title" content="[jQuery플러그인제작] jQuery 확장 소개">
+<meta name="twitter:description" content="jQuery 확장에는 유틸리티와 플러그인 두 가지가 있습니다. jQuery 확장이란123456// 자바스크립트 방식var tabMenu1 = new TabMenu(&apos;.tabMenu1&apos;);TabMenuenu.setSelectAt(1);// jQuery 플러그인 방식$(&quot;.tabMenu1&quot;).setSelectAt(1);  jQuery 확장 요소 종류1.유틸리티">
 <meta name="twitter:image" content="https://recoveryman.github.io/img/all/js.jpg">
     
 
@@ -157,14 +157,14 @@ ga('send', 'pageview');
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-클래스정의-3가지-비교" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-jQuery플러그인제작-jQuery-확장-소개" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        클래스정의 3가지 비교
+        [jQuery플러그인제작] jQuery 확장 소개
         </h1>
     
 
@@ -174,8 +174,8 @@ ga('send', 'pageview');
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2017/12/10/클래스정의-3가지-비교/" class="article-date">
-            <time datetime="2017-12-10T13:14:43.000Z" itemprop="datePublished">2017-12-10</time>
+        <a href="/2017/12/28/jQuery플러그인제작-jQuery-확장-소개/" class="article-date">
+            <time datetime="2017-12-28T05:08:04.000Z" itemprop="datePublished">2017-12-28</time>
         </a>
     </div>
 
@@ -184,79 +184,24 @@ ga('send', 'pageview');
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p><img src="/img/all/js.jpg" alt=""></p>
-<h2 id="특징"><a href="#특징" class="headerlink" title="특징"></a>특징</h2><table>
-<thead>
-<tr>
-<th>방식</th>
-<th>특징</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>프로토타입방식</td>
-<td><ul><li>일반적인 클래스 제작 방법</li><li>인스턴스마다 공통된 메서드를 공유해서 사용하는 장점이 있음</li><li>jQuery도 prototype방식으로 만들어져 있음</li></ul></td>
-</tr>
-<tr>
-<td>함수 방식</td>
-<td><ul><li>간단한 클래스 제작 시 사용</li><li>인스탄스마다 메서드가 독립적으로 만들어지는 단점이 있음</li></ul></td>
-</tr>
-<tr>
-<td>리터럴 방식</td>
-<td><ul><li>클래스 만드는 용도는 아니며 주로 여러개의 매개변수를 그룹으로 묶어 함수의 매개변수로 보낼 때 사용</li><li>정의와 함께 인스턴스가 만들어지는 장점이 있음. 단! 인스턴스는 오직 하나만 만들 수 있음</li></ul></td>
-</tr>
-</tbody>
-</table>
-<p><br><br></p>
-<h2 id="클래스-정의-방법-포장-비교"><a href="#클래스-정의-방법-포장-비교" class="headerlink" title="클래스 정의 방법(포장) 비교"></a>클래스 정의 방법(포장) 비교</h2><p><strong>리터럴방식</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> 인스턴스 = &#123;</span><br><span class="line">	프로퍼티<span class="number">1</span>: 초깃값,</span><br><span class="line">	프로퍼티<span class="number">2</span>: 초깃값,</span><br><span class="line"></span><br><span class="line">	메서드<span class="number">1</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	&#125;,</span><br><span class="line">	메서드<span class="number">2</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<hr>
-<p><br><br><strong>함수방식</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 클래스이름(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.프로퍼티<span class="number">1</span> = 초깃값;</span><br><span class="line">	<span class="keyword">this</span>.프로퍼티<span class="number">2</span> = 초깃값;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">this</span>.메서드<span class="number">1</span> = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">this</span>.메서드<span class="number">2</span> = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<hr>
-<p><br><br><strong>프로토타입 방식</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 클래스이름(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.프로퍼티<span class="number">1</span> = 초깃값;</span><br><span class="line">	<span class="keyword">this</span>.프로퍼티<span class="number">2</span> = 초깃값;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">클래스이름.prototype.메서드<span class="number">1</span> = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">&#125;</span><br><span class="line">클래스이름.prototype.메서드<span class="number">2</span> = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><br><br></p>
-<h2 id="인스턴스-생성-방법"><a href="#인스턴스-생성-방법" class="headerlink" title="인스턴스 생성 방법"></a>인스턴스 생성 방법</h2><table>
-<thead>
-<tr>
-<th>리터럴 방식</th>
-<th>함수 방식</th>
-<th>프로토타입 방식</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>var 인스턴스 = {};</td>
-<td>var 인스턴스 = new 클래스이름();</td>
-<td>var 인스턴스 = new 클래스이름();</td>
-</tr>
-</tbody>
-</table>
-<p><br><br></p>
-<h2 id="객체-외부에서-프로퍼티와-메서드-접근-방법"><a href="#객체-외부에서-프로퍼티와-메서드-접근-방법" class="headerlink" title="객체 외부에서 프로퍼티와 메서드 접근 방법"></a>객체 외부에서 프로퍼티와 메서드 접근 방법</h2><p><strong>리터럴 방식</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> 인스턴스 = &#123;</span><br><span class="line">	프로퍼티<span class="number">1</span>: 초깃갑,</span><br><span class="line">	프로퍼티<span class="number">2</span>: 초깃갑,</span><br><span class="line"></span><br><span class="line">	메서드<span class="number">1</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	&#125;</span><br><span class="line">	메서드<span class="number">2</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">인스턴스.프로퍼티<span class="number">1</span>;</span><br><span class="line">인스턴스.메서드<span class="number">1</span>();</span><br></pre></td></tr></table></figure>
-<hr>
-<p><br><br><strong>함수방식</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 클래스이름(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.프로퍼티<span class="number">1</span> = 초깃값;</span><br><span class="line">	<span class="keyword">this</span>.프로퍼티<span class="number">2</span> = 초깃값;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">this</span>.메서드<span class="number">1</span> = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">this</span>.메서드<span class="number">2</span> = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">인스턴스.프로퍼티<span class="number">1</span>;</span><br><span class="line">인스턴스.메서드<span class="number">1</span>();</span><br></pre></td></tr></table></figure>
-<hr>
-<p><br><br><strong>프로토타입 방식</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 클래스이름(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.프로퍼티<span class="number">1</span> = 초깃값;</span><br><span class="line">	<span class="keyword">this</span>.프로퍼티<span class="number">2</span> = 초깃값;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">클래스이름.prototype.메서드<span class="number">1</span> = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">&#125;</span><br><span class="line">클래스이름.prototype.메서드<span class="number">2</span> = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">인스턴스.프로퍼티<span class="number">1</span>;</span><br><span class="line">인스턴스.메서드<span class="number">1</span>();</span><br></pre></td></tr></table></figure>
-<p><br><br></p>
-<h2 id="객체-내부에서-프로퍼티와-메서드-접근-방법"><a href="#객체-내부에서-프로퍼티와-메서드-접근-방법" class="headerlink" title="객체 내부에서 프로퍼티와 메서드 접근 방법"></a>객체 내부에서 프로퍼티와 메서드 접근 방법</h2><p><strong>리터럴 방식</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> 인스턴스 = &#123;</span><br><span class="line">	프로퍼티<span class="number">1</span>: 초깃갑,</span><br><span class="line">	프로퍼티<span class="number">2</span>: 초깃갑,</span><br><span class="line"></span><br><span class="line">	메서드<span class="number">1</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		alert(<span class="keyword">this</span>.프로퍼티<span class="number">1</span>);</span><br><span class="line">		<span class="keyword">this</span>.메서드<span class="number">2</span>();</span><br><span class="line">	&#125;</span><br><span class="line">	메서드<span class="number">2</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<hr>
-<p><br><br><strong>함수방식</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 클래스이름(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.프로퍼티<span class="number">1</span> = 초깃값;</span><br><span class="line">	<span class="keyword">this</span>.프로퍼티<span class="number">2</span> = 초깃값;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">this</span>.메서드<span class="number">1</span> = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		alert(<span class="keyword">this</span>.프로퍼티<span class="number">1</span>);</span><br><span class="line">		<span class="keyword">this</span>.메서드<span class="number">2</span>();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">this</span>.메서드<span class="number">2</span> = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<hr>
-<p><br><br><strong>프로토타입 방식</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 클래스이름(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.프로퍼티<span class="number">1</span> = 초깃값;</span><br><span class="line">	<span class="keyword">this</span>.프로퍼티<span class="number">2</span> = 초깃값;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">클래스이름.prototype.메서드<span class="number">1</span> = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	alert(<span class="keyword">this</span>.프로퍼티<span class="number">1</span>);</span><br><span class="line">	<span class="keyword">this</span>.메서드<span class="number">2</span>();</span><br><span class="line">&#125;</span><br><span class="line">클래스이름.prototype.메서드<span class="number">2</span> = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><br><br></p>
+            <p><img src="/img/all/js.jpg" alt=""><br>jQuery 확장에는 유틸리티와 플러그인 두 가지가 있습니다.</p>
+<h3 id="jQuery-확장이란"><a href="#jQuery-확장이란" class="headerlink" title="jQuery 확장이란"></a>jQuery 확장이란</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 자바스크립트 방식</span></span><br><span class="line"><span class="keyword">var</span> tabMenu1 = <span class="keyword">new</span> TabMenu(<span class="string">'.tabMenu1'</span>);</span><br><span class="line">TabMenuenu.setSelectAt(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// jQuery 플러그인 방식</span></span><br><span class="line">$(<span class="string">".tabMenu1"</span>).setSelectAt(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+<p><br><hr><br></p>
+<h3 id="jQuery-확장-요소-종류"><a href="#jQuery-확장-요소-종류" class="headerlink" title="jQuery 확장 요소 종류"></a>jQuery 확장 요소 종류</h3><p><strong>1.유틸리티</strong></p>
+<p>문자열의 공백을 제거해주는 jQuery의 trim() 메서드와 같은 유틸리티는 주로 도움을 주는 기능을 합니다.<br>jQuery 인스턴스를 생성하지 않고 jQuery 클래스에 직접 접근하여 사용합니다.</p>
 <ul>
-<li><a href="/2017/12/10/클래스정의-3가지-비교/" title="클래스정의 3가지 비교">클래스정의 3가지 비교</a></li>
-<li><a href="/2017/12/26/함수-단위-코딩vs클래스-단위-코딩/" title="함수 단위 코딩vs클래스 단위 코딩">함수 단위 코딩vs클래스 단위 코딩</a></li>
-<li><a href="/2017/12/27/인스턴스-프로퍼티와-메서드vs클래스-프로퍼티와-메서드/" title="인스턴스 프로퍼티와 메서드vs클래스 프로퍼티와 메서드">인스턴스 프로퍼티와 메서드vs클래스 프로퍼티와 메서드</a></li>
-<li><a href="/2017/12/27/패키지/" title="패키지">패키지</a></li>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jQuery.유틸리티();</span><br></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$.유틸리티();</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><br></p>
+<p><strong>2.플러그인</strong></p>
+<p>특정 기능을 재사용 하고자 할 때 사용하는 포장 기능 입니다.</p>
+<ul>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'선택자'</span>).플러그인(옵션);</span><br></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $결과 = $(<span class="string">'선택자'</span>);</span><br><span class="line">$결과.플러그인(옵션);</span><br></pre></td></tr></table></figure></li>
 </ul>
 
         </div>
@@ -265,7 +210,7 @@ ga('send', 'pageview');
 
 
 
-    <!-- <a data-url="https://recoveryman.github.io/2017/12/10/클래스정의-3가지-비교/" data-id="cjbq14h620009tkb6nvtksqm3" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
+    <!-- <a data-url="https://recoveryman.github.io/2017/12/28/jQuery플러그인제작-jQuery-확장-소개/" data-id="cjbq14h6g000itkb6ouu7vswr" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -378,20 +323,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2017/12/12/this-1/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">새로운</strong>
-        <p class="article-nav-title">
-        
-            this (1) - 일반함수,일반중첩함수 의 this
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2017/12/07/jQuery-마우스휠2/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2017/12/27/패키지/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">오래된</strong>
-        <p class="article-nav-title">jQuery 마우스휠2</p>
+        <p class="article-nav-title">패키지</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -580,7 +515,7 @@ ga('send', 'pageview');
     var disqus_shortname = 'recoveryman';
     
     
-    var disqus_url = 'https://recoveryman.github.io/2017/12/10/클래스정의-3가지-비교/';
+    var disqus_url = 'https://recoveryman.github.io/2017/12/28/jQuery플러그인제작-jQuery-확장-소개/';
     
     (function() {
     var dsq = document.createElement('script');
