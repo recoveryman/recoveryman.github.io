@@ -3,24 +3,24 @@
 <head>
     <meta charset="utf-8">
     
-    <title>인스턴스 프로퍼티와 메서드vs클래스 프로퍼티와 메서드 | 회복맨</title>
+    <title>[객체지향 프로그래밍 기초] 객체지향 프로그래밍의 특징 | 회복맨</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="" />
     
-    <meta name="description" content="인스턴스 프로퍼티와 메서드란[인스턴스 프로퍼티와 메서드]클래스의 인스턴스를 생성 후 사용할 수 있는 프로퍼티와 메서드를 뜻함  [예]12var tabMenu1 = new TabMenu(&quot;.tab1&quot;);tabMenu1.setSelectItemAt(1);  클래스 프로퍼티">
+    <meta name="description" content="객체지향 프로그래밍의 특징 네 가지(추상화, 캡슐화, 상속, 다형성)와 객체지향 프로그래밍 학습법에 대해 알아보겠습니다. 객체지향 프로그래밍이란?간단한 의미의 객체지향 프로그래밍앞서 살펴본 것처럼 객체지향 프로그래밍이란 객체 단위로 기능을 나눠 구현하는 방식을 말합니다. 이때 클래스 문">
 <meta property="og:type" content="article">
-<meta property="og:title" content="인스턴스 프로퍼티와 메서드vs클래스 프로퍼티와 메서드">
-<meta property="og:url" content="https://recoveryman.github.io/2017/12/27/인스턴스-프로퍼티와-메서드vs클래스-프로퍼티와-메서드/index.html">
+<meta property="og:title" content="[객체지향 프로그래밍 기초] 객체지향 프로그래밍의 특징">
+<meta property="og:url" content="https://recoveryman.github.io/2018/02/11/객체지향-프로그래밍의-특징/index.html">
 <meta property="og:site_name" content="회복맨">
-<meta property="og:description" content="인스턴스 프로퍼티와 메서드란[인스턴스 프로퍼티와 메서드]클래스의 인스턴스를 생성 후 사용할 수 있는 프로퍼티와 메서드를 뜻함  [예]12var tabMenu1 = new TabMenu(&quot;.tab1&quot;);tabMenu1.setSelectItemAt(1);  클래스 프로퍼티와 메서드란[클래스 프로퍼티와 메서드]인스턴스를 생성하지 않고도 사용할 수 있는 프로퍼티">
+<meta property="og:description" content="객체지향 프로그래밍의 특징 네 가지(추상화, 캡슐화, 상속, 다형성)와 객체지향 프로그래밍 학습법에 대해 알아보겠습니다. 객체지향 프로그래밍이란?간단한 의미의 객체지향 프로그래밍앞서 살펴본 것처럼 객체지향 프로그래밍이란 객체 단위로 기능을 나눠 구현하는 방식을 말합니다. 이때 클래스 문법은 객체의 속성과 기능을 작성할때 사용한다고 배웠습니다. 또한 클래스">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://recoveryman.github.io/img/all/js.jpg">
-<meta property="og:updated_time" content="2017-12-28T04:36:00.088Z">
+<meta property="og:updated_time" content="2018-02-11T14:34:20.970Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="인스턴스 프로퍼티와 메서드vs클래스 프로퍼티와 메서드">
-<meta name="twitter:description" content="인스턴스 프로퍼티와 메서드란[인스턴스 프로퍼티와 메서드]클래스의 인스턴스를 생성 후 사용할 수 있는 프로퍼티와 메서드를 뜻함  [예]12var tabMenu1 = new TabMenu(&quot;.tab1&quot;);tabMenu1.setSelectItemAt(1);  클래스 프로퍼티와 메서드란[클래스 프로퍼티와 메서드]인스턴스를 생성하지 않고도 사용할 수 있는 프로퍼티">
+<meta name="twitter:title" content="[객체지향 프로그래밍 기초] 객체지향 프로그래밍의 특징">
+<meta name="twitter:description" content="객체지향 프로그래밍의 특징 네 가지(추상화, 캡슐화, 상속, 다형성)와 객체지향 프로그래밍 학습법에 대해 알아보겠습니다. 객체지향 프로그래밍이란?간단한 의미의 객체지향 프로그래밍앞서 살펴본 것처럼 객체지향 프로그래밍이란 객체 단위로 기능을 나눠 구현하는 방식을 말합니다. 이때 클래스 문법은 객체의 속성과 기능을 작성할때 사용한다고 배웠습니다. 또한 클래스">
 <meta name="twitter:image" content="https://recoveryman.github.io/img/all/js.jpg">
     
 
@@ -153,18 +153,18 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/JS/">JS</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/JS/js-학습/">js 학습</a>
+    <a class="page-title-link" href="/categories/JS/">JS</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/JS/js-학습/">js 학습</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/JS/js-학습/객체지향-프로그래밍-기초/">객체지향 프로그래밍 기초</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-인스턴스-프로퍼티와-메서드vs클래스-프로퍼티와-메서드" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-객체지향-프로그래밍의-특징" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        인스턴스 프로퍼티와 메서드vs클래스 프로퍼티와 메서드
+        [객체지향 프로그래밍 기초] 객체지향 프로그래밍의 특징
         </h1>
     
 
@@ -174,8 +174,8 @@ ga('send', 'pageview');
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2017/12/27/인스턴스-프로퍼티와-메서드vs클래스-프로퍼티와-메서드/" class="article-date">
-            <time datetime="2017-12-27T02:07:02.000Z" itemprop="datePublished">2017-12-27</time>
+        <a href="/2018/02/11/객체지향-프로그래밍의-특징/" class="article-date">
+            <time datetime="2018-02-11T13:41:21.000Z" itemprop="datePublished">2018-02-11</time>
         </a>
     </div>
 
@@ -185,29 +185,41 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
             <p><img src="/img/all/js.jpg" alt=""></p>
-<h3 id="인스턴스-프로퍼티와-메서드란"><a href="#인스턴스-프로퍼티와-메서드란" class="headerlink" title="인스턴스 프로퍼티와 메서드란"></a>인스턴스 프로퍼티와 메서드란</h3><blockquote><p>[인스턴스 프로퍼티와 메서드]<br>클래스의 인스턴스를 생성 후 사용할 수 있는 프로퍼티와 메서드를 뜻함</p>
-</blockquote>
-<figure class="highlight js"><figcaption><span>[예]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> tabMenu1 = <span class="keyword">new</span> TabMenu(<span class="string">".tab1"</span>);</span><br><span class="line">tabMenu1.setSelectItemAt(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+<p>객체지향 프로그래밍의 특징 네 가지(추상화, 캡슐화, 상속, 다형성)와 객체지향 프로그래밍 학습법에 대해 알아보겠습니다.</p>
+<h3 id="객체지향-프로그래밍이란"><a href="#객체지향-프로그래밍이란" class="headerlink" title="객체지향 프로그래밍이란?"></a>객체지향 프로그래밍이란?</h3><p><strong>간단한 의미의 객체지향 프로그래밍</strong><br>앞서 살펴본 것처럼 객체지향 프로그래밍이란 객체 단위로 기능을 나눠 구현하는 방식을 말합니다. 이때 클래스 문법은 객체의 속성과 기능을 작성할때 사용한다고 배웠습니다. 또한 클래스 단위 코딩 역시 객체 지향 프로그래밍에 포함된다고도 배웠습니다.</p>
+<p><strong>진정한 의미의 객체지향 프로그래밍</strong><br>객체지향 프로그래밍이란 일종의 논문과도 같은 연구 결과의 산물입니다. 이미 우리보다 훨씬 전부터 프로그래밍을 한 선배님들이 어떻게 하면 프로그래밍을 유지보수하기 쉽고 냄새 나지 않는 멋진 코드를 만들 수 있을까 수없이 노력한 끝에 완성한 최상의 결과물 입니다.</p>
+<p>이 결과물에는 크게 네가지 특징이 담겨 있습니다. 간단하게 정리해보면 다음과 같습니다.</p>
+<ul>
+<li><strong>1)추상화(Abstraction)</strong><br>쉽게 말해 추상화는 설계하는 작업 자체를 나타냅니다. 예를 들어 세탁기를 클래스로 표현한다고 했을때 예상되는 프로퍼티와 메서드를 정의하게 되는데 바로 이 작업을 추상화라고 합니다. 추상화의 가장 큰 특징은 프로퍼티와 메서드의 이름을 작성하는 선언 부분만 만들 뿐 구현 소스를 구현하지 않는다는 점입니다.</li>
+</ul>
+<p>연관 문법: 클래스, 추상 클래스, 인터페이스</p>
+<ul>
+<li><strong>2)캡슐화(Encapsulation)</strong><br>추상화 작업 내용 중 어떤 프로퍼티와 메서드는 외부에서 접근 가능하고 또 어떤 프로퍼티와 메서드는 외부에서 접근하지 못하게 해야 하는 경우가 있습니다. 바로 이 작업을 캡슐화라고 합니다. 예를 들어 세탁기의 기능 중 사용자에게는 세탁 명령과 세탁 진행 정보만 제공해주면 됩니다. 그 외의 기능은 세탁기 내부에서 일어나는 일이기 때문에 일반 사용자에게는 감춰져 있어야 하는 거죠.</li>
+</ul>
+<p>연관 문법: 접근 지정자(private, protected, public)</p>
+<ul>
+<li><strong>3)상속(Inheritance)</strong><br>상속은 특정 클래스(부모 클래스)의 속성과 메서드를 하위(자식) 클래스가 물려받는 것을 의미합니다. 예를 들어 일반 세탁기에 말리는 기능이 필요한 경우 일반 세탁기의 기능을 상속받은 후 말리는 기능만 추가하면 일반 세탁기를 전혀 수정하지 않고 원하는 기능을 추가할 수 있습니다.</li>
+</ul>
+<p>연관 문법: 상속</p>
+<ul>
+<li><strong>4)다형성(Polymorphism)</strong><br>다형성은 객체지향 프로그래밍의 핵심입니다. 다형성을 이용하면 선언 부분과 구현 부분을 나눠 다양하게 처리할 수 있습니다. 일종의 플러그인을 만든다고 보면 됩니다.</li>
+</ul>
+<p>연관 문법: 상속, 인터페이스, 추상클래스, 합성</p>
 <p><br><hr><br></p>
-<h3 id="클래스-프로퍼티와-메서드란"><a href="#클래스-프로퍼티와-메서드란" class="headerlink" title="클래스 프로퍼티와 메서드란"></a>클래스 프로퍼티와 메서드란</h3><blockquote><p>[클래스 프로퍼티와 메서드]<br>인스턴스를 생성하지 않고도 사용할 수 있는 프로퍼티와 메서드</p>
-</blockquote>
-<p><strong>만드는 방법</strong></p>
-<figure class="highlight js"><figcaption><span>[문법]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 클래스<span class="title">_</span>이름(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line">클래스_이름.프로퍼티 = 값;</span><br><span class="line">클래스_이름.메서드 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>여기서 클래스 이름은 인스턴스가 아닙니다.</strong></p>
-<figure class="highlight js"><figcaption><span>[차이]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">TabMenu</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// ..</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 인스턴스 프로퍼티와 메서드</span></span><br><span class="line">TabMenu.prototype.property1 = <span class="string">"string"</span>;</span><br><span class="line">TabMenu.prototype.method1 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="keyword">return</span> <span class="string">"method1"</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 클래스 프로퍼티와 메서드</span></span><br><span class="line">TabMenu.property2 = <span class="string">"string"</span>;</span><br><span class="line">TabMenu.method2 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="keyword">return</span> <span class="string">"method2"</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> tabMenu = <span class="keyword">new</span> TabMenu();</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"1. "</span> + tabMenu.property1);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"2. "</span> + tabMenu.property2);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"3. "</span> + tabMenu.method1());</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"4. "</span> + tabMenu.method2());</span><br></pre></td></tr></table></figure>
-<p><strong>결과</strong><br><img src="/img/qa/4.jpg" alt=""></p>
-<p>콘솔로 나온 결과 중에서 2, 4번의 출력은 저렇게 하면 안되고 다음과 같이 해야 합니다.</p>
-<figure class="highlight js"><figcaption><span>[클래스 프로퍼티와 메서드 출력]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">"2. "</span> + TabMenu.property2);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"4. "</span> + TabMenu.method2());</span><br></pre></td></tr></table></figure>
-<p><strong>결과</strong><br><img src="/img/qa/5.jpg" alt=""><br><br><br><blockquote><p><strong>[클래스 프로퍼티와 메서드 의 주 용도]</strong><br>주로 도움을 주는 유틸리티성 기능이나 또는 실행하더라도 내부 데이터에 영향을 주지 않고 독립적으로 실행되는 기능이나 정보를 담을 때 사용</p>
-</blockquote><br><br><br><strong>예</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">TabMenu</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// .. </span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TabMenu.version = <span class="string">"0.1.0"</span>;</span><br><span class="line">TabMenu.getInfo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> info = &#123;</span><br><span class="line">		developer: <span class="string">"반찬가게알바"</span>,</span><br><span class="line">		email: <span class="string">"고등어@등푸른생선.com"</span>,</span><br><span class="line">		desc: <span class="string">"저희 가게의 반찬은 고등어가 제일 맛있습니다!"</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> info;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(TabMenu.version);</span><br><span class="line"><span class="built_in">console</span>.log(TabMenu.getInfo());</span><br></pre></td></tr></table></figure>
-<p>클래스 프로퍼티와 메서드는 없거나 추가되더라도 기능이 동작하는데 전혀 지장을 주지 않습니다.</p>
+<h3 id="객체지향-프로그래밍-언어란"><a href="#객체지향-프로그래밍-언어란" class="headerlink" title="객체지향 프로그래밍 언어란?"></a>객체지향 프로그래밍 언어란?</h3><p>다시 한 번 설명하자면 객체지향 프로그래밍은 일종의 방법론일 뿐입니다. “이렇게 코딩하면 유지보수하기 쉬운 코드를 만들 수 있어요.” 와 같은 내용이 담긴 문서라는 거죠. 바로 객체지향 프로그래밍 언어란 객체지향 프로그래밍 방법론에 담긴 네 가지 특징을 사용할 수 있게 문법적으로 제공해주는 프로그래밍 언어를 말합니다.</p>
+<p>오늘날 가장 대표적인 객체지향 프로그래밍 언어는 C#, JAVA, Objective-C이며 이들은 자기들만의 고유 방식으로 객체지향 프로그래밍 특징 네 가지를 구현하고 있으며 개발자가 사용할 수 있게 다양한 문법을 제공해 줍니다.</p>
+<p>정리하자면, 문법이 다르더라도 어떤 방법으로든 객체지향 프로그래밍 특징 네 가지를 사용할 수 있게 되어 있다면 모두 객체지향 프로그래밍 언어로 부른다는 것입니다.</p>
+<p><br><hr><br></p>
+<h3 id="객체지향-프로그래밍-언어-학습법"><a href="#객체지향-프로그래밍-언어-학습법" class="headerlink" title="객체지향 프로그래밍 언어 학습법"></a>객체지향 프로그래밍 언어 학습법</h3><p>예를 들어 어느 날 회사에 아이폰 개발 의뢰가 들어와 Objective-C를 배워야 한다고 했을 때 예상 학습 기간은 어느 정도 걸릴 거라 생각되나요? 단, 오직 Objective-C 언어만을 배운다는 가정하에 말이지요(UI와 일반 라이브러리 기능 제외).</p>
+<p>만약 객체지향 프로그래밍 특징 네 가지의 개념과 사용 용도를 이미 알고 있다면 넉넉잡아 10일 내외면 충분할 것입니다. 이유는 앞에서 알아본 것처럼 자바와 Objective-C 언어 모두 객체지향 프로그래밍 언어이기 때문입니다.</p>
+<p>“Objective-C는 클래스를 이렇게 만드는 구나, 오! 메서드를 참 특이하게 만드네, 인터페이스를 프로토콜이라고 부르는군!” 식으로 이미 자바에서 알고 사용한 객체지향 프로그래밍 개념을 비교해가며 쭉쭉! 넘어가는 것입니다. 중요한 건 바로 객체지향 프로그래밍 특징 네 가지 개념의 이해입니다.</p>
+<p>정리하자면 객체지향 프로그래밍은 특징 네 가지를 저마다의 고유한 방법으로 제공하고 있기 때문에 지금 가장 자신 있게 사용하고 있는 프로그래밍 언어로 객체지향 프로그래밍 특징 네 가지를 배우면 됩니다.</p>
+<p><br><hr><br></p>
+<h3 id="자바스크립트는-객체지향-프로그래밍-언어인가요"><a href="#자바스크립트는-객체지향-프로그래밍-언어인가요" class="headerlink" title="자바스크립트는 객체지향 프로그래밍 언어인가요?"></a>자바스크립트는 객체지향 프로그래밍 언어인가요?</h3><p>결론부터 이야기하자면 아닙니다. 아쉽게도 자바스크립트는 객체지향 프로그래밍 언어가 갖추어야 할 특징 네 가지를 모두 지원하지 않습니다. 기껏해야 상속 정도만 제공하며 그 외의 기능은 거의 지원하지 않습니다. 지원하는 상속마저도 완벽하지 않습니다. 나머지 특징은 지원한다는 가정하에 비슷하게 만들어 사용하거나 아니면 아예 없는 걸로 간주하고 사용하지 않는 거죠.</p>
 <p><br><br></p>
 <ul>
-<li><a href="/2017/12/10/클래스정의-3가지-비교/" title="클래스정의 3가지 비교">클래스정의 3가지 비교</a></li>
-<li><a href="/2017/12/26/함수-단위-코딩vs클래스-단위-코딩/" title="함수 단위 코딩vs클래스 단위 코딩">함수 단위 코딩vs클래스 단위 코딩</a></li>
-<li><a href="/2017/12/27/인스턴스-프로퍼티와-메서드vs클래스-프로퍼티와-메서드/" title="인스턴스 프로퍼티와 메서드vs클래스 프로퍼티와 메서드">인스턴스 프로퍼티와 메서드vs클래스 프로퍼티와 메서드</a></li>
-<li><a href="/2017/12/27/패키지/" title="패키지">패키지</a></li>
+<li><a href="/2018/02/05/절차지향-프로그래밍-VS-객체지향-프로그래밍/" title="[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍">[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍</a></li>
+<li><a href="/2018/02/11/객체지향-프로그래밍의-특징/" title="[객체지향 프로그래밍 기초] 객체지향 프로그래밍의 특징">[객체지향 프로그래밍 기초] 객체지향 프로그래밍의 특징</a></li>
 </ul>
 
         </div>
@@ -216,7 +228,7 @@ ga('send', 'pageview');
 
 
 
-    <!-- <a data-url="https://recoveryman.github.io/2017/12/27/인스턴스-프로퍼티와-메서드vs클래스-프로퍼티와-메서드/" data-id="cjdiu96vh0009mw7ku1zi867e" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
+    <!-- <a data-url="https://recoveryman.github.io/2018/02/11/객체지향-프로그래밍의-특징/" data-id="cjdiu96vw000mmw7k5bpy60jp" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -329,20 +341,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2017/12/27/패키지/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">새로운</strong>
-        <p class="article-nav-title">
-        
-            패키지
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2017/12/26/함수-단위-코딩vs클래스-단위-코딩/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/02/05/절차지향-프로그래밍-VS-객체지향-프로그래밍/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">오래된</strong>
-        <p class="article-nav-title">함수 단위 코딩vs클래스 단위 코딩</p>
+        <p class="article-nav-title">[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -531,7 +533,7 @@ ga('send', 'pageview');
     var disqus_shortname = 'recoveryman';
     
     
-    var disqus_url = 'https://recoveryman.github.io/2017/12/27/인스턴스-프로퍼티와-메서드vs클래스-프로퍼티와-메서드/';
+    var disqus_url = 'https://recoveryman.github.io/2018/02/11/객체지향-프로그래밍의-특징/';
     
     (function() {
     var dsq = document.createElement('script');
