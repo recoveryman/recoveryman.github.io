@@ -3,24 +3,24 @@
 <head>
     <meta charset="utf-8">
     
-    <title>[객체지향 프로그래밍 기초] 객체지향 프로그래밍의 특징 | 회복맨</title>
+    <title>[객체지향 프로그래밍 특징] 추상화 | 회복맨</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="" />
     
-    <meta name="description" content="객체지향 프로그래밍의 특징 네 가지(추상화, 캡슐화, 상속, 다형성)와 객체지향 프로그래밍 학습법에 대해 알아보겠습니다. 객체지향 프로그래밍이란?간단한 의미의 객체지향 프로그래밍앞서 살펴본 것처럼 객체지향 프로그래밍이란 객체 단위로 기능을 나눠 구현하는 방식을 말합니다. 이때 클래스 문">
+    <meta name="description" content="추상화란특정 기능을 하는 그룹의 공통된 기능(프로퍼티와 메서드)을 정의하는 작업을 말합니다.   추상화란객체지향 프로그래밍에서 추상화(Abstraction)는 객체들의 공통적인 프로퍼티와 메서드를 뽑아내는 작업을 의미합니다. 좀더 풀어 설명하면 집을 짓기 전 설계도를 그린 후 설계도에 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[객체지향 프로그래밍 기초] 객체지향 프로그래밍의 특징">
-<meta property="og:url" content="https://recoveryman.github.io/2018/02/11/객체지향-프로그래밍의-특징/index.html">
+<meta property="og:title" content="[객체지향 프로그래밍 특징] 추상화">
+<meta property="og:url" content="https://recoveryman.github.io/2018/02/15/객체지향-프로그래밍-특징-추상화/index.html">
 <meta property="og:site_name" content="회복맨">
-<meta property="og:description" content="객체지향 프로그래밍의 특징 네 가지(추상화, 캡슐화, 상속, 다형성)와 객체지향 프로그래밍 학습법에 대해 알아보겠습니다. 객체지향 프로그래밍이란?간단한 의미의 객체지향 프로그래밍앞서 살펴본 것처럼 객체지향 프로그래밍이란 객체 단위로 기능을 나눠 구현하는 방식을 말합니다. 이때 클래스 문법은 객체의 속성과 기능을 작성할때 사용한다고 배웠습니다. 또한 클래스">
+<meta property="og:description" content="추상화란특정 기능을 하는 그룹의 공통된 기능(프로퍼티와 메서드)을 정의하는 작업을 말합니다.   추상화란객체지향 프로그래밍에서 추상화(Abstraction)는 객체들의 공통적인 프로퍼티와 메서드를 뽑아내는 작업을 의미합니다. 좀더 풀어 설명하면 집을 짓기 전 설계도를 그린 후 설계도에 맞게 집을 짓는 것처럼 객체지향 프로그래밍 동네에서도 개발하려고 하는 프">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://recoveryman.github.io/img/all/js.jpg">
-<meta property="og:updated_time" content="2018-02-15T08:33:06.551Z">
+<meta property="og:updated_time" content="2018-02-15T16:46:15.182Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[객체지향 프로그래밍 기초] 객체지향 프로그래밍의 특징">
-<meta name="twitter:description" content="객체지향 프로그래밍의 특징 네 가지(추상화, 캡슐화, 상속, 다형성)와 객체지향 프로그래밍 학습법에 대해 알아보겠습니다. 객체지향 프로그래밍이란?간단한 의미의 객체지향 프로그래밍앞서 살펴본 것처럼 객체지향 프로그래밍이란 객체 단위로 기능을 나눠 구현하는 방식을 말합니다. 이때 클래스 문법은 객체의 속성과 기능을 작성할때 사용한다고 배웠습니다. 또한 클래스">
+<meta name="twitter:title" content="[객체지향 프로그래밍 특징] 추상화">
+<meta name="twitter:description" content="추상화란특정 기능을 하는 그룹의 공통된 기능(프로퍼티와 메서드)을 정의하는 작업을 말합니다.   추상화란객체지향 프로그래밍에서 추상화(Abstraction)는 객체들의 공통적인 프로퍼티와 메서드를 뽑아내는 작업을 의미합니다. 좀더 풀어 설명하면 집을 짓기 전 설계도를 그린 후 설계도에 맞게 집을 짓는 것처럼 객체지향 프로그래밍 동네에서도 개발하려고 하는 프">
 <meta name="twitter:image" content="https://recoveryman.github.io/img/all/js.jpg">
     
 
@@ -157,14 +157,14 @@ ga('send', 'pageview');
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-객체지향-프로그래밍의-특징" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-객체지향-프로그래밍-특징-추상화" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        [객체지향 프로그래밍 기초] 객체지향 프로그래밍의 특징
+        [객체지향 프로그래밍 특징] 추상화
         </h1>
     
 
@@ -174,8 +174,8 @@ ga('send', 'pageview');
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2018/02/11/객체지향-프로그래밍의-특징/" class="article-date">
-            <time datetime="2018-02-11T13:41:21.000Z" itemprop="datePublished">2018-02-11</time>
+        <a href="/2018/02/15/객체지향-프로그래밍-특징-추상화/" class="article-date">
+            <time datetime="2018-02-15T08:03:41.000Z" itemprop="datePublished">2018-02-15</time>
         </a>
     </div>
 
@@ -184,38 +184,34 @@ ga('send', 'pageview');
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p><img src="/img/all/js.jpg" alt=""></p>
-<p>객체지향 프로그래밍의 특징 네 가지(추상화, 캡슐화, 상속, 다형성)와 객체지향 프로그래밍 학습법에 대해 알아보겠습니다.</p>
-<h3 id="객체지향-프로그래밍이란"><a href="#객체지향-프로그래밍이란" class="headerlink" title="객체지향 프로그래밍이란?"></a>객체지향 프로그래밍이란?</h3><p><strong>간단한 의미의 객체지향 프로그래밍</strong><br>앞서 살펴본 것처럼 객체지향 프로그래밍이란 객체 단위로 기능을 나눠 구현하는 방식을 말합니다. 이때 클래스 문법은 객체의 속성과 기능을 작성할때 사용한다고 배웠습니다. 또한 클래스 단위 코딩 역시 객체 지향 프로그래밍에 포함된다고도 배웠습니다.</p>
-<p><strong>진정한 의미의 객체지향 프로그래밍</strong><br>객체지향 프로그래밍이란 일종의 논문과도 같은 연구 결과의 산물입니다. 이미 우리보다 훨씬 전부터 프로그래밍을 한 선배님들이 어떻게 하면 프로그래밍을 유지보수하기 쉽고 냄새 나지 않는 멋진 코드를 만들 수 있을까 수없이 노력한 끝에 완성한 최상의 결과물 입니다.</p>
-<p>이 결과물에는 크게 네가지 특징이 담겨 있습니다. 간단하게 정리해보면 다음과 같습니다.</p>
-<ul>
-<li><strong>1)추상화(Abstraction)</strong><br>쉽게 말해 추상화는 설계하는 작업 자체를 나타냅니다. 예를 들어 세탁기를 클래스로 표현한다고 했을때 예상되는 프로퍼티와 메서드를 정의하게 되는데 바로 이 작업을 추상화라고 합니다. 추상화의 가장 큰 특징은 프로퍼티와 메서드의 이름을 작성하는 선언 부분만 만들 뿐 구현 소스를 구현하지 않는다는 점입니다.</li>
-</ul>
-<p>연관 문법: 클래스, 추상 클래스, 인터페이스</p>
-<ul>
-<li><strong>2)캡슐화(Encapsulation)</strong><br>추상화 작업 내용 중 어떤 프로퍼티와 메서드는 외부에서 접근 가능하고 또 어떤 프로퍼티와 메서드는 외부에서 접근하지 못하게 해야 하는 경우가 있습니다. 바로 이 작업을 캡슐화라고 합니다. 예를 들어 세탁기의 기능 중 사용자에게는 세탁 명령과 세탁 진행 정보만 제공해주면 됩니다. 그 외의 기능은 세탁기 내부에서 일어나는 일이기 때문에 일반 사용자에게는 감춰져 있어야 하는 거죠.</li>
-</ul>
-<p>연관 문법: 접근 지정자(private, protected, public)</p>
-<ul>
-<li><strong>3)상속(Inheritance)</strong><br>상속은 특정 클래스(부모 클래스)의 속성과 메서드를 하위(자식) 클래스가 물려받는 것을 의미합니다. 예를 들어 일반 세탁기에 말리는 기능이 필요한 경우 일반 세탁기의 기능을 상속받은 후 말리는 기능만 추가하면 일반 세탁기를 전혀 수정하지 않고 원하는 기능을 추가할 수 있습니다.</li>
-</ul>
-<p>연관 문법: 상속</p>
-<ul>
-<li><strong>4)다형성(Polymorphism)</strong><br>다형성은 객체지향 프로그래밍의 핵심입니다. 다형성을 이용하면 선언 부분과 구현 부분을 나눠 다양하게 처리할 수 있습니다. 일종의 플러그인을 만든다고 보면 됩니다.</li>
-</ul>
-<p>연관 문법: 상속, 인터페이스, 추상클래스, 합성</p>
-<p><br><hr><br></p>
-<h3 id="객체지향-프로그래밍-언어란"><a href="#객체지향-프로그래밍-언어란" class="headerlink" title="객체지향 프로그래밍 언어란?"></a>객체지향 프로그래밍 언어란?</h3><p>다시 한 번 설명하자면 객체지향 프로그래밍은 일종의 방법론일 뿐입니다. “이렇게 코딩하면 유지보수하기 쉬운 코드를 만들 수 있어요.” 와 같은 내용이 담긴 문서라는 거죠. 바로 객체지향 프로그래밍 언어란 객체지향 프로그래밍 방법론에 담긴 네 가지 특징을 사용할 수 있게 문법적으로 제공해주는 프로그래밍 언어를 말합니다.</p>
-<p>오늘날 가장 대표적인 객체지향 프로그래밍 언어는 C#, JAVA, Objective-C이며 이들은 자기들만의 고유 방식으로 객체지향 프로그래밍 특징 네 가지를 구현하고 있으며 개발자가 사용할 수 있게 다양한 문법을 제공해 줍니다.</p>
-<p>정리하자면, 문법이 다르더라도 어떤 방법으로든 객체지향 프로그래밍 특징 네 가지를 사용할 수 있게 되어 있다면 모두 객체지향 프로그래밍 언어로 부른다는 것입니다.</p>
-<p><br><hr><br></p>
-<h3 id="객체지향-프로그래밍-언어-학습법"><a href="#객체지향-프로그래밍-언어-학습법" class="headerlink" title="객체지향 프로그래밍 언어 학습법"></a>객체지향 프로그래밍 언어 학습법</h3><p>예를 들어 어느 날 회사에 아이폰 개발 의뢰가 들어와 Objective-C를 배워야 한다고 했을 때 예상 학습 기간은 어느 정도 걸릴 거라 생각되나요? 단, 오직 Objective-C 언어만을 배운다는 가정하에 말이지요(UI와 일반 라이브러리 기능 제외).</p>
-<p>만약 객체지향 프로그래밍 특징 네 가지의 개념과 사용 용도를 이미 알고 있다면 넉넉잡아 10일 내외면 충분할 것입니다. 이유는 앞에서 알아본 것처럼 자바와 Objective-C 언어 모두 객체지향 프로그래밍 언어이기 때문입니다.</p>
-<p>“Objective-C는 클래스를 이렇게 만드는 구나, 오! 메서드를 참 특이하게 만드네, 인터페이스를 프로토콜이라고 부르는군!” 식으로 이미 자바에서 알고 사용한 객체지향 프로그래밍 개념을 비교해가며 쭉쭉! 넘어가는 것입니다. 중요한 건 바로 객체지향 프로그래밍 특징 네 가지 개념의 이해입니다.</p>
-<p>정리하자면 객체지향 프로그래밍은 특징 네 가지를 저마다의 고유한 방법으로 제공하고 있기 때문에 지금 가장 자신 있게 사용하고 있는 프로그래밍 언어로 객체지향 프로그래밍 특징 네 가지를 배우면 됩니다.</p>
-<p><br><hr><br></p>
-<h3 id="자바스크립트는-객체지향-프로그래밍-언어인가요"><a href="#자바스크립트는-객체지향-프로그래밍-언어인가요" class="headerlink" title="자바스크립트는 객체지향 프로그래밍 언어인가요?"></a>자바스크립트는 객체지향 프로그래밍 언어인가요?</h3><p>결론부터 이야기하자면 아닙니다. 아쉽게도 자바스크립트는 객체지향 프로그래밍 언어가 갖추어야 할 특징 네 가지를 모두 지원하지 않습니다. 기껏해야 상속 정도만 제공하며 그 외의 기능은 거의 지원하지 않습니다. 지원하는 상속마저도 완벽하지 않습니다. 나머지 특징은 지원한다는 가정하에 비슷하게 만들어 사용하거나 아니면 아예 없는 걸로 간주하고 사용하지 않는 거죠.</p>
+            <p><img src="/img/all/js.jpg" alt=""><br><blockquote><p><strong>추상화란</strong><br>특정 기능을 하는 그룹의 공통된 기능(프로퍼티와 메서드)을 정의하는 작업을 말합니다.</p>
+</blockquote></p>
+<p><br></p>
+<h4 id="추상화란"><a href="#추상화란" class="headerlink" title="추상화란"></a>추상화란</h4><p>객체지향 프로그래밍에서 추상화(Abstraction)는 객체들의 공통적인 프로퍼티와 메서드를 뽑아내는 작업을 의미합니다. 좀더 풀어 설명하면 집을 짓기 전 설계도를 그린 후 설계도에 맞게 집을 짓는 것처럼 객체지향 프로그래밍 동네에서도 개발하려고 하는 프로젝트에서 사용하는 객체가 무엇인지 살펴본 후 객체가 가지고 있어야 할 프로퍼티와 메서드를 추상적으로 생각해 설계도를 그리게 됩니다. 예를 들어 사람을 추상화 한다면 다음과 같이 추상화할 수 있습니다.</p>
+<p><img src="/img/postimgs/5.jpg" alt=""></p>
+<p>동물을 추상화해보면 다음과 같이 표현할 수 있습니다.</p>
+<p><img src="/img/postimgs/6.jpg" alt=""></p>
+<p>그런데 여기서 주의해서 볼 사항이 있는데요. 모든 동물이 “날다()”라는 기능을 가진 것이 아니기 때문에 올바르게 추상화를 했다고 할 수 없습니다.</p>
+<p><img src="/img/postimgs/7.jpg" alt=""></p>
+<p>이처럼 추상화는 특정 기능을 하는 그룹의 공통된 기능(프로퍼티와 메서드)을 정의하는 작업을 의미합니다. 좀더 자세히 설명하자면 클래스의 선언 부분과 구현 부분 중 추상화는 오직 선언 부분만을 정의할 뿐 구현 부분은 작업하지 않습니다.</p>
+<p><br><hr><br> </p>
+<h3 id="예제"><a href="#예제" class="headerlink" title="예제"></a>예제</h3><p><strong>TV를 추상화하기</strong><br>먼저 집에서 흔히 볼 수 있는 TV라는 객체를 프로그래밍으로 표현한다고 해보죠. TV의 경우 브라운관 TV부터 요즘 나오는 스마트 TV까지 다양하게 있는데요. 여기에서는 종류를 떠나서 TV라면 기본적으로 가지고 있어야 하는 속성과 기능만을 뽑아보는 거죠. 아마도 다음과 같을 것입니다.</p>
+<p><img src="/img/postimgs/8.jpg" alt=""></p>
+<p>코드로 표현하면 다음과 같습니다.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">TV</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.모델명;</span><br><span class="line">	<span class="keyword">this</span>.해상도크기;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TV.prototype.전원On = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TV.prototype.전원Off = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TV.prototype.채널변경 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TV.prototype.사운드조절기능 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>바로 이처럼 TV라는 객체들이 공통적으로 가지고 있어야 하는 속성(property)과 메서드(method)를 뽑아 내는 작업을 추상화라고 합니다.</p>
+<p><strong>이미지 슬라이더를 추상화하기</strong><br>또 하나의 예를 들어 보겠습니다. 이번에는 웹 프론트엔드 실무에서 많이 사용하는 이미지 슬라이더를 만든다고 해보죠.</p>
+<p><img src="/img/postimgs/9.jpg" alt=""></p>
+<p>클래스 이름은 이미지 슬라이더를 의미하는 ImageSlider로 하고 3초마다 이미지가 슬라이더 되는 기능을 startAutoPlay()라는 메서드 이름으로 구현하면 되고 또 외부에서 특정 이미지 슬라이더를 선택할 수 있는 기능은 setImageAt()라는 메서드에 구현하면 될 것 같네요. 지금까지 추상화한 내용을 UML을 이용해 표현하면 다음과 같을 것입니다.</p>
+<p><img src="/img/postimgs/10.jpg" alt=""></p>
+<p>소스로 표현하면 다음과 같습니다.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ImageSlider</span>(<span class="params">selector</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.selectIndex; <span class="comment">// 현재 선택된 이미지 index</span></span><br><span class="line">	<span class="keyword">this</span>.$imageList; <span class="comment">// 이미지 목록</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ImageSlider.prototype.startAutoPlay = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 자동 플레이 기능 시작</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ImageSlider.prototype.stopAutoPlay = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 자동 플레이 기능 멈춤</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ImageSlider.prototype.nextImage = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 다음 이미지 이동</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ImageSlider.prototype.prevImage = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 이전 이미지 이동</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ImageSlider.prototype.setImageAt = <span class="function"><span class="keyword">function</span>(<span class="params">index</span>) </span>&#123;</span><br><span class="line">	<span class="comment">// index번째 이미지 이동</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>어떤가요? 추상화 라는 말이 조금 어려워서 그렇지 추상화 단계에서 핵심은 클래스를 설계하는 작업 자체 입니다. 여기까지는 아주 단순한 객체 추상화였습니다.</p>
+<p><strong>이미지 슬라이더 추상화하기2</strong></p>
+<p>그럼 이번에는 좀더 복잡한 예를 들어보겠습니다. 다음은 앞에서 살펴본 심플 이미지 슬라이더를 추상화한 그림입니다. 다시 한 번 살펴보죠.</p>
+<p><img src="/img/postimgs/11.jpg" alt=""></p>
+<p>여기에서 주의 깊게 살펴볼 부분은 바로 정렬 기능 인터페이스 부분 입니다. 앞에서 간단하게 살펴본 TV객체의 경우 TV객체들이 공통으로 가지고 있어야 하는 내용을 추상화한 것처럼 심플 이미지 갤러리와 연결해서 사용하게 될 정렬 기능 객체들이 공통으로 가지고 있어야 하는 기능을 인터페이스를 이용해 추상화했습니다.</p>
+<p>여기서 인터페이스를 사용한 이유는 앞에서 살펴본 것처럼 인터페이스와 연결되는 클래스는 반드시 인터페이스에 정의되어 있는 기능을 구현해야 하는 규약을 적용하기 위해서입니다.</p>
 <p><br><br></p>
 <ul>
 <li><a href="/2018/02/05/절차지향-프로그래밍-VS-객체지향-프로그래밍/" title="[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍">[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍</a></li>
@@ -230,7 +226,7 @@ ga('send', 'pageview');
 
 
 
-    <!-- <a data-url="https://recoveryman.github.io/2018/02/11/객체지향-프로그래밍의-특징/" data-id="cjdo8yyb4000res7k2i0ada6b" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
+    <!-- <a data-url="https://recoveryman.github.io/2018/02/15/객체지향-프로그래밍-특징-추상화/" data-id="cjdo8yyb5000tes7kn6723b7c" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -343,20 +339,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2018/02/11/객체지향-프로그래밍-언어에서-제공하는-기본-기능/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">새로운</strong>
-        <p class="article-nav-title">
-        
-            [객체지향 프로그래밍 기초] 객체지향 프로그래밍 언어에서 제공하는 기본 기능
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2018/02/05/절차지향-프로그래밍-VS-객체지향-프로그래밍/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/02/11/객체지향-프로그래밍-언어에서-제공하는-기본-기능/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">오래된</strong>
-        <p class="article-nav-title">[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍</p>
+        <p class="article-nav-title">[객체지향 프로그래밍 기초] 객체지향 프로그래밍 언어에서 제공하는 기본 기능</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -545,7 +531,7 @@ ga('send', 'pageview');
     var disqus_shortname = 'recoveryman';
     
     
-    var disqus_url = 'https://recoveryman.github.io/2018/02/11/객체지향-프로그래밍의-특징/';
+    var disqus_url = 'https://recoveryman.github.io/2018/02/15/객체지향-프로그래밍-특징-추상화/';
     
     (function() {
     var dsq = document.createElement('script');
