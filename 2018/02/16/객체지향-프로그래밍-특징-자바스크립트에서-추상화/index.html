@@ -17,7 +17,7 @@
 <meta property="og:description" content="일반 OOP에서 지원하는 추상화일반 객체지향 프로그래밍에서는 다음과 같은 추상화를 구현할 수 있는 문법을 지원합니다.  일반 클래스(class)일반적인 객체의 프로퍼티와 메서드를 만들 때 사용합니다.  추상클래스(abstract class)선언 부분과 구현 부분이 있는 클래스를 만들 때 사용합니다.  인터페이스(interface)클래스가 반드시 구현하고">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://recoveryman.github.io/img/all/js.jpg">
-<meta property="og:updated_time" content="2018-02-15T16:58:07.047Z">
+<meta property="og:updated_time" content="2018-02-15T17:27:36.920Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[객체지향 프로그래밍 특징] 자바스크립트에서 추상화">
 <meta name="twitter:description" content="일반 OOP에서 지원하는 추상화일반 객체지향 프로그래밍에서는 다음과 같은 추상화를 구현할 수 있는 문법을 지원합니다.  일반 클래스(class)일반적인 객체의 프로퍼티와 메서드를 만들 때 사용합니다.  추상클래스(abstract class)선언 부분과 구현 부분이 있는 클래스를 만들 때 사용합니다.  인터페이스(interface)클래스가 반드시 구현하고">
@@ -201,6 +201,12 @@ ga('send', 'pageview');
 <li>함수활용 방식</li>
 <li>프로토타입 방식</li>
 </ol>
+<p><br><hr><br></p>
+<h3 id="탭메뉴를-추상화하기"><a href="#탭메뉴를-추상화하기" class="headerlink" title="탭메뉴를 추상화하기"></a>탭메뉴를 추상화하기</h3><p>탭메뉴 클래스 이름은 뭐로 할 것인지, 그리고 기능과 속성까지 추상화 해보겠습니다.</p>
+<p><strong>풀이</strong><br><img src="/img/postimgs/12.jpg" alt=""></p>
+<p><strong>설명</strong><br>소스로 표현하면 다음과 같습니다.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">TabMenu</span>(<span class="params">selector</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.selectIndex;</span><br><span class="line">	<span class="keyword">this</span>.$menuItems;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TabMenu.prototype.setMenuItemAt = <span class="function"><span class="keyword">function</span>(<span class="params">index</span>) </span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TabMenu.prototype.setMenuItem = <span class="function"><span class="keyword">function</span>(<span class="params">$menuItems</span>) </span>&#123;</span><br><span class="line">	<span class="comment">//..</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TabMenu.prototype.getSelectIndex = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">//..</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>이처럼 추상화란 특정 기능을 하는 그룹의 공통된 기능(프로퍼티와 메서드)을 정의하는 작업을 말합니다.</p>
 <p><br><br></p>
 <ul>
 <li><a href="/2018/02/05/절차지향-프로그래밍-VS-객체지향-프로그래밍/" title="[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍">[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍</a></li>
