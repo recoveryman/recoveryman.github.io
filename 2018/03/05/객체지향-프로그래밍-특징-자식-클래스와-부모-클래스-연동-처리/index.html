@@ -3,24 +3,24 @@
 <head>
     <meta charset="utf-8">
     
-    <title>[jQuery플러그인제작] jQuery 확장 소개 | 회복맨</title>
+    <title>[객체지향 프로그래밍 특징] 자식 클래스와 부모 클래스 연동 처리 | 회복맨</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="" />
     
-    <meta name="description" content="jQuery 확장에는 유틸리티와 플러그인 두 가지가 있습니다. jQuery 확장이란123456// 자바스크립트 방식var tabMenu1 = new TabMenu(&apos;.tabMenu1&apos;);TabMenuenu.setSelectAt(1);// jQuery 플러그인 방식$(&">
+    <meta name="description" content="클래스 상속을 사용하다 보면 자식 클래스에서 부모 클래스의 생성자를 호출해야 하는 경우가 발생합니다. 자바스크립트 최상위 부모 Object 클래스앞에서 설명은 안했지만, 사실 부모가 없는 클래스의 경우 눈에 보이진 않지만 기본으로 자바스크립트에서 제공하는 Object라는 클래스를 상속받">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[jQuery플러그인제작] jQuery 확장 소개">
-<meta property="og:url" content="https://recoveryman.github.io/2017/12/28/jQuery플러그인제작-jQuery-확장-소개/index.html">
+<meta property="og:title" content="[객체지향 프로그래밍 특징] 자식 클래스와 부모 클래스 연동 처리">
+<meta property="og:url" content="https://recoveryman.github.io/2018/03/05/객체지향-프로그래밍-특징-자식-클래스와-부모-클래스-연동-처리/index.html">
 <meta property="og:site_name" content="회복맨">
-<meta property="og:description" content="jQuery 확장에는 유틸리티와 플러그인 두 가지가 있습니다. jQuery 확장이란123456// 자바스크립트 방식var tabMenu1 = new TabMenu(&apos;.tabMenu1&apos;);TabMenuenu.setSelectAt(1);// jQuery 플러그인 방식$(&quot;.tabMenu1&quot;).setSelectAt(1);  jQuery 확장 요소 종류1.유틸리티">
+<meta property="og:description" content="클래스 상속을 사용하다 보면 자식 클래스에서 부모 클래스의 생성자를 호출해야 하는 경우가 발생합니다. 자바스크립트 최상위 부모 Object 클래스앞에서 설명은 안했지만, 사실 부모가 없는 클래스의 경우 눈에 보이진 않지만 기본으로 자바스크립트에서 제공하는 Object라는 클래스를 상속받게 됩니다. Object 클래스에서는 프로퍼티 값 하나와 여러 개의 메">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://recoveryman.github.io/img/all/js.jpg">
-<meta property="og:updated_time" content="2018-01-15T01:40:10.572Z">
+<meta property="og:updated_time" content="2018-03-11T16:06:42.583Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[jQuery플러그인제작] jQuery 확장 소개">
-<meta name="twitter:description" content="jQuery 확장에는 유틸리티와 플러그인 두 가지가 있습니다. jQuery 확장이란123456// 자바스크립트 방식var tabMenu1 = new TabMenu(&apos;.tabMenu1&apos;);TabMenuenu.setSelectAt(1);// jQuery 플러그인 방식$(&quot;.tabMenu1&quot;).setSelectAt(1);  jQuery 확장 요소 종류1.유틸리티">
+<meta name="twitter:title" content="[객체지향 프로그래밍 특징] 자식 클래스와 부모 클래스 연동 처리">
+<meta name="twitter:description" content="클래스 상속을 사용하다 보면 자식 클래스에서 부모 클래스의 생성자를 호출해야 하는 경우가 발생합니다. 자바스크립트 최상위 부모 Object 클래스앞에서 설명은 안했지만, 사실 부모가 없는 클래스의 경우 눈에 보이진 않지만 기본으로 자바스크립트에서 제공하는 Object라는 클래스를 상속받게 됩니다. Object 클래스에서는 프로퍼티 값 하나와 여러 개의 메">
 <meta name="twitter:image" content="https://recoveryman.github.io/img/all/js.jpg">
     
 
@@ -153,18 +153,18 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/JS/">JS</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/JS/js-학습/">js 학습</a>
+    <a class="page-title-link" href="/categories/JS/">JS</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/JS/js-학습/">js 학습</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/JS/js-학습/객체지향-프로그래밍/">객체지향 프로그래밍</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-jQuery플러그인제작-jQuery-확장-소개" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-객체지향-프로그래밍-특징-자식-클래스와-부모-클래스-연동-처리" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        [jQuery플러그인제작] jQuery 확장 소개
+        [객체지향 프로그래밍 특징] 자식 클래스와 부모 클래스 연동 처리
         </h1>
     
 
@@ -174,8 +174,8 @@ ga('send', 'pageview');
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2017/12/28/jQuery플러그인제작-jQuery-확장-소개/" class="article-date">
-            <time datetime="2017-12-28T05:08:04.000Z" itemprop="datePublished">2017-12-28</time>
+        <a href="/2018/03/05/객체지향-프로그래밍-특징-자식-클래스와-부모-클래스-연동-처리/" class="article-date">
+            <time datetime="2018-03-05T00:35:38.000Z" itemprop="datePublished">2018-03-05</time>
         </a>
     </div>
 
@@ -184,35 +184,33 @@ ga('send', 'pageview');
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p><img src="/img/all/js.jpg" alt=""><br>jQuery 확장에는 유틸리티와 플러그인 두 가지가 있습니다.</p>
-<h3 id="jQuery-확장이란"><a href="#jQuery-확장이란" class="headerlink" title="jQuery 확장이란"></a>jQuery 확장이란</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 자바스크립트 방식</span></span><br><span class="line"><span class="keyword">var</span> tabMenu1 = <span class="keyword">new</span> TabMenu(<span class="string">'.tabMenu1'</span>);</span><br><span class="line">TabMenuenu.setSelectAt(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// jQuery 플러그인 방식</span></span><br><span class="line">$(<span class="string">".tabMenu1"</span>).setSelectAt(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+            <p><img src="/img/all/js.jpg" alt=""></p>
+<p>클래스 상속을 사용하다 보면 자식 클래스에서 부모 클래스의 생성자를 호출해야 하는 경우가 발생합니다.</p>
+<h3 id="자바스크립트-최상위-부모-Object-클래스"><a href="#자바스크립트-최상위-부모-Object-클래스" class="headerlink" title="자바스크립트 최상위 부모 Object 클래스"></a>자바스크립트 최상위 부모 Object 클래스</h3><p><img src="/img/postimgs/42.jpg" alt=""><br>앞에서 설명은 안했지만, 사실 부모가 없는 클래스의 경우 눈에 보이진 않지만 기본으로 자바스크립트에서 제공하는 Object라는 클래스를 상속받게 됩니다.</p>
+<p>Object 클래스에서는 프로퍼티 값 하나와 여러 개의 메서드를 제공하는데 이 중에서 메서드는 많이 사용하지 않아 몰라도 되지만 constructor라는 속성은 중요하기 때문에 알고 있어야 합니다.</p>
 <p><br><hr><br></p>
-<h3 id="jQuery-확장-요소-종류"><a href="#jQuery-확장-요소-종류" class="headerlink" title="jQuery 확장 요소 종류"></a>jQuery 확장 요소 종류</h3><p><strong>1.유틸리티</strong></p>
-<p>문자열의 공백을 제거해주는 jQuery의 trim() 메서드와 같은 유틸리티는 주로 도움을 주는 기능을 합니다.<br>jQuery 인스턴스를 생성하지 않고 jQuery 클래스에 직접 접근하여 사용합니다.</p>
-<ul>
-<li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jQuery.유틸리티();</span><br></pre></td></tr></table></figure>
-</li>
-<li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$.유틸리티();</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p><br></p>
-<p><strong>2.플러그인</strong></p>
-<p>특정 기능을 재사용 하고자 할 때 사용하는 포장 기능 입니다.</p>
-<ul>
-<li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'선택자'</span>).플러그인(옵션);</span><br></pre></td></tr></table></figure>
-</li>
-<li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $결과 = $(<span class="string">'선택자'</span>);</span><br><span class="line">$결과.플러그인(옵션);</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
+<h3 id="자바스크립트에서-부모-생성자-호출하기"><a href="#자바스크립트에서-부모-생성자-호출하기" class="headerlink" title="자바스크립트에서 부모 생성자 호출하기"></a>자바스크립트에서 부모 생성자 호출하기</h3><p>상속 구현 시 부모 클래스의 생성자에 매개변수가 있는 경우 자식 클래스에서 부모 클래스의 생성자를 호출해 매개변수 값을 전달해야 합니다.</p>
+<p><strong>문법</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 자식클래스(<span class="params">[param1, param2, ...]</span>) </span>&#123;</span><br><span class="line">	부모클래스.call(<span class="keyword">this</span>[, param1, param2, ...]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>부모 클래스의 생성자를 호출할 때 함수객체에서 제공하는 call()메서드를 이용해 첫 번째 매개변수에 자식 인스턴스를 전달하고, 두 번째 매개변수 이후부터는 부모의 생성자로 전달할 데이터를 전달해 줍니다.</p>
+<p><strong>예제</strong><br>다음 예제처럼 상속을 사용하는 경우 자식클래스의 인스턴스 생성 시 부모의 속성값을 설정해야 하는 경우가 자주 있습니다. 이번에 다룬 문법대로 사용하면 됩니다.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 부모 클래스</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MyParent</span>(<span class="params">param1</span>)</span>&#123;</span><br><span class="line">	<span class="comment">// 프로퍼티 생성</span></span><br><span class="line">	<span class="keyword">this</span>.property1=param1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 메서드 생성</span></span><br><span class="line">MyParent.prototype.method1=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"MyParent.method1() "</span>+<span class="keyword">this</span>.property1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 자식 클래스</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MyChild</span>(<span class="params">param1</span>)</span>&#123;</span><br><span class="line">	MyParent.call(<span class="keyword">this</span>, param1);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 상속</span></span><br><span class="line">MyChild.prototype = <span class="keyword">new</span> MyParent();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 인스턴스 생성</span></span><br><span class="line"><span class="keyword">var</span> child1 = <span class="keyword">new</span> MyChild(<span class="string">"data1"</span>);</span><br><span class="line"><span class="comment">// 부모의 프로퍼티와 메서드 호출</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"child1.property1 = "</span>+ child1.property1);</span><br><span class="line">child1.method1();</span><br></pre></td></tr></table></figure>
+<p><img src="/img/postimgs/43.jpg" alt=""></p>
+<p><strong>결과</strong><br><img src="/img/postimgs/44.jpg" alt=""></p>
+<p>만약 3번의 구문을 호출해 주지 않으면 부모에 값이 전달되지 않아 method1()메서드를 호출하는 경우 정상적으로 원하는 값이 출력되지 않게 됩니다.</p>
 <p><br><br></p>
 <ul>
-<li><a href="/2017/12/28/jQuery플러그인제작-jQuery-확장-소개/" title="[jQuery플러그인제작] jQuery 확장 소개">[jQuery플러그인제작] jQuery 확장 소개</a></li>
-<li><a href="/2017/12/28/jQuery플러그인제작-jQuery유틸리티-만들기/" title="[jQuery플러그인제작] jQuery유틸리티 만들기">[jQuery플러그인제작] jQuery유틸리티 만들기</a></li>
-<li><a href="/2018/01/04/jQuery플러그인제작-jQuery-플러그인-만들기/" title="[jQuery플러그인제작] jQuery 플러그인 만들기 ">[jQuery플러그인제작] jQuery 플러그인 만들기 </a></li>
-<li><a href="/2018/01/09/jQuery플러그인제작-함수-기반-플러그인-만들기/" title="[jQuery플러그인제작] 함수 기반 플러그인 만들기">[jQuery플러그인제작] 함수 기반 플러그인 만들기</a></li>
-<li><a href="/2018/01/10/jQuery플러그인제작-클래스-기반-플러그인-만들기/" title="[jQuery플러그인제작] 클래스 기반 플러그인 만들기">[jQuery플러그인제작] 클래스 기반 플러그인 만들기</a></li>
-<li><a href="/2018/01/11/jQuery플러그인제작-플러그인-그룹-만들기/" title="[jQuery플러그인제작] 플러그인 그룹 만들기">[jQuery플러그인제작] 플러그인 그룹 만들기</a></li>
-<li><a href="/2018/01/15/jQuery플러그인제작-extend-메서드를-활용한-플러그인-옵션-처리/" title="[jQuery플러그인제작] extend() 메서드를 활용한 플러그인 옵션 처리">[jQuery플러그인제작] extend() 메서드를 활용한 플러그인 옵션 처리</a></li>
+<li><a href="/2018/02/05/절차지향-프로그래밍-VS-객체지향-프로그래밍/" title="[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍">[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍</a></li>
+<li><a href="/2018/02/11/객체지향-프로그래밍의-특징/" title="[객체지향 프로그래밍 기초] 객체지향 프로그래밍의 특징">[객체지향 프로그래밍 기초] 객체지향 프로그래밍의 특징</a></li>
+<li><a href="/2018/02/11/객체지향-프로그래밍-언어에서-제공하는-기본-기능/" title="[객체지향 프로그래밍 기초] 객체지향 프로그래밍 언어에서 제공하는 기본 기능">[객체지향 프로그래밍 기초] 객체지향 프로그래밍 언어에서 제공하는 기본 기능</a></li>
+<li><a href="/2018/02/15/객체지향-프로그래밍-특징-추상화-소개/" title="[객체지향 프로그래밍 특징] 추상화 소개">[객체지향 프로그래밍 특징] 추상화 소개</a></li>
+<li><a href="/2018/02/16/객체지향-프로그래밍-특징-자바스크립트에서-추상화/" title="[객체지향 프로그래밍 특징] 자바스크립트에서 추상화">[객체지향 프로그래밍 특징] 자바스크립트에서 추상화</a></li>
+<li><a href="/2018/02/16/객체지향-프로그래밍-특징-캡슐화-소개/" title="[객체지향 프로그래밍 특징] 캡슐화 소개">[객체지향 프로그래밍 특징] 캡슐화 소개</a></li>
+<li><a href="/2018/02/16/객체지향-프로그래밍-특징-자바스크립트에서의-캡슐화/" title="[객체지향 프로그래밍 특징] 자바스크립트에서의 캡슐화">[객체지향 프로그래밍 특징] 자바스크립트에서의 캡슐화</a></li>
+<li><a href="/2018/02/17/객체지향-프로그래밍-특징-클래스-상속-소개/" title="[객체지향 프로그래밍 특징] 클래스 상속 소개">[객체지향 프로그래밍 특징] 클래스 상속 소개</a></li>
+<li><a href="/2018/02/25/객체지향-프로그래밍-특징-클래스-상속-기능/" title="[객체지향 프로그래밍 특징] 클래스 상속 기능">[객체지향 프로그래밍 특징] 클래스 상속 기능</a></li>
+<li><a href="/2018/02/28/객체지향-프로그래밍-특징-자바스크립트에서-클래스-상속/" title="[객체지향 프로그래밍 특징] 자바스크립트에서 클래스 상속">[객체지향 프로그래밍 특징] 자바스크립트에서 클래스 상속</a></li>
+<li><a href="/2018/03/05/객체지향-프로그래밍-특징-자식-클래스와-부모-클래스-연동-처리/" title="[객체지향 프로그래밍 특징] 자식 클래스와 부모 클래스 연동 처리">[객체지향 프로그래밍 특징] 자식 클래스와 부모 클래스 연동 처리</a></li>
 </ul>
 
         </div>
@@ -221,7 +219,7 @@ ga('send', 'pageview');
 
 
 
-    <!-- <a data-url="https://recoveryman.github.io/2017/12/28/jQuery플러그인제작-jQuery-확장-소개/" data-id="cjedhvci6000f9wb6xien7qwh" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
+    <!-- <a data-url="https://recoveryman.github.io/2018/03/05/객체지향-프로그래밍-특징-자식-클래스와-부모-클래스-연동-처리/" data-id="cjedhvcj6001d9wb6y3n6ykg4" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -334,20 +332,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2017/12/28/jQuery플러그인제작-jQuery유틸리티-만들기/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">새로운</strong>
-        <p class="article-nav-title">
-        
-            [jQuery플러그인제작] jQuery유틸리티 만들기
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2017/12/27/패키지/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/02/28/객체지향-프로그래밍-특징-자바스크립트에서-클래스-상속/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">오래된</strong>
-        <p class="article-nav-title">패키지</p>
+        <p class="article-nav-title">[객체지향 프로그래밍 특징] 자바스크립트에서 클래스 상속</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -536,7 +524,7 @@ ga('send', 'pageview');
     var disqus_shortname = 'recoveryman';
     
     
-    var disqus_url = 'https://recoveryman.github.io/2017/12/28/jQuery플러그인제작-jQuery-확장-소개/';
+    var disqus_url = 'https://recoveryman.github.io/2018/03/05/객체지향-프로그래밍-특징-자식-클래스와-부모-클래스-연동-처리/';
     
     (function() {
     var dsq = document.createElement('script');
