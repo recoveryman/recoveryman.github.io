@@ -17,7 +17,7 @@
 <meta property="og:description" content="클래스 상속을 사용하다 보면 자식 클래스에서 부모 클래스의 생성자를 호출해야 하는 경우가 발생합니다. 자바스크립트 최상위 부모 Object 클래스앞에서 설명은 안했지만, 사실 부모가 없는 클래스의 경우 눈에 보이진 않지만 기본으로 자바스크립트에서 제공하는 Object라는 클래스를 상속받게 됩니다. Object 클래스에서는 프로퍼티 값 하나와 여러 개의 메">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://recoveryman.github.io/img/all/js.jpg">
-<meta property="og:updated_time" content="2018-03-11T16:06:42.583Z">
+<meta property="og:updated_time" content="2018-03-11T16:10:06.910Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[객체지향 프로그래밍 특징] 자식 클래스와 부모 클래스 연동 처리">
 <meta name="twitter:description" content="클래스 상속을 사용하다 보면 자식 클래스에서 부모 클래스의 생성자를 호출해야 하는 경우가 발생합니다. 자바스크립트 최상위 부모 Object 클래스앞에서 설명은 안했지만, 사실 부모가 없는 클래스의 경우 눈에 보이진 않지만 기본으로 자바스크립트에서 제공하는 Object라는 클래스를 상속받게 됩니다. Object 클래스에서는 프로퍼티 값 하나와 여러 개의 메">
@@ -211,6 +211,7 @@ ga('send', 'pageview');
 <li><a href="/2018/02/25/객체지향-프로그래밍-특징-클래스-상속-기능/" title="[객체지향 프로그래밍 특징] 클래스 상속 기능">[객체지향 프로그래밍 특징] 클래스 상속 기능</a></li>
 <li><a href="/2018/02/28/객체지향-프로그래밍-특징-자바스크립트에서-클래스-상속/" title="[객체지향 프로그래밍 특징] 자바스크립트에서 클래스 상속">[객체지향 프로그래밍 특징] 자바스크립트에서 클래스 상속</a></li>
 <li><a href="/2018/03/05/객체지향-프로그래밍-특징-자식-클래스와-부모-클래스-연동-처리/" title="[객체지향 프로그래밍 특징] 자식 클래스와 부모 클래스 연동 처리">[객체지향 프로그래밍 특징] 자식 클래스와 부모 클래스 연동 처리</a></li>
+<li><a href="/2018/03/12/객체지향-프로그래밍-특징-자바스크립트에서-메서드-오버라이드/" title="[객체지향 프로그래밍 특징] 자바스크립트에서 메서드 오버라이드">[객체지향 프로그래밍 특징] 자바스크립트에서 메서드 오버라이드</a></li>
 </ul>
 
         </div>
@@ -219,7 +220,7 @@ ga('send', 'pageview');
 
 
 
-    <!-- <a data-url="https://recoveryman.github.io/2018/03/05/객체지향-프로그래밍-특징-자식-클래스와-부모-클래스-연동-처리/" data-id="cjedhvcj6001d9wb6y3n6ykg4" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
+    <!-- <a data-url="https://recoveryman.github.io/2018/03/05/객체지향-프로그래밍-특징-자식-클래스와-부모-클래스-연동-처리/" data-id="cjemzv3dm001gcc7krm8kiwgl" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -332,6 +333,16 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
+        <a href="/2018/03/12/객체지향-프로그래밍-특징-자바스크립트에서-메서드-오버라이드/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">새로운</strong>
+        <p class="article-nav-title">
+        
+            [객체지향 프로그래밍 특징] 자바스크립트에서 메서드 오버라이드
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
     
         <a href="/2018/02/28/객체지향-프로그래밍-특징-자바스크립트에서-클래스-상속/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">오래된</strong>
@@ -350,6 +361,26 @@ ga('send', 'pageview');
         <h3 class="widget-title">최근 글</h3>
         <div class="widget">
             <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/03/12/객체지향-프로그래밍-특징-자바스크립트에서-메서드-오버라이드/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/img/all/js.jpg)" alt="[객체지향 프로그래밍 특징] 자바스크립트에서 메서드 오버라이드" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/JS/">JS</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/JS/js-학습/">js 학습</a></p>
+                            <p class="item-title"><a href="/2018/03/12/객체지향-프로그래밍-특징-자바스크립트에서-메서드-오버라이드/" class="title">[객체지향 프로그래밍 특징] 자바스크립트에서 메서드 오버라이드</a></p>
+                            <p class="item-date"><time datetime="2018-03-11T16:09:13.000Z" itemprop="datePublished">2018-03-12</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -431,26 +462,6 @@ ga('send', 'pageview');
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/02/16/객체지향-프로그래밍-특징-자바스크립트에서의-캡슐화/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/img/all/js.jpg)" alt="[객체지향 프로그래밍 특징] 자바스크립트에서의 캡슐화" class="thumbnail-image"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/JS/">JS</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/JS/js-학습/">js 학습</a></p>
-                            <p class="item-title"><a href="/2018/02/16/객체지향-프로그래밍-특징-자바스크립트에서의-캡슐화/" class="title">[객체지향 프로그래밍 특징] 자바스크립트에서의 캡슐화</a></p>
-                            <p class="item-date"><time datetime="2018-02-16T07:11:40.000Z" itemprop="datePublished">2018-02-16</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -460,7 +471,7 @@ ga('send', 'pageview');
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">카테고리</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/JS/">JS</a><span class="category-list-count">26</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/JS/js-학습/">js 학습</a><span class="category-list-count">24</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/JS/js-학습/객체지향-프로그래밍/">객체지향 프로그래밍</a><span class="category-list-count">11</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/JS/마크업부터-시작하는-UI/">마크업부터 시작하는 UI</a><span class="category-list-count">2</span></li></ul></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/JS/">JS</a><span class="category-list-count">27</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/JS/js-학습/">js 학습</a><span class="category-list-count">25</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/JS/js-학습/객체지향-프로그래밍/">객체지향 프로그래밍</a><span class="category-list-count">12</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/JS/마크업부터-시작하는-UI/">마크업부터 시작하는 UI</a><span class="category-list-count">2</span></li></ul></li></ul>
         </div>
     </div>
 
@@ -470,7 +481,7 @@ ga('send', 'pageview');
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">아카이브</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">3월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2월 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1월 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">12월 2017</a><span class="archive-list-count">10</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">3월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2월 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1월 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">12월 2017</a><span class="archive-list-count">10</span></li></ul>
         </div>
     </div>
 
