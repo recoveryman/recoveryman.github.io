@@ -10,18 +10,18 @@
     <!-- 
         <meta name="keywords" content="" />
     
-    <meta name="description" content="[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍 [객체지향 프로그래밍 기초] 객체지향 프로그래밍의 특징 [객체지향 프로그래밍 기초] 객체지향 프로그래밍 언어에서 제공하는 기본 기능 [객체지향 프로그래밍 특징] 추상화 소개 [객체지향 프로그래밍 특징] 자바스크립트">
+    <meta name="description" content="자바스크립트에서 메서드 오버로딩메서드 오버로딩(overloading)은 동일한 이름을 가진 여러 개의 메서드를 만든 후 매개변수 타입과 개수에 맞는 메서드가 자동으로 호출되는 기능을 뜻합니다.  하지만 아쉽게도 자바스크립트는 문법적으로 오버로딩을 제공하지 않습니다. 대신 오버로딩을 흉내">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[객체지향 프로그래밍 특징] 자바스크립트에서 메서드 오버로딩">
 <meta property="og:url" content="https://recoveryman.github.io/2018/03/12/객체지향-프로그래밍-특징-자바스크립트에서-메서드-오버로딩/index.html">
 <meta property="og:site_name" content="회복맨">
-<meta property="og:description" content="[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍 [객체지향 프로그래밍 기초] 객체지향 프로그래밍의 특징 [객체지향 프로그래밍 기초] 객체지향 프로그래밍 언어에서 제공하는 기본 기능 [객체지향 프로그래밍 특징] 추상화 소개 [객체지향 프로그래밍 특징] 자바스크립트에서 추상화 [객체지향 프로그래밍 특징] 캡슐화 소개 [객체지향 프">
+<meta property="og:description" content="자바스크립트에서 메서드 오버로딩메서드 오버로딩(overloading)은 동일한 이름을 가진 여러 개의 메서드를 만든 후 매개변수 타입과 개수에 맞는 메서드가 자동으로 호출되는 기능을 뜻합니다.  하지만 아쉽게도 자바스크립트는 문법적으로 오버로딩을 제공하지 않습니다. 대신 오버로딩을 흉내 낼 수는 있습니다.  문법123function 함수 또는 메서드 이름">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://recoveryman.github.io/img/all/js.jpg">
-<meta property="og:updated_time" content="2018-03-12T02:42:40.394Z">
+<meta property="og:updated_time" content="2018-03-14T17:30:09.856Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[객체지향 프로그래밍 특징] 자바스크립트에서 메서드 오버로딩">
-<meta name="twitter:description" content="[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍 [객체지향 프로그래밍 기초] 객체지향 프로그래밍의 특징 [객체지향 프로그래밍 기초] 객체지향 프로그래밍 언어에서 제공하는 기본 기능 [객체지향 프로그래밍 특징] 추상화 소개 [객체지향 프로그래밍 특징] 자바스크립트에서 추상화 [객체지향 프로그래밍 특징] 캡슐화 소개 [객체지향 프">
+<meta name="twitter:description" content="자바스크립트에서 메서드 오버로딩메서드 오버로딩(overloading)은 동일한 이름을 가진 여러 개의 메서드를 만든 후 매개변수 타입과 개수에 맞는 메서드가 자동으로 호출되는 기능을 뜻합니다.  하지만 아쉽게도 자바스크립트는 문법적으로 오버로딩을 제공하지 않습니다. 대신 오버로딩을 흉내 낼 수는 있습니다.  문법123function 함수 또는 메서드 이름">
 <meta name="twitter:image" content="https://recoveryman.github.io/img/all/js.jpg">
      -->
 
@@ -186,6 +186,16 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
             <p><img src="/img/all/js.jpg" alt=""></p>
+<h3 id="자바스크립트에서-메서드-오버로딩"><a href="#자바스크립트에서-메서드-오버로딩" class="headerlink" title="자바스크립트에서 메서드 오버로딩"></a>자바스크립트에서 메서드 오버로딩</h3><p>메서드 오버로딩(overloading)은 동일한 이름을 가진 여러 개의 메서드를 만든 후 매개변수 타입과 개수에 맞는 메서드가 자동으로 호출되는 기능을 뜻합니다.</p>
+<p><img src="/img/postimgs/48.jpg"></p>
+<p>하지만 아쉽게도 자바스크립트는 문법적으로 오버로딩을 제공하지 않습니다. 대신 오버로딩을 흉내 낼 수는 있습니다.</p>
+<p><br><hr><br></p>
+<h3 id="문법"><a href="#문법" class="headerlink" title="문법"></a>문법</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 함수 또는 메서드 이름(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="built_in">arguments</span> 객체 활용</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>자바스크립트에서는 매개변수 정보를 담고 있는 arguments를 이용해 오버로딩을 흉내 냅니다. 오버로딩은 함수와 메서드에서 동일하게 사용할 수 있습니다.</p>
+<p><br><br></p>
+<figure class="highlight js"><figcaption><span>[여러 개의 숫자 값을 더하는 함수]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 더하기 함수</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> result = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;<span class="built_in">arguments</span>.length; i++) &#123;</span><br><span class="line">		result+=<span class="built_in">arguments</span>[i];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 함수 호출</span></span><br><span class="line"><span class="built_in">console</span>.log(sum(<span class="number">10</span>, <span class="number">20</span>));</span><br><span class="line"><span class="built_in">console</span>.log(sum(<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>));</span><br><span class="line"><span class="built_in">console</span>.log(sum(<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>, <span class="number">40</span>));</span><br></pre></td></tr></table></figure>
+<p><strong>실행 결과</strong><br><img src="/img/postimgs/49.jpg"></p>
+<p><strong>설명</strong><br>arguments 객체에 담긴 매개변수 값을 매개변수 개수만큼 반복해서 더해 줍니다. 오버로딩은 특히 본인만의 라이브러리를 만들 때 유용하게 사용할 수 있습니다.</p>
 <p><br><br></p>
 <ul>
 <li><a href="/2018/02/05/절차지향-프로그래밍-VS-객체지향-프로그래밍/" title="[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍">[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍</a></li>
