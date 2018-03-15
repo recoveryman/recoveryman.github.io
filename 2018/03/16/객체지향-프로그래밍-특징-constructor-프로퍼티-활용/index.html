@@ -3,25 +3,25 @@
 <head>
     <meta charset="utf-8">
     
-    <title>[jQuery플러그인제작] 플러그인 그룹 만들기 | 회복맨</title>
+    <title>[객체지향 프로그래밍 특징] constructor 프로퍼티 활용 | 회복맨</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="robots" content="noindex, nofollow" />
     <!-- 
         <meta name="keywords" content="" />
     
-    <meta name="description" content="jQuery 플러그인을 만들다 보면 하나 이상의 연관된 플러그인을 만들게 됩니다. 이 포스팅에서는 플러그인 그룹 만드는 방법과 플러그인 간의 연동 방법을 해보겠습니다. 소개플러그인 그룹이란 연관된 클래스 기반으로 jQuery 플러그인을 만들 때 클래스 인스턴스를 연관 있는 플러그인에서 ">
+    <meta name="description" content="construcotr 프로퍼티 소개일반적으로 클래스를 만들면 자동적으로 prototype의 constructor라는 프로퍼티가 만들어 집니다. 이 프로퍼티에는 해당 클래스의 생성자 정보가 기본값으로 담기게 됩니다. 달리 말하면 constructor 프로퍼티를 이용해 사용하는 객체(인스턴">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[jQuery플러그인제작] 플러그인 그룹 만들기">
-<meta property="og:url" content="https://recoveryman.github.io/2018/01/11/jQuery플러그인제작-플러그인-그룹-만들기/index.html">
+<meta property="og:title" content="[객체지향 프로그래밍 특징] constructor 프로퍼티 활용">
+<meta property="og:url" content="https://recoveryman.github.io/2018/03/16/객체지향-프로그래밍-특징-constructor-프로퍼티-활용/index.html">
 <meta property="og:site_name" content="회복맨">
-<meta property="og:description" content="jQuery 플러그인을 만들다 보면 하나 이상의 연관된 플러그인을 만들게 됩니다. 이 포스팅에서는 플러그인 그룹 만드는 방법과 플러그인 간의 연동 방법을 해보겠습니다. 소개플러그인 그룹이란 연관된 클래스 기반으로 jQuery 플러그인을 만들 때 클래스 인스턴스를 연관 있는 플러그인에서 공유 해서 사용하는 구조룰 의미합니다.  예제[jQuery플러그인제작]">
+<meta property="og:description" content="construcotr 프로퍼티 소개일반적으로 클래스를 만들면 자동적으로 prototype의 constructor라는 프로퍼티가 만들어 집니다. 이 프로퍼티에는 해당 클래스의 생성자 정보가 기본값으로 담기게 됩니다. 달리 말하면 constructor 프로퍼티를 이용해 사용하는 객체(인스턴스)가 어떤 클래스의 인스턴스인지 알아낼 수 있습니다. 하지만 상속관계">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://recoveryman.github.io/img/all/js.jpg">
-<meta property="og:updated_time" content="2018-01-15T01:39:41.858Z">
+<meta property="og:updated_time" content="2018-03-15T17:34:02.217Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[jQuery플러그인제작] 플러그인 그룹 만들기">
-<meta name="twitter:description" content="jQuery 플러그인을 만들다 보면 하나 이상의 연관된 플러그인을 만들게 됩니다. 이 포스팅에서는 플러그인 그룹 만드는 방법과 플러그인 간의 연동 방법을 해보겠습니다. 소개플러그인 그룹이란 연관된 클래스 기반으로 jQuery 플러그인을 만들 때 클래스 인스턴스를 연관 있는 플러그인에서 공유 해서 사용하는 구조룰 의미합니다.  예제[jQuery플러그인제작]">
+<meta name="twitter:title" content="[객체지향 프로그래밍 특징] constructor 프로퍼티 활용">
+<meta name="twitter:description" content="construcotr 프로퍼티 소개일반적으로 클래스를 만들면 자동적으로 prototype의 constructor라는 프로퍼티가 만들어 집니다. 이 프로퍼티에는 해당 클래스의 생성자 정보가 기본값으로 담기게 됩니다. 달리 말하면 constructor 프로퍼티를 이용해 사용하는 객체(인스턴스)가 어떤 클래스의 인스턴스인지 알아낼 수 있습니다. 하지만 상속관계">
 <meta name="twitter:image" content="https://recoveryman.github.io/img/all/js.jpg">
      -->
 
@@ -154,18 +154,18 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/JS/">JS</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/JS/js-학습/">js 학습</a>
+    <a class="page-title-link" href="/categories/JS/">JS</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/JS/js-학습/">js 학습</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/JS/js-학습/객체지향-프로그래밍/">객체지향 프로그래밍</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-jQuery플러그인제작-플러그인-그룹-만들기" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-객체지향-프로그래밍-특징-constructor-프로퍼티-활용" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        [jQuery플러그인제작] 플러그인 그룹 만들기
+        [객체지향 프로그래밍 특징] constructor 프로퍼티 활용
         </h1>
     
 
@@ -175,8 +175,8 @@ ga('send', 'pageview');
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2018/01/11/jQuery플러그인제작-플러그인-그룹-만들기/" class="article-date">
-            <time datetime="2018-01-10T23:30:29.000Z" itemprop="datePublished">2018-01-11</time>
+        <a href="/2018/03/16/객체지향-프로그래밍-특징-constructor-프로퍼티-활용/" class="article-date">
+            <time datetime="2018-03-15T17:06:29.000Z" itemprop="datePublished">2018-03-16</time>
         </a>
     </div>
 
@@ -186,33 +186,35 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
             <p><img src="/img/all/js.jpg" alt=""></p>
-<p>jQuery 플러그인을 만들다 보면 하나 이상의 연관된 플러그인을 만들게 됩니다. 이 포스팅에서는 플러그인 그룹 만드는 방법과 플러그인 간의 연동 방법을 해보겠습니다.</p>
-<h3 id="소개"><a href="#소개" class="headerlink" title="소개"></a>소개</h3><p>플러그인 그룹이란 연관된 클래스 기반으로 jQuery 플러그인을 만들 때 클래스 인스턴스를 연관 있는 플러그인에서 공유 해서 사용하는 구조룰 의미합니다.</p>
+<h3 id="construcotr-프로퍼티-소개"><a href="#construcotr-프로퍼티-소개" class="headerlink" title="construcotr 프로퍼티 소개"></a>construcotr 프로퍼티 소개</h3><p>일반적으로 클래스를 만들면 자동적으로 prototype의 constructor라는 프로퍼티가 만들어 집니다.</p>
+<p>이 프로퍼티에는 해당 클래스의 생성자 정보가 기본값으로 담기게 됩니다. 달리 말하면 constructor 프로퍼티를 이용해 사용하는 객체(인스턴스)가 어떤 클래스의 인스턴스인지 알아낼 수 있습니다. 하지만 상속관계를 맺는 경우 자식 클래스의 constructor 프로퍼티에는 기본적으로 부모클래스의 생성자가 담기게 되어 constructor 프로퍼티를 가지고는 해당 객체의 클래스를 알아낼 수가 없습니다. 예제를 이용해 좀 더 자세히 설명해 보겠습니다.</p>
 <p><br><hr><br></p>
-<h3 id="예제"><a href="#예제" class="headerlink" title="예제"></a>예제</h3><a href="/2018/01/10/jQuery플러그인제작-클래스-기반-플러그인-만들기/" title="[jQuery플러그인제작] 클래스 기반 플러그인 만들기">[jQuery플러그인제작] 클래스 기반 플러그인 만들기</a>에서 만든 tabMenu 플러그인을 좀 더 확장해 보겠습니다.<br><iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/z4hL8mza/embedded/result,html,css,js/dark" frameborder="0" allowfullscreen></iframe>
-<p><a href="/file/tabMenu6.zip">소스코드 다운받기</a></p>
-<p>이전장 마지막에 적어놨던것과 같이 페이지 로딩 시 원하는 탭메뉴의 원하는 탭을 미리 선택하는 기능을 만들어 보겠습니다.</p>
-<figure class="highlight js"><figcaption><span>[플러그인 그룹 플러그인 js 코드]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">$</span>) </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">TabMenu</span>(<span class="params">selector</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">var</span> $tabMenu = <span class="literal">null</span>;</span><br><span class="line">		<span class="keyword">var</span> $menuItems = <span class="literal">null</span>;</span><br><span class="line">		<span class="keyword">var</span> $selectMenuItem = <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 요소 초기화 및 이벤트 등록 호출</span></span><br><span class="line">		<span class="keyword">this</span>.init(selector);</span><br><span class="line">		<span class="keyword">this</span>.initEvent();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 요소 초기화</span></span><br><span class="line">	TabMenu.prototype.init = <span class="function"><span class="keyword">function</span>(<span class="params">selector</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.$tabMenu = $(selector);</span><br><span class="line">		<span class="keyword">this</span>.$menuItems = <span class="keyword">this</span>.$tabMenu.find(<span class="string">"ul"</span>).find(<span class="string">"li"</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 이벤트 등록</span></span><br><span class="line">	TabMenu.prototype.initEvent = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">var</span> objThis = <span class="keyword">this</span>;</span><br><span class="line">		<span class="keyword">this</span>.$menuItems.on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">			e.preventDefault();</span><br><span class="line">			objThis.setSelectItem($(<span class="keyword">this</span>));</span><br><span class="line">		&#125;)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// $menuItem에 해당하는 메뉴 아이템 선택하기</span></span><br><span class="line">	TabMenu.prototype.setSelectItem = <span class="function"><span class="keyword">function</span>(<span class="params">$menuItem</span>) </span>&#123;</span><br><span class="line">		<span class="comment">// 기존 선택메뉴 아이템을 비활성화 처리</span></span><br><span class="line">		<span class="keyword">if</span>(<span class="keyword">this</span>.$selectMenuItem)&#123;</span><br><span class="line">			<span class="keyword">this</span>.$selectMenuItem.removeClass(<span class="string">'on'</span>);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 신규 아이템 활성화 처리하기</span></span><br><span class="line">		<span class="keyword">this</span>.$selectMenuItem = $menuItem;</span><br><span class="line">		<span class="keyword">this</span>.$selectMenuItem.addClass(<span class="string">'on'</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 인덱스에 해당하는 메뉴 아이템 선택하기</span></span><br><span class="line">	TabMenu.prototype.setSelectItemAt = <span class="function"><span class="keyword">function</span>(<span class="params">index</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">var</span> $menuItem = <span class="keyword">this</span>.$menuItems.eq(index);</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 기존 메서드 재사용</span></span><br><span class="line">		<span class="keyword">this</span>.setSelectItem($menuItem);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	$.fn.tabMenu = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.each(<span class="function"><span class="keyword">function</span>(<span class="params">index</span>) </span>&#123;</span><br><span class="line">			<span class="comment">// 인스턴스 생성</span></span><br><span class="line">			<span class="keyword">var</span> tabMenu = <span class="keyword">new</span> TabMenu(<span class="keyword">this</span>);</span><br><span class="line">			$(<span class="keyword">this</span>).data(<span class="string">"tabMenu"</span>, tabMenu);</span><br><span class="line">		&#125;)</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// n번째 탭메뉴 아이템 선택하기</span></span><br><span class="line">	$.fn.selectTabMenuItemAt = <span class="function"><span class="keyword">function</span>(<span class="params">selectIndex</span>) </span>&#123; </span><br><span class="line">		<span class="keyword">this</span>.each(<span class="function"><span class="keyword">function</span>(<span class="params">index</span>) </span>&#123;</span><br><span class="line">			<span class="comment">// 저장한 TabMenu 객체 구하기</span></span><br><span class="line">			<span class="keyword">var</span> tabMenu = $(<span class="keyword">this</span>).data(<span class="string">"tabMenu"</span>);</span><br><span class="line">			<span class="keyword">if</span>(tabMenu) &#123;</span><br><span class="line">				<span class="comment">// n번째 메뉴 아이템 선택하기</span></span><br><span class="line">				tabMenu.setSelectItem(tabMenu.$menuItems.eq(selectIndex))</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;)</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)(jQuery)</span><br><span class="line"></span><br><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	$(<span class="string">".tab1"</span>).tabMenu().selectTabMenuItemAt(<span class="number">1</span>);</span><br><span class="line">	$(<span class="string">".tab2"</span>).tabMenu().selectTabMenuItemAt(<span class="number">2</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<p><strong>결과</strong><br><iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/zbfkg3f4/embedded/result,html,css,js/dark" frameborder="0" allowfullscreen></iframe><br><a href="/file/tabMenu7.zip">소스코드 다운받기</a></p>
-<p>우선 <strong>[플러그인 그룹 플러그인 js 코드]</strong> 기준으로</p>
-<ul>
-<li>51번 라인: 먼저 기존 tabMenu 플러그인 구문에 생성한 TabMenu 클래스 인스턴스를 data()를 활용해 저장합니다. data() 메서드를 통해서 어떤 값이 들어가 있는지 확인이 가능합니다.<br><img src="/img/qa/8.jpg" alt=""></li>
-<li>57번 라인: n번째 탭메뉴 아이템을 선택하는 플러그인(selectTabMenuItemAt)을 신규로 만듭니다. 이 selectTabMenuItemAt 플러그인은 n번째 탭메뉴를 선택하게 하는 플러그인 입니다.</li>
-<li>60번 라인: 51번 라인에서 저장한 탭메뉴 인스턴스를 구합니다. 아래와 같은 형태의 값이 변수에 담기게 됩니다.<br><img src="/img/qa/9.jpg" alt=""></li>
-<li>63번 라인: 이 라인은 if 문으로 감싸져 있습니다. if 문에서는 60번 라인의 지역변수 tabMenu에 값이 담기게 되어 true를 반환합니다. 그래서 그 안의 63번째 라인이 실행되는데요. 탭메뉴에서 제공하는 setSelectItem() 메서드를 호출해 n번째에 해당하는 메뉴 아이템을 활성화해 주는 기능을 하고 있습니다. 아래 그림을 보시면 63번 라인의 코드에 대한 의미를 알 수 있습니다.<br><img src="/img/qa/10.jpg" alt=""></li>
-</ul>
-<p><br><hr><br></p>
-<h3 id="결론"><a href="#결론" class="headerlink" title="결론"></a>결론</h3><p><strong>플러그인 그룹이란?</strong><br>예제를 가지고 설명하면 tabMenu 플러그인과 selectTabMenuItemAt 플러그인이 탭메뉴 플러그인 그룹이 됩니다.</p>
-<p><strong>플러그인 그룹 구조</strong><br>특정 플러그인에서 생성한 클래스의 인스턴스를 다른 플러그인에서 재사용 해야하는 경우 jQuery의 data() 메서드를 활용해 생성한 인스턴스를 저장해 재사용 하면 됩니다.</p>
+<h3 id="예제"><a href="#예제" class="headerlink" title="예제"></a>예제</h3><p>다음 코드는 사용하는 인스턴스가 특정 클래스의 인스턴스인지 확인하는 예제입니다. 다음 코드를 실행해 주세요.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MyParent</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.prototype1 = <span class="string">"value1"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">MyParent.prototype.method1 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"property1 = "</span>, <span class="keyword">this</span>.property1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MyChild</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">MyChild.prototype = <span class="keyword">new</span> MyParent();</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> parent1 = <span class="keyword">new</span> MyParent();</span><br><span class="line"><span class="keyword">var</span> child1 = <span class="keyword">new</span> MyChild();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 부모 클래스의 인스턴스인지 확인</span></span><br><span class="line"><span class="keyword">if</span>(parent1.constructor == MyParent) &#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"1. parent1는 MyParent의 인스턴스입니다."</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 자식 클래스의 인스턴스인지 확인</span></span><br><span class="line"><span class="keyword">if</span>(child1.constructor == MyChild) &#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"2. child1 MyChild의 인스턴스입니다."</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>실행결과</strong><br><img src="/img/postimgs/50.jpg"></p>
+<p><strong>설명</strong><br>parent1 인스턴스의 constructor 프로퍼티에는 클래스 생성자인 MyParent가 저장돼 있기 때문에 <code>19번 라인</code>의 조건문이 참이되어 조건문 내부 내용이 실행됩니다. 하지만 실행결과에서 알 수 있는 것처럼 예상과는 달리 <code>24번 라인</code>의 조건문은 거짓이 되어 실행되지 않게 됩니다. 이유는 앞에서 설명한 것처럼 자식 객체의 경우 constructor 프로퍼티에는 부모의 생성자가 기본값으로 담기기 때문입니다.</p>
+<p>그럼 어떻게 해결해야 할까요? 방법은 아주 간단합니다. 다음과 같이 constructor에 생성자를 설정해 주면 됩니다.</p>
+<figure class="highlight js"><figcaption><span>[해결책]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//.....</span></span><br><span class="line"><span class="keyword">var</span> parent1 = <span class="keyword">new</span> MyParent();</span><br><span class="line"><span class="keyword">var</span> child1 = <span class="keyword">new</span> MyChild();</span><br><span class="line"><span class="comment">//.....</span></span><br></pre></td></tr></table></figure>
+<p><br><br></p>
+<figure class="highlight js"><figcaption><span>[construcotor 생성자 설정]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MyParent</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.prototype1 = <span class="string">"value1"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">MyParent.prototype.method1 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"property1 = "</span>, <span class="keyword">this</span>.property1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MyChild</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">MyChild.prototype = <span class="keyword">new</span> MyParent();</span><br><span class="line">MyChild.prototype.constructor = MyChild;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> parent1 = <span class="keyword">new</span> MyParent();</span><br><span class="line"><span class="keyword">var</span> child1 = <span class="keyword">new</span> MyChild();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 부모 클래스의 인스턴스인지 확인</span></span><br><span class="line"><span class="keyword">if</span>(parent1.constructor == MyParent) &#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"1. parent1는 MyParent의 인스턴스입니다."</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 자식 클래스의 인스턴스인지 확인</span></span><br><span class="line"><span class="keyword">if</span>(child1.constructor == MyChild) &#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"2. child1 MyChild의 인스턴스입니다."</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>기존 코드를 변경한 후 실행해 보세요. <code>25번 라인(이전의 24번 라인)</code>의 조건문이 참이 되어 조건문 내부 내용이 동작하는 것을 확인할 수 있을 것입니다.<br><img src="/img/postimgs/51.jpg"></p>
+<p>실무에서 constructor를 가지고 어떤 클래스의 인스턴스인지 비교하는 일은 그렇게 많지 않을 것입니다. 하지만 라이브러리를 만들 때 유용하게 사용되는 속성이니 꼭 알아두길 바랍니다.</p>
 <p><br><br></p>
 <ul>
-<li><a href="/2017/12/28/jQuery플러그인제작-jQuery-확장-소개/" title="[jQuery플러그인제작] jQuery 확장 소개">[jQuery플러그인제작] jQuery 확장 소개</a></li>
-<li><a href="/2017/12/28/jQuery플러그인제작-jQuery유틸리티-만들기/" title="[jQuery플러그인제작] jQuery유틸리티 만들기">[jQuery플러그인제작] jQuery유틸리티 만들기</a></li>
-<li><a href="/2018/01/04/jQuery플러그인제작-jQuery-플러그인-만들기/" title="[jQuery플러그인제작] jQuery 플러그인 만들기 ">[jQuery플러그인제작] jQuery 플러그인 만들기 </a></li>
-<li><a href="/2018/01/09/jQuery플러그인제작-함수-기반-플러그인-만들기/" title="[jQuery플러그인제작] 함수 기반 플러그인 만들기">[jQuery플러그인제작] 함수 기반 플러그인 만들기</a></li>
-<li><a href="/2018/01/10/jQuery플러그인제작-클래스-기반-플러그인-만들기/" title="[jQuery플러그인제작] 클래스 기반 플러그인 만들기">[jQuery플러그인제작] 클래스 기반 플러그인 만들기</a></li>
-<li><a href="/2018/01/11/jQuery플러그인제작-플러그인-그룹-만들기/" title="[jQuery플러그인제작] 플러그인 그룹 만들기">[jQuery플러그인제작] 플러그인 그룹 만들기</a></li>
-<li><a href="/2018/01/15/jQuery플러그인제작-extend-메서드를-활용한-플러그인-옵션-처리/" title="[jQuery플러그인제작] extend() 메서드를 활용한 플러그인 옵션 처리">[jQuery플러그인제작] extend() 메서드를 활용한 플러그인 옵션 처리</a></li>
+<li><a href="/2018/02/05/절차지향-프로그래밍-VS-객체지향-프로그래밍/" title="[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍">[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍</a></li>
+<li><a href="/2018/02/11/객체지향-프로그래밍의-특징/" title="[객체지향 프로그래밍 기초] 객체지향 프로그래밍의 특징">[객체지향 프로그래밍 기초] 객체지향 프로그래밍의 특징</a></li>
+<li><a href="/2018/02/11/객체지향-프로그래밍-언어에서-제공하는-기본-기능/" title="[객체지향 프로그래밍 기초] 객체지향 프로그래밍 언어에서 제공하는 기본 기능">[객체지향 프로그래밍 기초] 객체지향 프로그래밍 언어에서 제공하는 기본 기능</a></li>
+<li><a href="/2018/02/15/객체지향-프로그래밍-특징-추상화-소개/" title="[객체지향 프로그래밍 특징] 추상화 소개">[객체지향 프로그래밍 특징] 추상화 소개</a></li>
+<li><a href="/2018/02/16/객체지향-프로그래밍-특징-자바스크립트에서-추상화/" title="[객체지향 프로그래밍 특징] 자바스크립트에서 추상화">[객체지향 프로그래밍 특징] 자바스크립트에서 추상화</a></li>
+<li><a href="/2018/02/16/객체지향-프로그래밍-특징-캡슐화-소개/" title="[객체지향 프로그래밍 특징] 캡슐화 소개">[객체지향 프로그래밍 특징] 캡슐화 소개</a></li>
+<li><a href="/2018/02/16/객체지향-프로그래밍-특징-자바스크립트에서의-캡슐화/" title="[객체지향 프로그래밍 특징] 자바스크립트에서의 캡슐화">[객체지향 프로그래밍 특징] 자바스크립트에서의 캡슐화</a></li>
+<li><a href="/2018/02/17/객체지향-프로그래밍-특징-클래스-상속-소개/" title="[객체지향 프로그래밍 특징] 클래스 상속 소개">[객체지향 프로그래밍 특징] 클래스 상속 소개</a></li>
+<li><a href="/2018/02/25/객체지향-프로그래밍-특징-클래스-상속-기능/" title="[객체지향 프로그래밍 특징] 클래스 상속 기능">[객체지향 프로그래밍 특징] 클래스 상속 기능</a></li>
+<li><a href="/2018/02/28/객체지향-프로그래밍-특징-자바스크립트에서-클래스-상속/" title="[객체지향 프로그래밍 특징] 자바스크립트에서 클래스 상속">[객체지향 프로그래밍 특징] 자바스크립트에서 클래스 상속</a></li>
+<li><a href="/2018/03/05/객체지향-프로그래밍-특징-자식-클래스와-부모-클래스-연동-처리/" title="[객체지향 프로그래밍 특징] 자식 클래스와 부모 클래스 연동 처리">[객체지향 프로그래밍 특징] 자식 클래스와 부모 클래스 연동 처리</a></li>
+<li><a href="/2018/03/12/객체지향-프로그래밍-특징-자바스크립트에서-메서드-오버라이드/" title="[객체지향 프로그래밍 특징] 자바스크립트에서 메서드 오버라이드">[객체지향 프로그래밍 특징] 자바스크립트에서 메서드 오버라이드</a></li>
+<li><a href="/2018/03/12/객체지향-프로그래밍-특징-자바스크립트에서-메서드-오버로딩/" title="[객체지향 프로그래밍 특징] 자바스크립트에서 메서드 오버로딩">[객체지향 프로그래밍 특징] 자바스크립트에서 메서드 오버로딩</a></li>
+<li><a href="/2018/03/16/객체지향-프로그래밍-특징-constructor-프로퍼티-활용/" title="[객체지향 프로그래밍 특징] constructor 프로퍼티 활용">[객체지향 프로그래밍 특징] constructor 프로퍼티 활용</a></li>
 </ul>
 
         </div>
@@ -221,7 +223,7 @@ ga('send', 'pageview');
 
 
 
-    <!-- <a data-url="https://recoveryman.github.io/2018/01/11/jQuery플러그인제작-플러그인-그룹-만들기/" data-id="cjesro2u9000i207kdlq1p6in" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
+    <!-- <a data-url="https://recoveryman.github.io/2018/03/16/객체지향-프로그래밍-특징-constructor-프로퍼티-활용/" data-id="cjesro2uo001b207k78qaurlf" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -334,20 +336,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2018/01/15/jQuery플러그인제작-extend-메서드를-활용한-플러그인-옵션-처리/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">새로운</strong>
-        <p class="article-nav-title">
-        
-            [jQuery플러그인제작] extend() 메서드를 활용한 플러그인 옵션 처리
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2018/01/10/jQuery플러그인제작-클래스-기반-플러그인-만들기/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/03/12/객체지향-프로그래밍-특징-자바스크립트에서-메서드-오버로딩/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">오래된</strong>
-        <p class="article-nav-title">[jQuery플러그인제작] 클래스 기반 플러그인 만들기</p>
+        <p class="article-nav-title">[객체지향 프로그래밍 특징] 자바스크립트에서 메서드 오버로딩</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -536,7 +528,7 @@ ga('send', 'pageview');
     var disqus_shortname = 'recoveryman';
     
     
-    var disqus_url = 'https://recoveryman.github.io/2018/01/11/jQuery플러그인제작-플러그인-그룹-만들기/';
+    var disqus_url = 'https://recoveryman.github.io/2018/03/16/객체지향-프로그래밍-특징-constructor-프로퍼티-활용/';
     
     (function() {
     var dsq = document.createElement('script');
