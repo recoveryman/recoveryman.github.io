@@ -3,25 +3,25 @@
 <head>
     <meta charset="utf-8">
     
-    <title>[객체지향 프로그래밍 특징] 자바스크립트에서의 캡슐화 | 회복맨</title>
+    <title>[객체지향 프로그래밍 특징] 자바스크립트에서 다형성 | 회복맨</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="robots" content="noindex, nofollow" />
     <!-- 
         <meta name="keywords" content="" />
     
-    <meta name="description" content="일반 OOP에서 지원하는 캡슐화 관련 기능접근 지정자일반적으로 객체 내부에 들어 있는 프로퍼티와 메서드는 객체 외부, 객체 내부, 자식 객체에서 접근해 사용합니다.  일반 객체지향 프로그래밍에서는 캡슐화를 위해 접근 지정자라는 문법을 제공합니다. 이 접근 지정자를 이용하면 개발자가 원하">
+    <meta name="description" content="먼저 일반 객체지향 프로그래밍 언어에서 다형성을 구현하는 방법을 살펴본 후 자바스크립트에서 다형성을 구현하는 방법을 살펴보겠습니다. 일반 객체지향 프로그래밍의 다형성 관련 문법일반적으로 다형성은 선언부분과 구현부분으로 나눠 구성되며 객체지향 프로그래밍 문법 3가지는 다음과 같이 사용됩니">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[객체지향 프로그래밍 특징] 자바스크립트에서의 캡슐화">
-<meta property="og:url" content="https://recoveryman.github.io/2018/02/16/객체지향-프로그래밍-특징-자바스크립트에서의-캡슐화/index.html">
+<meta property="og:title" content="[객체지향 프로그래밍 특징] 자바스크립트에서 다형성">
+<meta property="og:url" content="https://recoveryman.github.io/2018/03/20/객체지향-프로그래밍-특징-자바스크립트에서-다형성/index.html">
 <meta property="og:site_name" content="회복맨">
-<meta property="og:description" content="일반 OOP에서 지원하는 캡슐화 관련 기능접근 지정자일반적으로 객체 내부에 들어 있는 프로퍼티와 메서드는 객체 외부, 객체 내부, 자식 객체에서 접근해 사용합니다.  일반 객체지향 프로그래밍에서는 캡슐화를 위해 접근 지정자라는 문법을 제공합니다. 이 접근 지정자를 이용하면 개발자가 원하는 곳에서만 프로퍼티와 메서드가 접근할 수 있게 만들 수 있습니다. 접">
+<meta property="og:description" content="먼저 일반 객체지향 프로그래밍 언어에서 다형성을 구현하는 방법을 살펴본 후 자바스크립트에서 다형성을 구현하는 방법을 살펴보겠습니다. 일반 객체지향 프로그래밍의 다형성 관련 문법일반적으로 다형성은 선언부분과 구현부분으로 나눠 구성되며 객체지향 프로그래밍 문법 3가지는 다음과 같이 사용됩니다.    다형성 선언부분 다형성 구현부분     인터페이스(inter">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://recoveryman.github.io/img/all/js.jpg">
-<meta property="og:updated_time" content="2018-03-19T15:03:55.108Z">
+<meta property="og:updated_time" content="2018-03-19T16:19:12.471Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[객체지향 프로그래밍 특징] 자바스크립트에서의 캡슐화">
-<meta name="twitter:description" content="일반 OOP에서 지원하는 캡슐화 관련 기능접근 지정자일반적으로 객체 내부에 들어 있는 프로퍼티와 메서드는 객체 외부, 객체 내부, 자식 객체에서 접근해 사용합니다.  일반 객체지향 프로그래밍에서는 캡슐화를 위해 접근 지정자라는 문법을 제공합니다. 이 접근 지정자를 이용하면 개발자가 원하는 곳에서만 프로퍼티와 메서드가 접근할 수 있게 만들 수 있습니다. 접">
+<meta name="twitter:title" content="[객체지향 프로그래밍 특징] 자바스크립트에서 다형성">
+<meta name="twitter:description" content="먼저 일반 객체지향 프로그래밍 언어에서 다형성을 구현하는 방법을 살펴본 후 자바스크립트에서 다형성을 구현하는 방법을 살펴보겠습니다. 일반 객체지향 프로그래밍의 다형성 관련 문법일반적으로 다형성은 선언부분과 구현부분으로 나눠 구성되며 객체지향 프로그래밍 문법 3가지는 다음과 같이 사용됩니다.    다형성 선언부분 다형성 구현부분     인터페이스(inter">
 <meta name="twitter:image" content="https://recoveryman.github.io/img/all/js.jpg">
      -->
 
@@ -158,14 +158,14 @@ ga('send', 'pageview');
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-객체지향-프로그래밍-특징-자바스크립트에서의-캡슐화" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-객체지향-프로그래밍-특징-자바스크립트에서-다형성" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        [객체지향 프로그래밍 특징] 자바스크립트에서의 캡슐화
+        [객체지향 프로그래밍 특징] 자바스크립트에서 다형성
         </h1>
     
 
@@ -175,8 +175,8 @@ ga('send', 'pageview');
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2018/02/16/객체지향-프로그래밍-특징-자바스크립트에서의-캡슐화/" class="article-date">
-            <time datetime="2018-02-16T07:11:40.000Z" itemprop="datePublished">2018-02-16</time>
+        <a href="/2018/03/20/객체지향-프로그래밍-특징-자바스크립트에서-다형성/" class="article-date">
+            <time datetime="2018-03-19T15:00:58.000Z" itemprop="datePublished">2018-03-20</time>
         </a>
     </div>
 
@@ -186,146 +186,32 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
             <p><img src="/img/all/js.jpg" alt=""></p>
-<h3 id="일반-OOP에서-지원하는-캡슐화-관련-기능"><a href="#일반-OOP에서-지원하는-캡슐화-관련-기능" class="headerlink" title="일반 OOP에서 지원하는 캡슐화 관련 기능"></a>일반 OOP에서 지원하는 캡슐화 관련 기능</h3><p><strong>접근 지정자</strong><br>일반적으로 객체 내부에 들어 있는 프로퍼티와 메서드는 객체 외부, 객체 내부, 자식 객체에서 접근해 사용합니다.</p>
-<p><img src="/img/postimgs/16.jpg" alt=""></p>
-<p>일반 객체지향 프로그래밍에서는 캡슐화를 위해 접근 지정자라는 문법을 제공합니다. 이 접근 지정자를 이용하면 개발자가 원하는 곳에서만 프로퍼티와 메서드가 접근할 수 있게 만들 수 있습니다.</p>
-<p>접근 지정자는 다음과 같이 세 가지가 있습니다.</p>
-<ol>
-<li>public</li>
-<li>protected</li>
-<li>private</li>
-</ol>
-<p><img src="/img/postimgs/17.jpg" alt=""></p>
-<ol>
-<li><p><strong>public 접근 지정자</strong><br>public 접근 지정자를 적용하는 경우 객체 외부와 객체 내부 그리고 자식 객체에서 모두 접근 가능한 프로퍼티와 메서드를 만들 수 있습니다.</p>
-</li>
-<li><p><strong>protected 접근 지정자</strong><br>protected 접근 지정자를 적용하는 경우 객체 외부에서는 접근이 불가능 하고 객체 내부와 자식 객체에서만 접근 가능한 프로퍼티와 메서드를 만들 수 있습니다.</p>
-</li>
-<li><p><strong>private 접근 지정자</strong><br>private 접근 지정자를 적용하는 경우 오직 객체 자기 자신에서만 접근할 수 있는 프로퍼티와 메서드를 만들 수 있습니다.</p>
-</li>
-</ol>
-<p>지금까지 다룬 접근 지정자를 정리하면 다음과 같습니다.</p>
+<p>먼저 일반 객체지향 프로그래밍 언어에서 다형성을 구현하는 방법을 살펴본 후 자바스크립트에서 다형성을 구현하는 방법을 살펴보겠습니다.</p>
+<h3 id="일반-객체지향-프로그래밍의-다형성-관련-문법"><a href="#일반-객체지향-프로그래밍의-다형성-관련-문법" class="headerlink" title="일반 객체지향 프로그래밍의 다형성 관련 문법"></a>일반 객체지향 프로그래밍의 다형성 관련 문법</h3><p>일반적으로 다형성은 선언부분과 구현부분으로 나눠 구성되며 객체지향 프로그래밍 문법 3가지는 다음과 같이 사용됩니다.</p>
 <table>
 <thead>
 <tr>
-<th>접근지정자</th>
-<th>객체 외부 접근</th>
-<th>객체 내부 접근</th>
-<th>자식객체 접근</th>
+<th><strong>다형성 선언부분</strong></th>
+<th><strong>다형성 구현부분</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>public</td>
-<td>O</td>
-<td>O</td>
-<td>O</td>
-</tr>
-<tr>
-<td>protected</td>
-<td>X</td>
-<td>O</td>
-<td>O</td>
-</tr>
-<tr>
-<td>private</td>
-<td>X</td>
-<td>O</td>
-<td>X</td>
+<td>인터페이스(interface)와 추상클래스(abstract class)</td>
+<td>클래스(class)</td>
 </tr>
 </tbody>
 </table>
-<p><br></p>
-<p><strong>예제</strong><br>일반적인 객체지향 프로그래밍에서는 모두 접근 지정자 문법을 제공합니다. 자바 언어를 가지고 간단한 접근 지정자 예제를 보여드리겠습니다.</p>
-<p><img src="/img/postimgs/18.jpg" alt=""></p>
-<p>이처럼 일반 객체지향 프로그래밍에서는 접근 지정자 문법을 제공하기 때문에 좀 더 멋진 캡슐화를 활용해 객체를 만들 수 있습니다.</p>
-<p><br></p>
-<p><strong>UML로 접근 지정자 표현하기</strong><br>UML에서 접근 지정자는 다음과 같이 표현합니다.</p>
-<table>
-<thead>
-<tr>
-<th>접근 지정자</th>
-<th>UML 접근 지정자 표현법</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>public</td>
-<td>+</td>
-</tr>
-<tr>
-<td>protected</td>
-<td>#</td>
-</tr>
-<tr>
-<td>private</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
-<p><img src="/img/postimgs/19.jpg" alt=""></p>
+<p>마지막으로 자바와 PHP 프로그래밍 언어에서는 어떤 식으로 다형성을 구현하는지 살짝 구경해보죠.</p>
+<p><img src="/img/postimgs/66.jpg"></p>
+<p><img src="/img/postimgs/67.jpg"></p>
+<p>방금 알아본 것처럼 일반 객체지향 프로그래밍에서는 다형성을 선언부분과 구현부분을 완전히 분리해서 구현할 수 있다는 것을 알 수 있습니다. 자! 그럼 이어서 자바스크립트에서는 과연 어떻게 다형성을 구현하는지 알아보죠.</p>
 <p><br><hr><br></p>
-<h3 id="자바스크립트에서-캡슐화"><a href="#자바스크립트에서-캡슐화" class="headerlink" title="자바스크립트에서  캡슐화"></a>자바스크립트에서  캡슐화</h3><p>아쉽게도 자바스크립트는 접근 지정자 문법을 지원하지 않습니다. 문법적으로 지원한다는 의미는 객체밖에서(인스턴스 이름으로 접근하는 경우) public을 제외한 protected, private으로 선언한 프로퍼티와 메서드는 아예 접근조차 할 수 없을 뿐만 아니라 접근하는 구문을 작성하는 즉시 에러가 되어 실행조차 할 수가 없게 됩니다. 바로 자바스크립트에서는 문법적으로 이런 기능을 제공하지 않는다는 뜻입니다.</p>
-<p>대신 자바스크립트에서는 다음과 같은 방식으로 접근 지정자를 흉내 내어 사용합니다.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MyClass</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// public 프로퍼티</span></span><br><span class="line">	<span class="keyword">this</span>.프로퍼티이름 = 값;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// private/protected 프로퍼티</span></span><br><span class="line">	<span class="keyword">this</span>._프로퍼티이름 = 값;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// public 메서드</span></span><br><span class="line">MyClass.prototype.메서드이름 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// private/protected 메서드</span></span><br><span class="line">MyClass.prototype._메서드이름 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>설명</strong><br>정리하면 접근 지정자 대신 사용하는 자바스크립트 캡슐화 문법은 다음과 같습니다.</p>
-<table>
-<thead>
-<tr>
-<th>접근 지정자</th>
-<th>자바스크립트</th>
-<th>자바스크립트 표현 방법</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>public</td>
-<td>지원(기본)</td>
-<td><code>프로퍼티</code><br><code>메서드</code></td>
-</tr>
-<tr>
-<td>protected</td>
-<td>미지원</td>
-<td><code>_프로퍼티</code><br><code>_메서드</code></td>
-</tr>
-<tr>
-<td>private</td>
-<td>미지원</td>
-<td><code>_프로퍼티</code><br><code>_메서드</code></td>
-</tr>
-</tbody>
-</table>
-<p>자바스크립트에서는 객체 외부에서 접근하지 못하게 하는 접근 지정자 private와 protected 대신 요소 이름 앞에 “_”를 붙여 만들어 사용합니다.</p>
-<p>여기서 주의해야 할 점은 앞에서 언급한 것처럼 이렇게 한다고 해도 자바스크립트는 문법적으로 접근 지정자 기능을 지원하지 않기 때문에 객체 외부에서 얼마든지 접근할 수 있습니다. 하지만 일종의 무언의 약속처럼 “음…private 이기 때문에 클래스 밖에서 접근해서 사용하면 안되겠군” 하는 식으로 사용하는 거죠.</p>
-<p><br><hr><br></p>
-<h3 id="캡슐화를-적용해-탭메뉴-만들기"><a href="#캡슐화를-적용해-탭메뉴-만들기" class="headerlink" title="캡슐화를 적용해 탭메뉴 만들기"></a>캡슐화를 적용해 탭메뉴 만들기</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 첫 번째 탭메뉴 인스턴스 생성</span></span><br><span class="line">	<span class="keyword">var</span> tab1 = <span class="keyword">new</span> TabMenu(<span class="string">".tab1"</span>);</span><br><span class="line">	tab1.setSelectItemAt(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 두 번째 탭메뉴 인스턴스 생성</span></span><br><span class="line">	<span class="keyword">var</span> tab2 = <span class="keyword">new</span> TabMenu(<span class="string">".tab2"</span>);</span><br><span class="line">	tab2.setSelectItemAt(<span class="number">2</span>);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 탭메뉴 클래스</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">TabMenu</span>(<span class="params">selector</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>._$tabMenu = <span class="literal">null</span>;</span><br><span class="line">	<span class="keyword">this</span>._$menuItems = <span class="literal">null</span>;</span><br><span class="line">	<span class="keyword">this</span>._$selectMenuItem = <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 요소 초기화 및 이벤트 등록 호출하기</span></span><br><span class="line">	<span class="keyword">this</span>._init(selector);</span><br><span class="line">	<span class="keyword">this</span>._initEvent();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 요소 초기화</span></span><br><span class="line">TabMenu.prototype._init = <span class="function"><span class="keyword">function</span>(<span class="params">selector</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>._$tabMenu = $(selector);</span><br><span class="line">	<span class="keyword">this</span>._$menuItems = <span class="keyword">this</span>._$tabMenu.find(<span class="string">'li'</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 이벤트 등록</span></span><br><span class="line">TabMenu.prototype._initEvent = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> objThis = <span class="keyword">this</span>;</span><br><span class="line">	<span class="keyword">this</span>._$menuItems.on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">		e.preventDefault();</span><br><span class="line">		objThis.setSelectItem($(<span class="keyword">this</span>));</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// $menuItem에 해당하는 메뉴 아이템 선택하기</span></span><br><span class="line">TabMenu.prototype.setSelectItem = <span class="function"><span class="keyword">function</span>(<span class="params">$menuItem</span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 기존 선택메뉴 아이템을 비활성화 처리하기</span></span><br><span class="line">	<span class="keyword">if</span>(<span class="keyword">this</span>._$selectMenuItem) &#123;</span><br><span class="line">		<span class="keyword">this</span>._$selectMenuItem.removeClass(<span class="string">'on'</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 신규 아이템 활성화 처리하기</span></span><br><span class="line">	<span class="keyword">this</span>._$selectMenuItem = $menuItem;</span><br><span class="line">	<span class="keyword">this</span>._$selectMenuItem.addClass(<span class="string">'on'</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// index에 해당하는 메뉴 아이템 선택하기</span></span><br><span class="line">TabMenu.prototype.setSelectItemAt = <span class="function"><span class="keyword">function</span>(<span class="params">index</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> $menuItem = <span class="keyword">this</span>._$menuItems.eq(index);</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 기존 메서드 재사용</span></span><br><span class="line">	<span class="keyword">this</span>.setSelectItem($menuItem);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/gf1c4rrL/embedded/result,html,css,js/dark" frameborder="0" allowfullscreen></iframe>
-<p><a href="/file/capsul_tabMenu2.zip">소스코드 다운받기</a></p>
-<p><strong>설명</strong><br>클래스 내부에서만 사용하는 프로퍼티와 메서드를 찾아 객체 외부에서 접근할 수 없다는 의미로 “_”를 붙혀 줍니다. 한눈에 확인할 수 있게 표로 정리해보죠.</p>
-<table>
-<thead>
-<tr>
-<th>요소</th>
-<th>접근가능(public)</th>
-<th>접근불가(prevate)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>프로퍼티</td>
-<td></td>
-<td><code>_$menuItems</code><br><code>_$selectMenuItem</code><br><code>_$tabMenu</code></td>
-</tr>
-<tr>
-<td>메서드</td>
-<td><code>setSelectMenuItem($menuItem)</code><br><code>setSelectMenuItemAt(index)</code></td>
-<td><code>_init(selector)</code><br><code>_initEvent()</code></td>
-</tr>
-</tbody>
-</table>
-<p>처음에는 이 방식이 뭔가 좀 어색할 수 있지만 이 규칙에 익숙해져야 합니다. 지금 유용하게 사용하는 외부 라이브러리 소스 내부를 들여다 보면 “_”가 붙어있는 프로퍼티와 메서드를 쉽게 볼 수 있을 것입니다. 참고로 풀이를 UML로 표현하면 다음과 같습니다.</p>
-<p><img src="/img/postimgs/20.jpg" alt=""></p>
-<p>앞으로 다룰 내용 중 클래스 내부에서만 사용해야 하는 프로퍼티와 메서드에는 가급적 언더바(_)를 붙여 코드를 작성하겠습니다.</p>
+<h3 id="자바스크립트에서-다형성"><a href="#자바스크립트에서-다형성" class="headerlink" title="자바스크립트에서 다형성"></a>자바스크립트에서 다형성</h3><p><strong>자바스크립트에서 다형성 지원 유무</strong><br>앞에서 확인한 것처럼 아쉽게도 자바스크립트는 인터페이스와 추상 클래스 그리고 엄격한 데이터 타입체크 등의 다형성과 관련된 문법은 전혀 지원하지 않습니다. 그렇기 때문에 그저 자바스크립트에는 다형성을 지원한다는 가정하에 다형성스럽게 코드를 만드는 것이죠.</p>
+<p>그렇다고 너무 실망하지 마세요. 문법만 제공하지 않을 뿐 다형성 개념을 사용해 코드를 만들게 되면 지금까지 겪어보지 못한 진정한 프로그래밍의 참맛을 느끼게 될 것입니다. 좀 더 자랑해 보자면 프로그래밍 실력은 다형성을 사용하기 전과 후로 나눠진다고 해도 과언이 아닐 정도로 아주 놀라운 기능입니다.</p>
+<p><strong>문법</strong><br>계속해서 언급한 것처럼 자바스크립트는 문법적으로 다형성과 관련된 기능을 전혀 제공하지 않습니다. 그냥 다형성을 지원한다 생각하고 사용하는 거죠.</p>
+<p>자바스크립트에서 다형성은 일반적으로 다음과 같은 구조를 갖게 됩니다.</p>
+<p><img src="/img/postimgs/68.jpg"></p>
 <p><br><br></p>
 <ul>
 <li><a href="/2018/02/05/절차지향-프로그래밍-VS-객체지향-프로그래밍/" title="[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍">[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍</a></li>
@@ -354,7 +240,7 @@ ga('send', 'pageview');
 
 
 
-    <!-- <a data-url="https://recoveryman.github.io/2018/02/16/객체지향-프로그래밍-특징-자바스크립트에서의-캡슐화/" data-id="cjeycy5d8000woc7khxxhhx6d" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
+    <!-- <a data-url="https://recoveryman.github.io/2018/03/20/객체지향-프로그래밍-특징-자바스크립트에서-다형성/" data-id="cjeycy5do001qoc7kv3hpbtor" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -467,20 +353,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2018/02/17/객체지향-프로그래밍-특징-클래스-상속-소개/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">새로운</strong>
-        <p class="article-nav-title">
-        
-            [객체지향 프로그래밍 특징] 클래스 상속 소개
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2018/02/16/객체지향-프로그래밍-특징-캡슐화-소개/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/03/18/객체지향-프로그래밍-특징-다형성과-데이터-타입과의-관계/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">오래된</strong>
-        <p class="article-nav-title">[객체지향 프로그래밍 특징] 캡슐화 소개</p>
+        <p class="article-nav-title">[객체지향 프로그래밍 특징] 다형성과 데이터 타입과의 관계</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -669,7 +545,7 @@ ga('send', 'pageview');
     var disqus_shortname = 'recoveryman';
     
     
-    var disqus_url = 'https://recoveryman.github.io/2018/02/16/객체지향-프로그래밍-특징-자바스크립트에서의-캡슐화/';
+    var disqus_url = 'https://recoveryman.github.io/2018/03/20/객체지향-프로그래밍-특징-자바스크립트에서-다형성/';
     
     (function() {
     var dsq = document.createElement('script');
