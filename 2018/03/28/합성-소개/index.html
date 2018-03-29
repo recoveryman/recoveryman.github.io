@@ -3,25 +3,25 @@
 <head>
     <meta charset="utf-8">
     
-    <title>[객체지향 프로그래밍 특징] 자바스크립트에서 메서드 오버로딩 | 회복맨</title>
+    <title>합성 소개 | 회복맨</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="robots" content="noindex, nofollow" />
     <!-- 
         <meta name="keywords" content="" />
     
-    <meta name="description" content="자바스크립트에서 메서드 오버로딩메서드 오버로딩(overloading)은 동일한 이름을 가진 여러 개의 메서드를 만든 후 매개변수 타입과 개수에 맞는 메서드가 자동으로 호출되는 기능을 뜻합니다.  하지만 아쉽게도 자바스크립트는 문법적으로 오버로딩을 제공하지 않습니다. 대신 오버로딩을 흉내">
+    <meta name="description" content="합성이란?합성(Composition)이란 단어에서도 짐작할 수 있는 것처럼 필요한 기능을 직접 구현하는 것이 아니라 필요한 기능을 구현하고 있는 객체와 연결(합성)해서 기능을 사용하는 것을 의미합니다. 이때 기능을 구현하고 있는 객체와 기능을 사용하는 객체 간의 관계를 합성관계라고 부릅">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[객체지향 프로그래밍 특징] 자바스크립트에서 메서드 오버로딩">
-<meta property="og:url" content="https://recoveryman.github.io/2018/03/12/객체지향-프로그래밍-특징-자바스크립트에서-메서드-오버로딩/index.html">
+<meta property="og:title" content="합성 소개">
+<meta property="og:url" content="https://recoveryman.github.io/2018/03/28/합성-소개/index.html">
 <meta property="og:site_name" content="회복맨">
-<meta property="og:description" content="자바스크립트에서 메서드 오버로딩메서드 오버로딩(overloading)은 동일한 이름을 가진 여러 개의 메서드를 만든 후 매개변수 타입과 개수에 맞는 메서드가 자동으로 호출되는 기능을 뜻합니다.  하지만 아쉽게도 자바스크립트는 문법적으로 오버로딩을 제공하지 않습니다. 대신 오버로딩을 흉내 낼 수는 있습니다.  문법123function 함수 또는 메서드 이름">
+<meta property="og:description" content="합성이란?합성(Composition)이란 단어에서도 짐작할 수 있는 것처럼 필요한 기능을 직접 구현하는 것이 아니라 필요한 기능을 구현하고 있는 객체와 연결(합성)해서 기능을 사용하는 것을 의미합니다. 이때 기능을 구현하고 있는 객체와 기능을 사용하는 객체 간의 관계를 합성관계라고 부릅니다. 이해를 돕기 위해 예제를 가지고 설명해 보겠습니다.  예제예를">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://recoveryman.github.io/img/all/js.jpg">
-<meta property="og:updated_time" content="2018-03-28T00:28:15.514Z">
+<meta property="og:updated_time" content="2018-03-29T17:33:10.420Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[객체지향 프로그래밍 특징] 자바스크립트에서 메서드 오버로딩">
-<meta name="twitter:description" content="자바스크립트에서 메서드 오버로딩메서드 오버로딩(overloading)은 동일한 이름을 가진 여러 개의 메서드를 만든 후 매개변수 타입과 개수에 맞는 메서드가 자동으로 호출되는 기능을 뜻합니다.  하지만 아쉽게도 자바스크립트는 문법적으로 오버로딩을 제공하지 않습니다. 대신 오버로딩을 흉내 낼 수는 있습니다.  문법123function 함수 또는 메서드 이름">
+<meta name="twitter:title" content="합성 소개">
+<meta name="twitter:description" content="합성이란?합성(Composition)이란 단어에서도 짐작할 수 있는 것처럼 필요한 기능을 직접 구현하는 것이 아니라 필요한 기능을 구현하고 있는 객체와 연결(합성)해서 기능을 사용하는 것을 의미합니다. 이때 기능을 구현하고 있는 객체와 기능을 사용하는 객체 간의 관계를 합성관계라고 부릅니다. 이해를 돕기 위해 예제를 가지고 설명해 보겠습니다.  예제예를">
 <meta name="twitter:image" content="https://recoveryman.github.io/img/all/js.jpg">
      -->
 
@@ -158,14 +158,14 @@ ga('send', 'pageview');
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-객체지향-프로그래밍-특징-자바스크립트에서-메서드-오버로딩" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-합성-소개" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        [객체지향 프로그래밍 특징] 자바스크립트에서 메서드 오버로딩
+        합성 소개
         </h1>
     
 
@@ -175,8 +175,8 @@ ga('send', 'pageview');
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2018/03/12/객체지향-프로그래밍-특징-자바스크립트에서-메서드-오버로딩/" class="article-date">
-            <time datetime="2018-03-12T02:22:23.000Z" itemprop="datePublished">2018-03-12</time>
+        <a href="/2018/03/28/합성-소개/" class="article-date">
+            <time datetime="2018-03-27T23:51:24.000Z" itemprop="datePublished">2018-03-28</time>
         </a>
     </div>
 
@@ -186,16 +186,14 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
             <p><img src="/img/all/js.jpg" alt=""></p>
-<h3 id="자바스크립트에서-메서드-오버로딩"><a href="#자바스크립트에서-메서드-오버로딩" class="headerlink" title="자바스크립트에서 메서드 오버로딩"></a>자바스크립트에서 메서드 오버로딩</h3><p>메서드 오버로딩(overloading)은 동일한 이름을 가진 여러 개의 메서드를 만든 후 매개변수 타입과 개수에 맞는 메서드가 자동으로 호출되는 기능을 뜻합니다.</p>
-<p><img src="/img/postimgs/48.jpg"></p>
-<p>하지만 아쉽게도 자바스크립트는 문법적으로 오버로딩을 제공하지 않습니다. 대신 오버로딩을 흉내 낼 수는 있습니다.</p>
+<h3 id="합성이란"><a href="#합성이란" class="headerlink" title="합성이란?"></a>합성이란?</h3><p>합성(Composition)이란 단어에서도 짐작할 수 있는 것처럼 필요한 기능을 직접 구현하는 것이 아니라 필요한 기능을 구현하고 있는 객체와 연결(합성)해서 기능을 사용하는 것을 의미합니다. 이때 기능을 구현하고 있는 객체와 기능을 사용하는 객체 간의 관계를 합성관계라고 부릅니다. 이해를 돕기 위해 예제를 가지고 설명해 보겠습니다.</p>
 <p><br><hr><br></p>
-<h3 id="문법"><a href="#문법" class="headerlink" title="문법"></a>문법</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 함수 또는 메서드 이름(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="built_in">arguments</span> 객체 활용</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>자바스크립트에서는 매개변수 정보를 담고 있는 arguments를 이용해 오버로딩을 흉내 냅니다. 오버로딩은 함수와 메서드에서 동일하게 사용할 수 있습니다.</p>
-<p><br><br></p>
-<figure class="highlight js"><figcaption><span>[여러 개의 숫자 값을 더하는 함수]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 더하기 함수</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> result = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;<span class="built_in">arguments</span>.length; i++) &#123;</span><br><span class="line">		result+=<span class="built_in">arguments</span>[i];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 함수 호출</span></span><br><span class="line"><span class="built_in">console</span>.log(sum(<span class="number">10</span>, <span class="number">20</span>));</span><br><span class="line"><span class="built_in">console</span>.log(sum(<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>));</span><br><span class="line"><span class="built_in">console</span>.log(sum(<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>, <span class="number">40</span>));</span><br></pre></td></tr></table></figure>
-<p><strong>실행 결과</strong><br><img src="/img/postimgs/49.jpg"></p>
-<p><strong>설명</strong><br>arguments 객체에 담긴 매개변수 값을 매개변수 개수만큼 반복해서 더해 줍니다. 오버로딩은 특히 본인만의 라이브러리를 만들 때 유용하게 사용할 수 있습니다.</p>
+<h3 id="예제"><a href="#예제" class="headerlink" title="예제"></a>예제</h3><p>예를 들어 이미지를 가로로 정렬하는 기능만을 가진 아주 심플한 갤러리를 만든다고 해보죠.<br><img src="/img/postimgs/72.jpg"><br>여러 가지 풀이 방법이 있겠지만 여기에서는 합성을 사용하지 않은 풀이법과 합성을 사용한 방법으로 풀어보겠습니다.</p>
+<p><br></p>
+<p><strong>합성을 사용하지 않은 풀이</strong><br><img src="/img/postimgs/73.jpg"></p>
+<p><br></p>
+<p><strong>합성을 사용한 풀이</strong><br>두 번째 방법은 이미지를 가로로 정렬하는 기능을 SimpleGallery 내부에 구현하는 것이 아니라 독립적인 객체(HAlignable)로 구현한 후 연결(합성)해서 사용하는 것입니다. 코드로 표현하면 다음과 같습니다.<br><img src="/img/postimgs/74.jpg"></p>
+<p>바로 이처럼 특정 기능을 직접 구현하지 않고 기능을 빌렷거 사용하는 방식을 합성이라고 합니다. 참고로 풀이 내용을 UML로 표현하면 다음과 같습니다.<br><img src="/img/postimgs/75.jpg"></p>
 <p><br><br></p>
 <ul>
 <li><a href="/2018/02/05/절차지향-프로그래밍-VS-객체지향-프로그래밍/" title="[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍">[객체지향 프로그래밍 기초] 절차지향 프로그래밍 VS 객체지향 프로그래밍</a></li>
@@ -225,7 +223,7 @@ ga('send', 'pageview');
 
 
 
-    <!-- <a data-url="https://recoveryman.github.io/2018/03/12/객체지향-프로그래밍-특징-자바스크립트에서-메서드-오버로딩/" data-id="cjfabf14z001p80b6b5tt896z" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
+    <!-- <a data-url="https://recoveryman.github.io/2018/03/28/합성-소개/" data-id="cjfabf17n003z80b64r4tt5al" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -338,20 +336,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2018/03/16/객체지향-프로그래밍-특징-constructor-프로퍼티-활용/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">새로운</strong>
-        <p class="article-nav-title">
-        
-            [객체지향 프로그래밍 특징] constructor 프로퍼티 활용
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2018/03/12/객체지향-프로그래밍-특징-자바스크립트에서-메서드-오버라이드/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/03/20/객체지향-프로그래밍-특징-자바스크립트에서-다형성/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">오래된</strong>
-        <p class="article-nav-title">[객체지향 프로그래밍 특징] 자바스크립트에서 메서드 오버라이드</p>
+        <p class="article-nav-title">[객체지향 프로그래밍 특징] 자바스크립트에서 다형성</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -540,7 +528,7 @@ ga('send', 'pageview');
     var disqus_shortname = 'recoveryman';
     
     
-    var disqus_url = 'https://recoveryman.github.io/2018/03/12/객체지향-프로그래밍-특징-자바스크립트에서-메서드-오버로딩/';
+    var disqus_url = 'https://recoveryman.github.io/2018/03/28/합성-소개/';
     
     (function() {
     var dsq = document.createElement('script');
