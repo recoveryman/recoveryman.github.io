@@ -1,0 +1,214 @@
+/* ----------------------------------------------
+ * http://recoveryman.tistory.com
+ * 알트리아2차티저 Stylesheet
+ * Author - recoveryman
+ ------------------------------------------------- */
+
+@charset "UTF-8";
+
+/* style
+------------------------------------------------- */
+#wrap{position:relative;overflow:hidden;width:100%;min-width:1200px}
+section{display:none;position:absolute;top:0;left:0;width:100%}
+.inner{position:relative;width:1200px;height:100%;margin:0 auto}
+.evt_box{background-position:50% 0;background-repeat:no-repeat}
+#wrap .ani_evt{display: none}
+#wrap .ani_evt.sld_out{display:block}
+
+
+/* header
+------------------------------------------------- */
+.sp_common{background-image:url(../images/common/sp.png)}
+.menu_standard{position:relative;width:1200px;height:999px;margin:0 auto}
+header{display:none;position:absolute;top:0;left:-413px;z-index:1000;width:697px;height:999px;background:url(../images/common/bg_nav.png) 0 0 no-repeat}
+nav{position: absolute;top:165px;right:32px;width:223px;height:443px}
+.menu1{display:block;overflow:hidden;position:absolute;top:-126px;left:33px;width:164px;height:91px;margin-bottom:47px;background:url(../images/common/logo.png) 0 0 no-repeat;text-indent:-9999px}
+.menu2{height:81px;background-position:0 0}
+.menu3{height:62px;background-position:0 -81px}
+.menu4{height:66px;background-position:0 -143px}
+.menu5{height:65px;background-position:0 -209px}
+.menu6{height:77px;background-position:0 -274px}
+.menu7{height:92px;background-position:0 -351px}
+nav li:hover a,nav li.on a{background-position-x:-225px}
+nav li:hover a.menu1,nav li.on a.menu1{background-position-x:0}
+.remocon{overflow:hidden;position:absolute;bottom:309px;right:50px;height:46px;}
+.remocon li{float:left}
+.remocon li a{width:44px;height:46px;background-position-y:0}
+.btn_home{background-position-x:-450px}
+#jp_container2 .btn_audio{width:44px;height:46px;}
+#jp_container2 .jp-play{background-position:-496px 0}
+#jp_container2 .jp-pause{background-position:-542px 0}
+.btn_fb{background-position-x:-588px}
+.btn_tw{background-position-x:-634px}
+.btn_today{position:absolute;bottom:264px;right:50px;width:179px;height:28px;background-position:-450px -48px}
+.btn_today:hover{background-position-y:-78px}
+.ie10{position:absolute;bottom:220px;right:53px;font-size:11px;color:#6d768b;list-style-type:disc;line-height:1.5}
+.copyright{position:absolute;bottom:0;left:0;width:673px;height:187px;background:url(../images/common/bg_copy.png) 0 0 repeat}
+.copyright p{overflow:hidden;position:absolute;top:40px;right:15px;width:197px;height:59px;background:url(../images/common/copyright.png) 0 0 no-repeat;text-indent:-9999px}
+
+
+
+/* intro
+------------------------------------------------- */
+.intro{display:block;height:999px;background-image:url(../images/intro/bg.jpg)}
+.intro .img1{bottom:0;right:-332px}
+.intro .img2{bottom:0;right:-303px}
+.intro .img3{top:-14px;left:20px}
+.intro .img4{top:195px;left:560px}
+.intro .img5{top:172px;left:363px}
+.intro .img6{top:343px;left:368px}
+.intro .img7{top:261px;left:453px}
+
+
+/* story
+------------------------------------------------- */
+.story{height:999px;background-image:url(../images/story/bg.jpg)}
+.story .img1{bottom:0;right:-320px}
+.story .img2{bottom:0;right:-196px}
+.story .img3{bottom:50px;left:612px}
+.story .img4{top:120px;left:338px}
+.story .img5{top:222px;left:338px}
+.story .img6{top:344px;left:338px}
+.story .img7{top:560px;left:338px}
+.story .img8{top:590px;left:338px}
+.story .img9{top:755px;left:338px}
+
+
+
+/* field
+------------------------------------------------- */
+.field{height:1159px;background-image:url(../images/field/bg.jpg)}
+.field .img1{top:97px;right:-142px}
+.field .img2{top:20px;right:-236px}
+.field .img3{bottom:307px;left:667px}
+.field .img4{bottom:603px;left:271px}
+.field .img5{top:70px;left:338px}
+.field .img6{top:122px;left:338px}
+.field .img7{top:217px;left:338px}
+.field .img8{top:486px;left:338px}
+.field .img9{top:515px;left:338px}
+.field .img10{top:544px;left:338px}
+.field .img11{top:574px;left:338px}
+.field .img12{top:603px;left:338px}
+.field .img13{top:666px;left:338px}
+.field .sld_in{bottom:46px;left:338px}
+
+
+
+/* character
+------------------------------------------------- */
+.sp_character{background-image:url(../images/character/sp.png)}
+.character{height:999px;background-image:url(../images/character/bg.jpg)}
+.character .chbox{display:none}
+.character .chbox.chr1{display:block}
+.character .tab_area{top:122px;left:338px;width:590px;height:710px}
+
+.character .img1{top:184px;right:-294px}
+.character .img2{top:30px;right:-396px}
+.character .img3{top:30px;right:-238px}
+.character .img4{top:70px;left:338px}
+.character .img5{top:0;left:-346px}
+.character .img6{top:0;left:-346px}
+
+.character .tab_inner{position:absolute;top:0;left:0;width:214px;height:24px;margin-left:3px}
+.character .tab_inner li{float:left}
+.character .tab_inner li a{height:24px}
+.character .tab_inner li.on a,.character .tab_inner li:hover a{background-position-y:-24px}
+.character .tab_inner li .tt1{width:38px;background-position:0 0}
+.character .tab_inner li .tt2{width:176px;background-position:-38px 0}
+
+.character .dec_wrap{top:48px;left:0;width:1139px;height:835px}
+.character .dec_wrap .dec2 .sld_in{margin:61px 0 0 -6px}
+.character .dec1,.character .dec2{display:none}
+.character .dec1{display:block}
+.character .dec2{height:700px}
+
+
+/* monster
+------------------------------------------------- */
+.sp_monster{background-image:url(../images/monster/sp.png)}
+.monster{height:999px;background-image:url(../images/monster/bg.jpg)}
+.monster .chbox{display:none}
+.monster .chbox.chr1{display:block}
+.monster .tab_area{top:122px;left:338px;width:800px;height:710px}
+
+.monster .img1{top:184px;right:-294px}
+.monster .img2{top:51px;right:-168px}
+.monster .img3{top:71px;right:-318px}
+.monster .img4{top:70px;left:338px}
+.monster .img5{top:0;left:-0px;margin-top:-70px}
+.monster .img6{top:0;left:-346px}
+
+.monster .tab_inner{position:absolute;top:0;left:0;z-index:10;width:223px;height:24px;margin-left:3px}
+.monster .tab_inner li{float:left}
+.monster .tab_inner li a{height:24px}
+.monster .tab_inner li.on a,.monster .tab_inner li:hover a{background-position-y:-24px}
+.monster .tab_inner li .tt1{width:111px;background-position:0 0}
+.monster .tab_inner li .tt2{width:112px;background-position:-111px 0}
+
+.monster .dec_wrap{top:48px;left:0;width:1139px;height:835px}
+.monster .dec_wrap .dec1 .sld_in{margin:61px 0 0 -6px}
+.monster .dec_wrap .dec2 .sld_in{margin:61px 0 0 -6px}
+.monster .dec1,.monster .dec2{display:none;}
+.monster .dec1{display:block;height:700px}
+.monster .dec2{height:700px}
+
+.monster .img5+.sld_in{margin-top:-45px !important}
+
+/* mission
+------------------------------------------------- */
+.sp_mission{background-image:url(../images/mission/sp.png)}
+.mission{height:999px;background-image:url(../images/mission/bg.jpg)}
+.mission .chbox{display:none}
+.mission .chbox.chr1{display:block}
+.mission .tab_area{top:122px;left:338px;width:590px;height:710px}
+
+.mission .img1{top:184px;right:-294px}
+.mission .img2{top:17px;right:-693px}
+.mission .img3{top:22px;right:-134px}
+.mission .img4{top:70px;left:338px}
+.mission .img5{top:0;left:-0px}
+.mission .img6{top:0;left:-346px}
+.mission .img6.img6_2{top:0;left:0}
+
+.mission .tab_inner{position:absolute;top:0;left:0;width:380px;height:24px;margin-left:3px}
+.mission .tab_inner li{float:left}
+.mission .tab_inner li a{height:24px}
+.mission .tab_inner li.on a,.mission .tab_inner li:hover a{background-position-y:-24px}
+.mission .tab_inner li .tt1{width:190px;background-position:0 0}
+.mission .tab_inner li .tt2{width:190px;background-position:-190px 0}
+
+.mission .dec_wrap{top:48px;left:0;width:1139px;height:835px}
+.mission .dec_wrap .dec1 .sld_in{margin:61px 0 0 -6px}
+.mission .dec_wrap .dec2 .sld_in{margin:61px 0 0 -6px}
+.mission .dec1,.mission .dec2{display:none;}
+.mission .dec1{display:block;height:700px}
+.mission .dec1.img5_2{display:block;height:auto}
+.mission .dec2{height:700px}
+.mission .dec2.img6_2{height:auto}
+
+
+
+/* slider
+------------------------------------------------- */
+.sld_dir{position:absolute;bottom:15px;left:0;width:100%;height:42px;text-align:center;font-family:Bodoni MT, Malgun Gothic,'맑은고딕';font-size:18px;color:#fefefe;font-style:italic}
+.sld_dir .btn_lt,.btn_gt{display:inline-block !important;width:9px;height:17px;margin:0 5px;background-position-y:-108px;vertical-align:sub}
+.sld_dir .btn_lt{background-position-x:-484px}
+.sld_dir .btn_gt{background-position-x:-495px}
+.btn_ly{position:absolute;bottom:0;right:0;width:32px;height:32px;background-position:-450px -108px}
+
+.sld_in{width:573px;height:386px;background:url(../images/common/bg_sld1.png) 0 0 no-repeat}
+.sld_out{position:absolute;top:50%;left:50%;width:894px;height:593px;margin:-296px 0 0 -447px;background:url(../images/common/bg_sld2.png) 0 0 no-repeat}
+
+.sld_view{overflow:hidden;position:absolute;top:9px;left:50%;width:541px;height:302px;margin-left:-270px}
+.sld_view ul{position:relative;width:999999px;}
+.sld_view li{float:left;height:302px}
+.sld_view li img{width:541px}
+
+.sld_out .sld_view{width:852px;height:476px;margin-left:-426px}
+.sld_out .sld_view ul li{height:476px}
+.sld_out .sld_view li img{width:852px}
+.sld_out .sld_dir{height:57px;}
+.sld_ly{display:none;position:fixed;top:0;left:0;z-index:1100;width:100%;height:100%;background:url(../images/common/bg_ly.png) 0 0 repeat}
+.btn_close{position:absolute;top:-56px;right:-51px;width:51px;height:51px;background-position:-450px -142px;transition:all 300ms ease}
+.btn_close:hover{transform:rotate(90deg)}
