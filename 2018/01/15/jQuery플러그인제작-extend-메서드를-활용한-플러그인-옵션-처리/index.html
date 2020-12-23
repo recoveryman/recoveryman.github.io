@@ -18,12 +18,12 @@
 <meta property="og:site_name" content="회복맨">
 <meta property="og:description" content="jQuery 플러그인의 경우 기능을 변경할 수 있는 옵션값이 존재합니다. jQuery 에서 제공하는 extend() 메서드를 활용해 좀 더 효율적인 옵션값 처리 방법을 학습해 보겠습니다. 기본 옵션값플러그인을 만들다 보면 플러그인 호출 시 넘겨야 하는 매개변수 값이 많은 경우가 있습니다. 이 값들은 주로 옵션값 입니다. 옵션값은 일반적으로 jQuery 플러">
 <meta property="og:locale" content="ko_KR">
-<meta property="og:image" content="https://recoveryman.github.io/img/all/js.jpg">
+<meta property="og:image" content="https://recoveryman.github.io/img/all/js_image.jpg">
 <meta property="article:published_time" content="2018-01-15T01:38:11.000Z">
-<meta property="article:modified_time" content="2018-02-04T12:44:58.000Z">
+<meta property="article:modified_time" content="2020-12-23T03:32:48.536Z">
 <meta property="article:author" content="회복맨">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://recoveryman.github.io/img/all/js.jpg">
+<meta name="twitter:image" content="https://recoveryman.github.io/img/all/js_image.jpg">
      -->
 
     
@@ -202,7 +202,7 @@ ga('send', 'pageview');
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p><img src="/img/all/js.jpg" alt=""><br>jQuery 플러그인의 경우 기능을 변경할 수 있는 옵션값이 존재합니다. jQuery 에서 제공하는 extend() 메서드를 활용해 좀 더 효율적인 옵션값 처리 방법을 학습해 보겠습니다.</p>
+            <p><img src="/img/all/js_image.jpg" alt=""><br>jQuery 플러그인의 경우 기능을 변경할 수 있는 옵션값이 존재합니다. jQuery 에서 제공하는 extend() 메서드를 활용해 좀 더 효율적인 옵션값 처리 방법을 학습해 보겠습니다.</p>
 <h3 id="기본-옵션값"><a href="#기본-옵션값" class="headerlink" title="기본 옵션값"></a>기본 옵션값</h3><p>플러그인을 만들다 보면 플러그인 호출 시 넘겨야 하는 매개변수 값이 많은 경우가 있습니다. 이 값들은 주로 옵션값 입니다. 옵션값은 일반적으로 jQuery 플러그인을 만들때 기본 옶션값을 만들어 사용하고 사용자가 필요로 할때 원하는 값으로 변경할 수 있는 구조로 만듭니다.</p>
 <p>먼저 <a href="/2018/01/04/jQuery%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%A0%9C%EC%9E%91-jQuery-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/" title="[jQuery플러그인제작] jQuery 플러그인 만들기 ">[jQuery플러그인제작] jQuery 플러그인 만들기 </a> 에서 예제로 만들어 봤던 플러그인을 확인해 보겠습니다.<br><iframe scrolling="no" width="100%" height="300" src="https://jsfiddle.net/3twguaob/embedded/result,html,css,js/dark" frameborder="0" loading="lazy" allowfullscreen></iframe><br><a href="/file/jQueryPlugin.zip">소스코드 다운받기</a></p>
 <figure class="highlight js"><figcaption><span>[javascript]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">$</span>) </span>&#123;</span><br><span class="line">	$.fn.removeLi = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.each(<span class="function"><span class="keyword">function</span>(<span class="params">index</span>) </span>&#123;</span><br><span class="line">			<span class="keyword">var</span> $target = $(<span class="keyword">this</span>);</span><br><span class="line">			$target.delay(index * <span class="number">1000</span>).animate(&#123;</span><br><span class="line">				height: <span class="number">0</span></span><br><span class="line">			&#125;, <span class="number">500</span>, <span class="string">"easeInQuint"</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">				$target.remove();</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;)</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)(jQuery)</span><br><span class="line"></span><br><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	$(<span class="string">".menu"</span>).removeLi();</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
@@ -273,7 +273,7 @@ ga('send', 'pageview');
 
 
 
-    <!-- <a data-url="https://recoveryman.github.io/2018/01/15/jQuery%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%A0%9C%EC%9E%91-extend-%EB%A9%94%EC%84%9C%EB%93%9C%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%98%B5%EC%85%98-%EC%B2%98%EB%A6%AC/" data-id="ckj0ulj20000etc7k6hx3531v" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
+    <!-- <a data-url="https://recoveryman.github.io/2018/01/15/jQuery%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%A0%9C%EC%9E%91-extend-%EB%A9%94%EC%84%9C%EB%93%9C%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%98%B5%EC%85%98-%EC%B2%98%EB%A6%AC/" data-id="ckj0v5cgz000fo07k7364areh" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -421,7 +421,7 @@ ga('send', 'pageview');
                             <a href="/2018/08/20/%EC%84%B1%EB%8A%A5-%EC%93%B0%EB%A1%9C%ED%8B%80%EB%A7%81%EA%B3%BC-%EB%94%94%EB%B0%94%EC%9A%B4%EC%8B%B1/" class="thumbnail">
     
     
-        <span style="background-image:url(/img/all/js.jpg)" alt="[성능] 쓰로틀링과 디바운싱" class="thumbnail-image"></span>
+        <span style="background-image:url(/img/all/js_image.jpg)" alt="[성능] 쓰로틀링과 디바운싱" class="thumbnail-image"></span>
     
     
 </a>
@@ -441,7 +441,7 @@ ga('send', 'pageview');
                             <a href="/2018/03/30/%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%83%81%EC%86%8D-VS-%ED%95%A9%EC%84%B1/" class="thumbnail">
     
     
-        <span style="background-image:url(/img/all/js.jpg)" alt="클래스 상속 VS 합성" class="thumbnail-image"></span>
+        <span style="background-image:url(/img/all/js_image.jpg)" alt="클래스 상속 VS 합성" class="thumbnail-image"></span>
     
     
 </a>
@@ -461,7 +461,7 @@ ga('send', 'pageview');
                             <a href="/2018/03/28/%ED%95%A9%EC%84%B1-%EC%86%8C%EA%B0%9C/" class="thumbnail">
     
     
-        <span style="background-image:url(/img/all/js.jpg)" alt="합성 소개" class="thumbnail-image"></span>
+        <span style="background-image:url(/img/all/js_image.jpg)" alt="합성 소개" class="thumbnail-image"></span>
     
     
 </a>
@@ -481,7 +481,7 @@ ga('send', 'pageview');
                             <a href="/2018/03/20/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8A%B9%EC%A7%95-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%97%90%EC%84%9C-%EB%8B%A4%ED%98%95%EC%84%B1/" class="thumbnail">
     
     
-        <span style="background-image:url(/img/all/js.jpg)" alt="[객체지향 프로그래밍 특징] 자바스크립트에서 다형성" class="thumbnail-image"></span>
+        <span style="background-image:url(/img/all/js_image.jpg)" alt="[객체지향 프로그래밍 특징] 자바스크립트에서 다형성" class="thumbnail-image"></span>
     
     
 </a>
@@ -501,7 +501,7 @@ ga('send', 'pageview');
                             <a href="/2018/03/18/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8A%B9%EC%A7%95-%EB%8B%A4%ED%98%95%EC%84%B1%EA%B3%BC-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85%EA%B3%BC%EC%9D%98-%EA%B4%80%EA%B3%84/" class="thumbnail">
     
     
-        <span style="background-image:url(/img/all/js.jpg)" alt="[객체지향 프로그래밍 특징] 다형성과 데이터 타입과의 관계" class="thumbnail-image"></span>
+        <span style="background-image:url(/img/all/js_image.jpg)" alt="[객체지향 프로그래밍 특징] 다형성과 데이터 타입과의 관계" class="thumbnail-image"></span>
     
     
 </a>
