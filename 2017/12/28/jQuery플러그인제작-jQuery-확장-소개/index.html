@@ -208,29 +208,24 @@ ga('send', 'pageview');
 <h3 id="jQuery-확장-요소-종류"><a href="#jQuery-확장-요소-종류" class="headerlink" title="jQuery 확장 요소 종류"></a>jQuery 확장 요소 종류</h3><p><strong>1.유틸리티</strong></p>
 <p>문자열의 공백을 제거해주는 jQuery의 trim() 메서드와 같은 유틸리티는 주로 도움을 주는 기능을 합니다.<br>jQuery 인스턴스를 생성하지 않고 jQuery 클래스에 직접 접근하여 사용합니다.</p>
 <ul>
-<li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jQuery.유틸리티();</span><br></pre></td></tr></table></figure>
-</li>
-<li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$.유틸리티();</span><br></pre></td></tr></table></figure>
-</li>
+<li><code>`</code>js<br>jQuery.유틸리티();<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">* 	&#96;&#96;&#96;js</span><br><span class="line">	$.유틸리티();</span><br></pre></td></tr></table></figure>
+<br></li>
 </ul>
-<p><br></p>
 <p><strong>2.플러그인</strong></p>
 <p>특정 기능을 재사용 하고자 할 때 사용하는 포장 기능 입니다.</p>
 <ul>
-<li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'선택자'</span>).플러그인(옵션);</span><br></pre></td></tr></table></figure>
-</li>
-<li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $결과 = $(<span class="string">'선택자'</span>);</span><br><span class="line">$결과.플러그인(옵션);</span><br></pre></td></tr></table></figure>
+<li><code>`</code>js<br>$(‘선택자’).플러그인(옵션);<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* 	&#96;&#96;&#96;js</span><br><span class="line">	var $결과 &#x3D; $(&#39;선택자&#39;);</span><br><span class="line">	$결과.플러그인(옵션);</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><br><br></p>
 <ul>
-<li><a href="/2017/12/28/jQuery플러그인제작-jQuery-확장-소개/" title="[jQuery플러그인제작] jQuery 확장 소개">[jQuery플러그인제작] jQuery 확장 소개</a></li>
-<li><a href="/2017/12/28/jQuery플러그인제작-jQuery유틸리티-만들기/" title="[jQuery플러그인제작] jQuery유틸리티 만들기">[jQuery플러그인제작] jQuery유틸리티 만들기</a></li>
-<li><a href="/2018/01/04/jQuery플러그인제작-jQuery-플러그인-만들기/" title="[jQuery플러그인제작] jQuery 플러그인 만들기 ">[jQuery플러그인제작] jQuery 플러그인 만들기 </a></li>
-<li><a href="/2018/01/09/jQuery플러그인제작-함수-기반-플러그인-만들기/" title="[jQuery플러그인제작] 함수 기반 플러그인 만들기">[jQuery플러그인제작] 함수 기반 플러그인 만들기</a></li>
-<li><a href="/2018/01/10/jQuery플러그인제작-클래스-기반-플러그인-만들기/" title="[jQuery플러그인제작] 클래스 기반 플러그인 만들기">[jQuery플러그인제작] 클래스 기반 플러그인 만들기</a></li>
-<li><a href="/2018/01/11/jQuery플러그인제작-플러그인-그룹-만들기/" title="[jQuery플러그인제작] 플러그인 그룹 만들기">[jQuery플러그인제작] 플러그인 그룹 만들기</a></li>
-<li><a href="/2018/01/15/jQuery플러그인제작-extend-메서드를-활용한-플러그인-옵션-처리/" title="[jQuery플러그인제작] extend() 메서드를 활용한 플러그인 옵션 처리">[jQuery플러그인제작] extend() 메서드를 활용한 플러그인 옵션 처리</a></li>
+<li><a href="/2017/12/28/jQuery%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%A0%9C%EC%9E%91-jQuery-%ED%99%95%EC%9E%A5-%EC%86%8C%EA%B0%9C/" title="[jQuery플러그인제작] jQuery 확장 소개">[jQuery플러그인제작] jQuery 확장 소개</a></li>
+<li><a href="/2017/12/28/jQuery%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%A0%9C%EC%9E%91-jQuery%EC%9C%A0%ED%8B%B8%EB%A6%AC%ED%8B%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0/" title="[jQuery플러그인제작] jQuery유틸리티 만들기">[jQuery플러그인제작] jQuery유틸리티 만들기</a></li>
+<li><a href="/2018/01/04/jQuery%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%A0%9C%EC%9E%91-jQuery-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/" title="[jQuery플러그인제작] jQuery 플러그인 만들기 ">[jQuery플러그인제작] jQuery 플러그인 만들기 </a></li>
+<li><a href="/2018/01/09/jQuery%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%A0%9C%EC%9E%91-%ED%95%A8%EC%88%98-%EA%B8%B0%EB%B0%98-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/" title="[jQuery플러그인제작] 함수 기반 플러그인 만들기">[jQuery플러그인제작] 함수 기반 플러그인 만들기</a></li>
+<li><a href="/2018/01/10/jQuery%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%A0%9C%EC%9E%91-%ED%81%B4%EB%9E%98%EC%8A%A4-%EA%B8%B0%EB%B0%98-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/" title="[jQuery플러그인제작] 클래스 기반 플러그인 만들기">[jQuery플러그인제작] 클래스 기반 플러그인 만들기</a></li>
+<li><a href="/2018/01/11/jQuery%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%A0%9C%EC%9E%91-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EA%B7%B8%EB%A3%B9-%EB%A7%8C%EB%93%A4%EA%B8%B0/" title="[jQuery플러그인제작] 플러그인 그룹 만들기">[jQuery플러그인제작] 플러그인 그룹 만들기</a></li>
+<li><a href="/2018/01/15/jQuery%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%A0%9C%EC%9E%91-extend-%EB%A9%94%EC%84%9C%EB%93%9C%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%98%B5%EC%85%98-%EC%B2%98%EB%A6%AC/" title="[jQuery플러그인제작] extend() 메서드를 활용한 플러그인 옵션 처리">[jQuery플러그인제작] extend() 메서드를 활용한 플러그인 옵션 처리</a></li>
 </ul>
 
         </div>
@@ -239,7 +234,7 @@ ga('send', 'pageview');
 
 
 
-    <!-- <a data-url="https://recoveryman.github.io/2017/12/28/jQuery%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%A0%9C%EC%9E%91-jQuery-%ED%99%95%EC%9E%A5-%EC%86%8C%EA%B0%9C/" data-id="cjl1yswff000yasb6aj5sfsjn" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
+    <!-- <a data-url="https://recoveryman.github.io/2017/12/28/jQuery%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%A0%9C%EC%9E%91-jQuery-%ED%99%95%EC%9E%A5-%EC%86%8C%EA%B0%9C/" data-id="ckj0ryjnb00094s7k546a1lpe" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
 <script>
     (function ($) {
         $('body').on('click', function() {
