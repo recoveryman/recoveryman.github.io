@@ -75,7 +75,7 @@ ga('send', 'pageview');
     
 
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 5.3.0"></head>
 
 <body>
     <div id="wrap">
@@ -87,10 +87,6 @@ ga('send', 'pageview');
                     <h1 class="logo-wrap">
                         <a href="/" class="logo"></a>
                     </h1>
-                    
-                        <h2 class="subtitle-wrap">
-                            <p class="subtitle">Wellcome ..!</p>
-                        </h2>
                     
                 </div>
                 <div id="header-inner" class="nav-container">
@@ -113,7 +109,7 @@ ga('send', 'pageview');
                                 </li>
                             
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="http://recoveryman.tistory.com" target="_blank" rel="noopener">Tistory</a>
+                                    <a class="main-nav-list-link" target="_blank" rel="noopener" href="http://recoveryman.tistory.com">Tistory</a>
                                 </li>
                             
                         </ul>
@@ -208,17 +204,17 @@ ga('send', 'pageview');
 <li>jQuery 유틸리티는 jQuery 인스턴스를 생성하지 않고 직접 접근해서 사용 합니다.</li>
 </ul>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">jQuery.유틸리티();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 또는</span></span><br><span class="line"></span><br><span class="line">$.유틸리티();</span><br></pre></td></tr></table></figure>
-<p><a href="http://api.jquery.com/category/utilities/" target="_blank" rel="noopener" title="jQuery 기본 제공 유틸리티">jQuery 에서 기본으로 제공해 주는 유틸리티 - 바로가기</a></p>
+<p><a target="_blank" rel="noopener" href="http://api.jquery.com/category/utilities/" title="jQuery 기본 제공 유틸리티">jQuery 에서 기본으로 제공해 주는 유틸리티 - 바로가기</a></p>
 <p><br><hr><br></p>
 <h4 id="유틸리티-구조"><a href="#유틸리티-구조" class="headerlink" title="유틸리티 구조"></a>유틸리티 구조</h4><figure class="highlight js"><figcaption><span>[문법]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">$</span>) </span>&#123;</span><br><span class="line">	$.유틸리티 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="comment">// 기능구현</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;)(jQuery);</span><br><span class="line">jQuery.유틸리티(); <span class="comment">// 사용하기</span></span><br></pre></td></tr></table></figure>
 <p>2번 라인의 <strong>$</strong> 는 jQuery 클래스 자체를 나타내며 jQuery 의 클래스 메서드 입니다. 즉. 클래스 인스턴스를 생성하지 않고 바로 접근해서 사용할 수 있다는 의미 입니다.</p>
 <a href="/2017/12/27/%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80-%EB%A9%94%EC%84%9C%EB%93%9Cvs%ED%81%B4%EB%9E%98%EC%8A%A4-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80-%EB%A9%94%EC%84%9C%EB%93%9C/" title="인스턴스 프로퍼티와 메서드vs클래스 프로퍼티와 메서드">인스턴스 프로퍼티와 메서드vs클래스 프로퍼티와 메서드</a>
 <figure class="highlight js"><figcaption><span>[사용법]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">jQuery.유틸리티();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 또는</span></span><br><span class="line"></span><br><span class="line">$.유틸리티();</span><br></pre></td></tr></table></figure>
 <p>사용법은 일반 클래스 메서드 호출하듯 호출.</p>
-<figure class="highlight js"><figcaption><span>[사용 예]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> str = <span class="string">"   회복맨   "</span>;</span><br><span class="line">	<span class="built_in">console</span>.log($.trim(str));</span><br><span class="line">	<span class="built_in">console</span>.log(jQuery.trim(str));</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><figcaption><span>[사용 예]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> str = <span class="string">&quot;   회복맨   &quot;</span>;</span><br><span class="line">	<span class="built_in">console</span>.log($.trim(str));</span><br><span class="line">	<span class="built_in">console</span>.log(jQuery.trim(str));</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <p><br><hr><br></p>
 <h4 id="사용자-정의-jQuery-유틸리티-만들기"><a href="#사용자-정의-jQuery-유틸리티-만들기" class="headerlink" title="사용자 정의 jQuery 유틸리티 만들기"></a>사용자 정의 jQuery 유틸리티 만들기</h4><p>인자로 숫자를 넣으면 3자리 마다 콤마(,) 를 삽입 하는 유틸리티</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">$</span>) </span>&#123;</span><br><span class="line">	$.addComma = <span class="function"><span class="keyword">function</span>(<span class="params">value</span>) </span>&#123;</span><br><span class="line">		<span class="comment">// 숫자를 문자로 형변환</span></span><br><span class="line">		<span class="keyword">var</span> data = value + <span class="string">""</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 문자를 배열로 </span></span><br><span class="line">		<span class="keyword">var</span> aryResult = data.split(<span class="string">""</span>);</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 배열 요소를 뒤에서 세자리 수마다 콤마 추가 하기</span></span><br><span class="line">		<span class="keyword">var</span> startIndex = aryResult.length - <span class="number">3</span>;</span><br><span class="line">		<span class="keyword">for</span>( <span class="keyword">var</span> i = startIndex; i &gt; <span class="number">0</span>; i -= <span class="number">3</span> )&#123;</span><br><span class="line">			aryResult.splice(i, <span class="number">0</span>, <span class="string">","</span>);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 배열을 문자열 처리후 리턴</span></span><br><span class="line">		<span class="keyword">return</span> aryResult.join(<span class="string">""</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)(jQuery);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 사용</span></span><br><span class="line"><span class="built_in">console</span>.log($.addComma(<span class="number">123</span>))</span><br><span class="line"><span class="built_in">console</span>.log($.addComma(<span class="number">12345</span>))</span><br><span class="line"><span class="built_in">console</span>.log($.addComma(<span class="number">12345678</span>))</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">$</span>) </span>&#123;</span><br><span class="line">	$.addComma = <span class="function"><span class="keyword">function</span>(<span class="params">value</span>) </span>&#123;</span><br><span class="line">		<span class="comment">// 숫자를 문자로 형변환</span></span><br><span class="line">		<span class="keyword">var</span> data = value + <span class="string">&quot;&quot;</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 문자를 배열로 </span></span><br><span class="line">		<span class="keyword">var</span> aryResult = data.split(<span class="string">&quot;&quot;</span>);</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 배열 요소를 뒤에서 세자리 수마다 콤마 추가 하기</span></span><br><span class="line">		<span class="keyword">var</span> startIndex = aryResult.length - <span class="number">3</span>;</span><br><span class="line">		<span class="keyword">for</span>( <span class="keyword">var</span> i = startIndex; i &gt; <span class="number">0</span>; i -= <span class="number">3</span> )&#123;</span><br><span class="line">			aryResult.splice(i, <span class="number">0</span>, <span class="string">&quot;,&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 배열을 문자열 처리후 리턴</span></span><br><span class="line">		<span class="keyword">return</span> aryResult.join(<span class="string">&quot;&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)(jQuery);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 사용</span></span><br><span class="line"><span class="built_in">console</span>.log($.addComma(<span class="number">123</span>))</span><br><span class="line"><span class="built_in">console</span>.log($.addComma(<span class="number">12345</span>))</span><br><span class="line"><span class="built_in">console</span>.log($.addComma(<span class="number">12345678</span>))</span><br></pre></td></tr></table></figure>
 <p><a href="/file/jQueryUtilitie.zip">소스코드 다운받기</a></p>
 <p><br><br></p>
 <ul>
@@ -237,7 +233,7 @@ ga('send', 'pageview');
 
 
 
-    <!-- <a data-url="https://recoveryman.github.io/2017/12/28/jQuery%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%A0%9C%EC%9E%91-jQuery%EC%9C%A0%ED%8B%B8%EB%A6%AC%ED%8B%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0/" data-id="ckj28riua000a387ketq555mv" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
+    <!-- <a data-url="https://recoveryman.github.io/2017/12/28/jQuery%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%A0%9C%EC%9E%91-jQuery%EC%9C%A0%ED%8B%B8%EB%A6%AC%ED%8B%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0/" data-id="ckjgn8kj3000jyw7k56tdby3t" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -305,7 +301,7 @@ ga('send', 'pageview');
     
         
     <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
 
     
@@ -517,7 +513,7 @@ ga('send', 'pageview');
             <ul>
                 
                     <li>
-                        <a href="http://recoveryman.tistory.com" target="_blank" rel="noopener">Tistory</a>
+                        <a target="_blank" rel="noopener" href="http://recoveryman.tistory.com">Tistory</a>
                     </li>
                 
             </ul>
@@ -540,7 +536,7 @@ ga('send', 'pageview');
                 <h1 class="logo-wrap">
                     <a href="/" class="logo"></a>
                 </h1>
-                <p>&copy; 2020 회복맨</p>
+                <p>&copy; 2021 회복맨</p>
                 <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
             </div>
         </div>

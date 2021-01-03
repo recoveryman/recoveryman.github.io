@@ -75,7 +75,7 @@ ga('send', 'pageview');
     
 
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 5.3.0"></head>
 
 <body>
     <div id="wrap">
@@ -87,10 +87,6 @@ ga('send', 'pageview');
                     <h1 class="logo-wrap">
                         <a href="/" class="logo"></a>
                     </h1>
-                    
-                        <h2 class="subtitle-wrap">
-                            <p class="subtitle">Wellcome ..!</p>
-                        </h2>
                     
                 </div>
                 <div id="header-inner" class="nav-container">
@@ -113,7 +109,7 @@ ga('send', 'pageview');
                                 </li>
                             
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="http://recoveryman.tistory.com" target="_blank" rel="noopener">Tistory</a>
+                                    <a class="main-nav-list-link" target="_blank" rel="noopener" href="http://recoveryman.tistory.com">Tistory</a>
                                 </li>
                             
                         </ul>
@@ -209,10 +205,10 @@ ga('send', 'pageview');
 <p><br><hr><br></p>
 <h3 id="자바스크립트에서-부모-생성자-호출하기"><a href="#자바스크립트에서-부모-생성자-호출하기" class="headerlink" title="자바스크립트에서 부모 생성자 호출하기"></a>자바스크립트에서 부모 생성자 호출하기</h3><p>상속 구현 시 부모 클래스의 생성자에 매개변수가 있는 경우 자식 클래스에서 부모 클래스의 생성자를 호출해 매개변수 값을 전달해야 합니다.</p>
 <p><strong>문법</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 자식클래스(<span class="params">[param1, param2, ...]</span>) </span>&#123;</span><br><span class="line">	부모클래스.call(<span class="keyword">this</span>[, param1, param2, ...]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 자식클래스(<span class="params">[param1, param2, ...]</span>) </span>&#123;</span><br><span class="line">	부모클래스.call(<span class="built_in">this</span>[, param1, param2, ...]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>부모 클래스의 생성자를 호출할 때 함수객체에서 제공하는 call()메서드를 이용해 첫 번째 매개변수에 자식 인스턴스를 전달하고, 두 번째 매개변수 이후부터는 부모의 생성자로 전달할 데이터를 전달해 줍니다.</p>
 <p><strong>예제</strong><br>다음 예제처럼 상속을 사용하는 경우 자식클래스의 인스턴스 생성 시 부모의 속성값을 설정해야 하는 경우가 자주 있습니다. 이번에 다룬 문법대로 사용하면 됩니다.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 부모 클래스</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MyParent</span>(<span class="params">param1</span>)</span>&#123;</span><br><span class="line">	<span class="comment">// 프로퍼티 생성</span></span><br><span class="line">	<span class="keyword">this</span>.property1=param1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 메서드 생성</span></span><br><span class="line">MyParent.prototype.method1=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"MyParent.method1() "</span>+<span class="keyword">this</span>.property1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 자식 클래스</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MyChild</span>(<span class="params">param1</span>)</span>&#123;</span><br><span class="line">	MyParent.call(<span class="keyword">this</span>, param1);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 상속</span></span><br><span class="line">MyChild.prototype = <span class="keyword">new</span> MyParent();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 인스턴스 생성</span></span><br><span class="line"><span class="keyword">var</span> child1 = <span class="keyword">new</span> MyChild(<span class="string">"data1"</span>);</span><br><span class="line"><span class="comment">// 부모의 프로퍼티와 메서드 호출</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"child1.property1 = "</span>+ child1.property1);</span><br><span class="line">child1.method1();</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 부모 클래스</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MyParent</span>(<span class="params">param1</span>)</span>&#123;</span><br><span class="line">	<span class="comment">// 프로퍼티 생성</span></span><br><span class="line">	<span class="built_in">this</span>.property1=param1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 메서드 생성</span></span><br><span class="line">MyParent.prototype.method1=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">&quot;MyParent.method1() &quot;</span>+<span class="built_in">this</span>.property1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 자식 클래스</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MyChild</span>(<span class="params">param1</span>)</span>&#123;</span><br><span class="line">	MyParent.call(<span class="built_in">this</span>, param1);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 상속</span></span><br><span class="line">MyChild.prototype = <span class="keyword">new</span> MyParent();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 인스턴스 생성</span></span><br><span class="line"><span class="keyword">var</span> child1 = <span class="keyword">new</span> MyChild(<span class="string">&quot;data1&quot;</span>);</span><br><span class="line"><span class="comment">// 부모의 프로퍼티와 메서드 호출</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;child1.property1 = &quot;</span>+ child1.property1);</span><br><span class="line">child1.method1();</span><br></pre></td></tr></table></figure>
 <p><img src="/img/postimgs/43.jpg" alt=""></p>
 <p><strong>결과</strong><br><img src="/img/postimgs/44.jpg" alt=""></p>
 <p>만약 3번의 구문을 호출해 주지 않으면 부모에 값이 전달되지 않아 method1()메서드를 호출하는 경우 정상적으로 원하는 값이 출력되지 않게 됩니다.</p>
@@ -246,7 +242,7 @@ ga('send', 'pageview');
 
 
 
-    <!-- <a data-url="https://recoveryman.github.io/2018/03/05/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8A%B9%EC%A7%95-%EC%9E%90%EC%8B%9D-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%EB%B6%80%EB%AA%A8-%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%97%B0%EB%8F%99-%EC%B2%98%EB%A6%AC/" data-id="ckj28riuo000q387khcnp9jf2" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
+    <!-- <a data-url="https://recoveryman.github.io/2018/03/05/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8A%B9%EC%A7%95-%EC%9E%90%EC%8B%9D-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%EB%B6%80%EB%AA%A8-%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%97%B0%EB%8F%99-%EC%B2%98%EB%A6%AC/" data-id="ckjgn8kje0012yw7k91h2gd5q" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -314,7 +310,7 @@ ga('send', 'pageview');
     
         
     <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
 
     
@@ -526,7 +522,7 @@ ga('send', 'pageview');
             <ul>
                 
                     <li>
-                        <a href="http://recoveryman.tistory.com" target="_blank" rel="noopener">Tistory</a>
+                        <a target="_blank" rel="noopener" href="http://recoveryman.tistory.com">Tistory</a>
                     </li>
                 
             </ul>
@@ -549,7 +545,7 @@ ga('send', 'pageview');
                 <h1 class="logo-wrap">
                     <a href="/" class="logo"></a>
                 </h1>
-                <p>&copy; 2020 회복맨</p>
+                <p>&copy; 2021 회복맨</p>
                 <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
             </div>
         </div>

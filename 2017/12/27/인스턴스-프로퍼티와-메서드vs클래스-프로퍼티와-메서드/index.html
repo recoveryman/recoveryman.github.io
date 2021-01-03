@@ -11,12 +11,12 @@
     <!-- 
         <meta name="keywords" content="" />
     
-    <meta name="description" content="인스턴스 프로퍼티와 메서드란[인스턴스 프로퍼티와 메서드]클래스의 인스턴스를 생성 후 사용할 수 있는 프로퍼티와 메서드를 뜻함  [예]12var tabMenu1 &#x3D; new TabMenu(&quot;.tab1&quot;);tabMenu1.setSelectItemAt(1);  클래스 프로퍼티와 메서드란[클래스 프로퍼티와 메서드]인스턴스를 생성하지 않고도 사용할 수 있는 프로퍼티">
+    <meta name="description" content="인스턴스 프로퍼티와 메서드란[인스턴스 프로퍼티와 메서드]클래스의 인스턴스를 생성 후 사용할 수 있는 프로퍼티와 메서드를 뜻함  [예]12var tabMenu1 &#x3D; new TabMenu(&quot;.tab1&quot;);tabMenu1.setSelectItemAt(1);  클래스 프로퍼티와 메서드란[클래스 프로퍼티와 메서드]인스턴스를 생성하지 않고도 사용할">
 <meta property="og:type" content="article">
 <meta property="og:title" content="인스턴스 프로퍼티와 메서드vs클래스 프로퍼티와 메서드">
 <meta property="og:url" content="https://recoveryman.github.io/2017/12/27/%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80-%EB%A9%94%EC%84%9C%EB%93%9Cvs%ED%81%B4%EB%9E%98%EC%8A%A4-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80-%EB%A9%94%EC%84%9C%EB%93%9C/index.html">
 <meta property="og:site_name" content="회복맨">
-<meta property="og:description" content="인스턴스 프로퍼티와 메서드란[인스턴스 프로퍼티와 메서드]클래스의 인스턴스를 생성 후 사용할 수 있는 프로퍼티와 메서드를 뜻함  [예]12var tabMenu1 &#x3D; new TabMenu(&quot;.tab1&quot;);tabMenu1.setSelectItemAt(1);  클래스 프로퍼티와 메서드란[클래스 프로퍼티와 메서드]인스턴스를 생성하지 않고도 사용할 수 있는 프로퍼티">
+<meta property="og:description" content="인스턴스 프로퍼티와 메서드란[인스턴스 프로퍼티와 메서드]클래스의 인스턴스를 생성 후 사용할 수 있는 프로퍼티와 메서드를 뜻함  [예]12var tabMenu1 &#x3D; new TabMenu(&quot;.tab1&quot;);tabMenu1.setSelectItemAt(1);  클래스 프로퍼티와 메서드란[클래스 프로퍼티와 메서드]인스턴스를 생성하지 않고도 사용할">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:image" content="https://recoveryman.github.io/img/all/js_image.jpg">
 <meta property="article:published_time" content="2017-12-27T02:07:02.000Z">
@@ -75,7 +75,7 @@ ga('send', 'pageview');
     
 
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 5.3.0"></head>
 
 <body>
     <div id="wrap">
@@ -87,10 +87,6 @@ ga('send', 'pageview');
                     <h1 class="logo-wrap">
                         <a href="/" class="logo"></a>
                     </h1>
-                    
-                        <h2 class="subtitle-wrap">
-                            <p class="subtitle">Wellcome ..!</p>
-                        </h2>
                     
                 </div>
                 <div id="header-inner" class="nav-container">
@@ -113,7 +109,7 @@ ga('send', 'pageview');
                                 </li>
                             
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="http://recoveryman.tistory.com" target="_blank" rel="noopener">Tistory</a>
+                                    <a class="main-nav-list-link" target="_blank" rel="noopener" href="http://recoveryman.tistory.com">Tistory</a>
                                 </li>
                             
                         </ul>
@@ -205,20 +201,20 @@ ga('send', 'pageview');
             <p><img src="/img/all/js_image.jpg" alt=""></p>
 <h3 id="인스턴스-프로퍼티와-메서드란"><a href="#인스턴스-프로퍼티와-메서드란" class="headerlink" title="인스턴스 프로퍼티와 메서드란"></a>인스턴스 프로퍼티와 메서드란</h3><blockquote><p>[인스턴스 프로퍼티와 메서드]<br>클래스의 인스턴스를 생성 후 사용할 수 있는 프로퍼티와 메서드를 뜻함</p>
 </blockquote>
-<figure class="highlight js"><figcaption><span>[예]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> tabMenu1 = <span class="keyword">new</span> TabMenu(<span class="string">".tab1"</span>);</span><br><span class="line">tabMenu1.setSelectItemAt(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><figcaption><span>[예]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> tabMenu1 = <span class="keyword">new</span> TabMenu(<span class="string">&quot;.tab1&quot;</span>);</span><br><span class="line">tabMenu1.setSelectItemAt(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
 <p><br><hr><br></p>
 <h3 id="클래스-프로퍼티와-메서드란"><a href="#클래스-프로퍼티와-메서드란" class="headerlink" title="클래스 프로퍼티와 메서드란"></a>클래스 프로퍼티와 메서드란</h3><blockquote><p>[클래스 프로퍼티와 메서드]<br>인스턴스를 생성하지 않고도 사용할 수 있는 프로퍼티와 메서드</p>
 </blockquote>
 <p><strong>만드는 방법</strong></p>
 <figure class="highlight js"><figcaption><span>[문법]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 클래스<span class="title">_</span>이름(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line">클래스_이름.프로퍼티 = 값;</span><br><span class="line">클래스_이름.메서드 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>여기서 클래스 이름은 인스턴스가 아닙니다.</strong></p>
-<figure class="highlight js"><figcaption><span>[차이]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">TabMenu</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// ..</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 인스턴스 프로퍼티와 메서드</span></span><br><span class="line">TabMenu.prototype.property1 = <span class="string">"string"</span>;</span><br><span class="line">TabMenu.prototype.method1 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="keyword">return</span> <span class="string">"method1"</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 클래스 프로퍼티와 메서드</span></span><br><span class="line">TabMenu.property2 = <span class="string">"string"</span>;</span><br><span class="line">TabMenu.method2 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="keyword">return</span> <span class="string">"method2"</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> tabMenu = <span class="keyword">new</span> TabMenu();</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"1. "</span> + tabMenu.property1);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"2. "</span> + tabMenu.property2);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"3. "</span> + tabMenu.method1());</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"4. "</span> + tabMenu.method2());</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><figcaption><span>[차이]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">TabMenu</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// ..</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 인스턴스 프로퍼티와 메서드</span></span><br><span class="line">TabMenu.prototype.property1 = <span class="string">&quot;string&quot;</span>;</span><br><span class="line">TabMenu.prototype.method1 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="keyword">return</span> <span class="string">&quot;method1&quot;</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 클래스 프로퍼티와 메서드</span></span><br><span class="line">TabMenu.property2 = <span class="string">&quot;string&quot;</span>;</span><br><span class="line">TabMenu.method2 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="keyword">return</span> <span class="string">&quot;method2&quot;</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> tabMenu = <span class="keyword">new</span> TabMenu();</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;1. &quot;</span> + tabMenu.property1);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;2. &quot;</span> + tabMenu.property2);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;3. &quot;</span> + tabMenu.method1());</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;4. &quot;</span> + tabMenu.method2());</span><br></pre></td></tr></table></figure>
 <p><strong>결과</strong><br><img src="/img/qa/4.jpg" alt=""></p>
 <p>콘솔로 나온 결과 중에서 2, 4번의 출력은 저렇게 하면 안되고 다음과 같이 해야 합니다.</p>
-<figure class="highlight js"><figcaption><span>[클래스 프로퍼티와 메서드 출력]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">"2. "</span> + TabMenu.property2);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"4. "</span> + TabMenu.method2());</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><figcaption><span>[클래스 프로퍼티와 메서드 출력]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;2. &quot;</span> + TabMenu.property2);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;4. &quot;</span> + TabMenu.method2());</span><br></pre></td></tr></table></figure>
 <p><strong>결과</strong><br><img src="/img/qa/5.jpg" alt=""><br><br><br><blockquote><p><strong>[클래스 프로퍼티와 메서드 의 주 용도]</strong><br>주로 도움을 주는 유틸리티성 기능이나 또는 실행하더라도 내부 데이터에 영향을 주지 않고 독립적으로 실행되는 기능이나 정보를 담을 때 사용</p>
 </blockquote><br><br><br><strong>예</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">TabMenu</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// .. </span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TabMenu.version = <span class="string">"0.1.0"</span>;</span><br><span class="line">TabMenu.getInfo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> info = &#123;</span><br><span class="line">		developer: <span class="string">"반찬가게알바"</span>,</span><br><span class="line">		email: <span class="string">"고등어@등푸른생선.com"</span>,</span><br><span class="line">		desc: <span class="string">"저희 가게의 반찬은 고등어가 제일 맛있습니다!"</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> info;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(TabMenu.version);</span><br><span class="line"><span class="built_in">console</span>.log(TabMenu.getInfo());</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">TabMenu</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// .. </span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TabMenu.version = <span class="string">&quot;0.1.0&quot;</span>;</span><br><span class="line">TabMenu.getInfo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> info = &#123;</span><br><span class="line">		developer: <span class="string">&quot;반찬가게알바&quot;</span>,</span><br><span class="line">		email: <span class="string">&quot;고등어@등푸른생선.com&quot;</span>,</span><br><span class="line">		desc: <span class="string">&quot;저희 가게의 반찬은 고등어가 제일 맛있습니다!&quot;</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> info;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(TabMenu.version);</span><br><span class="line"><span class="built_in">console</span>.log(TabMenu.getInfo());</span><br></pre></td></tr></table></figure>
 <p>클래스 프로퍼티와 메서드는 없거나 추가되더라도 기능이 동작하는데 전혀 지장을 주지 않습니다.</p>
 <p><br><br></p>
 <ul>
@@ -234,7 +230,7 @@ ga('send', 'pageview');
 
 
 
-    <!-- <a data-url="https://recoveryman.github.io/2017/12/27/%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80-%EB%A9%94%EC%84%9C%EB%93%9Cvs%ED%81%B4%EB%9E%98%EC%8A%A4-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80-%EB%A9%94%EC%84%9C%EB%93%9C/" data-id="ckj28riu80008387k1tex547u" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
+    <!-- <a data-url="https://recoveryman.github.io/2017/12/27/%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80-%EB%A9%94%EC%84%9C%EB%93%9Cvs%ED%81%B4%EB%9E%98%EC%8A%A4-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80-%EB%A9%94%EC%84%9C%EB%93%9C/" data-id="ckjgn8kj0000dyw7k3x3qfhfp" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -302,7 +298,7 @@ ga('send', 'pageview');
     
         
     <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
 
     
@@ -514,7 +510,7 @@ ga('send', 'pageview');
             <ul>
                 
                     <li>
-                        <a href="http://recoveryman.tistory.com" target="_blank" rel="noopener">Tistory</a>
+                        <a target="_blank" rel="noopener" href="http://recoveryman.tistory.com">Tistory</a>
                     </li>
                 
             </ul>
@@ -537,7 +533,7 @@ ga('send', 'pageview');
                 <h1 class="logo-wrap">
                     <a href="/" class="logo"></a>
                 </h1>
-                <p>&copy; 2020 회복맨</p>
+                <p>&copy; 2021 회복맨</p>
                 <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
             </div>
         </div>

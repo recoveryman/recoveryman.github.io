@@ -75,7 +75,7 @@ ga('send', 'pageview');
     
 
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 5.3.0"></head>
 
 <body>
     <div id="wrap">
@@ -87,10 +87,6 @@ ga('send', 'pageview');
                     <h1 class="logo-wrap">
                         <a href="/" class="logo"></a>
                     </h1>
-                    
-                        <h2 class="subtitle-wrap">
-                            <p class="subtitle">Wellcome ..!</p>
-                        </h2>
                     
                 </div>
                 <div id="header-inner" class="nav-container">
@@ -113,7 +109,7 @@ ga('send', 'pageview');
                                 </li>
                             
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="http://recoveryman.tistory.com" target="_blank" rel="noopener">Tistory</a>
+                                    <a class="main-nav-list-link" target="_blank" rel="noopener" href="http://recoveryman.tistory.com">Tistory</a>
                                 </li>
                             
                         </ul>
@@ -216,14 +212,14 @@ ga('send', 'pageview');
 <h3 id="예제"><a href="#예제" class="headerlink" title="예제"></a>예제</h3><p><strong>TV를 추상화하기</strong><br>먼저 집에서 흔히 볼 수 있는 TV라는 객체를 프로그래밍으로 표현한다고 해보죠. TV의 경우 브라운관 TV부터 요즘 나오는 스마트 TV까지 다양하게 있는데요. 여기에서는 종류를 떠나서 TV라면 기본적으로 가지고 있어야 하는 속성과 기능만을 뽑아보는 거죠. 아마도 다음과 같을 것입니다.</p>
 <p><img src="/img/postimgs/8.jpg" alt=""></p>
 <p>코드로 표현하면 다음과 같습니다.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">TV</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.모델명;</span><br><span class="line">	<span class="keyword">this</span>.해상도크기;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TV.prototype.전원On = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TV.prototype.전원Off = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TV.prototype.채널변경 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TV.prototype.사운드조절기능 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">TV</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="built_in">this</span>.모델명;</span><br><span class="line">	<span class="built_in">this</span>.해상도크기;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TV.prototype.전원On = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TV.prototype.전원Off = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TV.prototype.채널변경 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TV.prototype.사운드조절기능 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>바로 이처럼 TV라는 객체들이 공통적으로 가지고 있어야 하는 속성(property)과 메서드(method)를 뽑아 내는 작업을 추상화라고 합니다.</p>
 <p><strong>이미지 슬라이더를 추상화하기</strong><br>또 하나의 예를 들어 보겠습니다. 이번에는 웹 프론트엔드 실무에서 많이 사용하는 이미지 슬라이더를 만든다고 해보죠.</p>
 <p><img src="/img/postimgs/9.jpg" alt=""></p>
 <p>클래스 이름은 이미지 슬라이더를 의미하는 ImageSlider로 하고 3초마다 이미지가 슬라이더 되는 기능을 startAutoPlay()라는 메서드 이름으로 구현하면 되고 또 외부에서 특정 이미지 슬라이더를 선택할 수 있는 기능은 setImageAt()라는 메서드에 구현하면 될 것 같네요. 지금까지 추상화한 내용을 UML을 이용해 표현하면 다음과 같을 것입니다.</p>
 <p><img src="/img/postimgs/10.jpg" alt=""></p>
 <p>소스로 표현하면 다음과 같습니다.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ImageSlider</span>(<span class="params">selector</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.selectIndex; <span class="comment">// 현재 선택된 이미지 index</span></span><br><span class="line">	<span class="keyword">this</span>.$imageList; <span class="comment">// 이미지 목록</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ImageSlider.prototype.startAutoPlay = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 자동 플레이 기능 시작</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ImageSlider.prototype.stopAutoPlay = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 자동 플레이 기능 멈춤</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ImageSlider.prototype.nextImage = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 다음 이미지 이동</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ImageSlider.prototype.prevImage = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 이전 이미지 이동</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ImageSlider.prototype.setImageAt = <span class="function"><span class="keyword">function</span>(<span class="params">index</span>) </span>&#123;</span><br><span class="line">	<span class="comment">// index번째 이미지 이동</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ImageSlider</span>(<span class="params">selector</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">this</span>.selectIndex; <span class="comment">// 현재 선택된 이미지 index</span></span><br><span class="line">	<span class="built_in">this</span>.$imageList; <span class="comment">// 이미지 목록</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ImageSlider.prototype.startAutoPlay = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 자동 플레이 기능 시작</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ImageSlider.prototype.stopAutoPlay = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 자동 플레이 기능 멈춤</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ImageSlider.prototype.nextImage = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 다음 이미지 이동</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ImageSlider.prototype.prevImage = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 이전 이미지 이동</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ImageSlider.prototype.setImageAt = <span class="function"><span class="keyword">function</span>(<span class="params">index</span>) </span>&#123;</span><br><span class="line">	<span class="comment">// index번째 이미지 이동</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>어떤가요? 추상화 라는 말이 조금 어려워서 그렇지 추상화 단계에서 핵심은 클래스를 설계하는 작업 자체 입니다. 여기까지는 아주 단순한 객체 추상화였습니다.</p>
 <p><strong>이미지 슬라이더 추상화하기2</strong></p>
 <p>그럼 이번에는 좀더 복잡한 예를 들어보겠습니다. 다음은 앞에서 살펴본 심플 이미지 슬라이더를 추상화한 그림입니다. 다시 한 번 살펴보죠.</p>
@@ -260,7 +256,7 @@ ga('send', 'pageview');
 
 
 
-    <!-- <a data-url="https://recoveryman.github.io/2018/02/15/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8A%B9%EC%A7%95-%EC%B6%94%EC%83%81%ED%99%94-%EC%86%8C%EA%B0%9C/" data-id="ckj28riui000k387k7wc9c343" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
+    <!-- <a data-url="https://recoveryman.github.io/2018/02/15/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8A%B9%EC%A7%95-%EC%B6%94%EC%83%81%ED%99%94-%EC%86%8C%EA%B0%9C/" data-id="ckjgn8kjc000wyw7k949y6jnm" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -328,7 +324,7 @@ ga('send', 'pageview');
     
         
     <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
 
     
@@ -540,7 +536,7 @@ ga('send', 'pageview');
             <ul>
                 
                     <li>
-                        <a href="http://recoveryman.tistory.com" target="_blank" rel="noopener">Tistory</a>
+                        <a target="_blank" rel="noopener" href="http://recoveryman.tistory.com">Tistory</a>
                     </li>
                 
             </ul>
@@ -563,7 +559,7 @@ ga('send', 'pageview');
                 <h1 class="logo-wrap">
                     <a href="/" class="logo"></a>
                 </h1>
-                <p>&copy; 2020 회복맨</p>
+                <p>&copy; 2021 회복맨</p>
                 <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
             </div>
         </div>

@@ -75,7 +75,7 @@ ga('send', 'pageview');
     
 
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 5.3.0"></head>
 
 <body>
     <div id="wrap">
@@ -87,10 +87,6 @@ ga('send', 'pageview');
                     <h1 class="logo-wrap">
                         <a href="/" class="logo"></a>
                     </h1>
-                    
-                        <h2 class="subtitle-wrap">
-                            <p class="subtitle">Wellcome ..!</p>
-                        </h2>
                     
                 </div>
                 <div id="header-inner" class="nav-container">
@@ -113,7 +109,7 @@ ga('send', 'pageview');
                                 </li>
                             
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="http://recoveryman.tistory.com" target="_blank" rel="noopener">Tistory</a>
+                                    <a class="main-nav-list-link" target="_blank" rel="noopener" href="http://recoveryman.tistory.com">Tistory</a>
                                 </li>
                             
                         </ul>
@@ -228,10 +224,10 @@ ga('send', 'pageview');
 </ol>
 <p><br></p>
 <p>아마 갑자기 객체 리터널이 나와서 이해가 안가실 수 있습니다.<br>그래서 아래 코드를 보시고 결과를 예측하시면 좋을듯 합니다.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1.</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">a</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// ..</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"함수 a 는 어떻게 출력될까요? "</span> + a);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"함수 a 를 '실행'시키면 어떻 뭐가 출력 될까요? "</span> + a());</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"함수 a 의 타입은? "</span> + (<span class="keyword">typeof</span> a));</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"함수 a 가 '실행'시키면 그 타입은? "</span> + (<span class="keyword">typeof</span> a()));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2.</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">b</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> str = <span class="string">"string"</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"함수 b 는 어떻게 출력될까요? "</span> + b);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"함수 b 를 '실행'시키면 어떻 뭐가 출력 될까요? "</span> + b());</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"함수 b 의 타입은? "</span> + (<span class="keyword">typeof</span> b));</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"함수 b 가 '실행'시키면 그 타입은? "</span> + (<span class="keyword">typeof</span> b()));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 3.</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">c</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">"string"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"함수 c 는 어떻게 출력될까요? "</span> + c);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"함수 c 를 '실행'시키면 어떻 뭐가 출력 될까요? "</span> + c());</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"함수 c 의 타입은? "</span> + (<span class="keyword">typeof</span> c));</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"함수 c 가 '실행'시키면 그 타입은? "</span> + (<span class="keyword">typeof</span> c()));</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1.</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">a</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// ..</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;함수 a 는 어떻게 출력될까요? &quot;</span> + a);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;함수 a 를 &#x27;실행&#x27;시키면 어떻 뭐가 출력 될까요? &quot;</span> + a());</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;함수 a 의 타입은? &quot;</span> + (<span class="keyword">typeof</span> a));</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;함수 a 가 &#x27;실행&#x27;시키면 그 타입은? &quot;</span> + (<span class="keyword">typeof</span> a()));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2.</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">b</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> str = <span class="string">&quot;string&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;함수 b 는 어떻게 출력될까요? &quot;</span> + b);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;함수 b 를 &#x27;실행&#x27;시키면 어떻 뭐가 출력 될까요? &quot;</span> + b());</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;함수 b 의 타입은? &quot;</span> + (<span class="keyword">typeof</span> b));</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;함수 b 가 &#x27;실행&#x27;시키면 그 타입은? &quot;</span> + (<span class="keyword">typeof</span> b()));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 3.</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">c</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">&quot;string&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;함수 c 는 어떻게 출력될까요? &quot;</span> + c);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;함수 c 를 &#x27;실행&#x27;시키면 어떻 뭐가 출력 될까요? &quot;</span> + c());</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;함수 c 의 타입은? &quot;</span> + (<span class="keyword">typeof</span> c));</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;함수 c 가 &#x27;실행&#x27;시키면 그 타입은? &quot;</span> + (<span class="keyword">typeof</span> c()));</span><br></pre></td></tr></table></figure>
 <p>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br><strong>결과</strong><br><img src="/img/qa/1.jpg" alt=""></p>
 <p>함수를 호출하면 리턴해온 반환값에 의해 타입이 바뀌게 되는걸 알 수 있습니다.<br>그래서 마지막에 객체를 반환하게 될 경우 타입이 객체로 바뀌게 됩니다.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">d</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> &#123;</span><br><span class="line">		str: <span class="string">"string"</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"함수 d 는 어떻게 출력될까요? "</span> + d);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"함수 d 를 '실행'시키면 어떻 뭐가 출력 될까요? "</span> + d());</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"함수 d 의 타입은? "</span> + (<span class="keyword">typeof</span> d));</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"함수 d 가 '실행'시키면 그 타입은? "</span> + (<span class="keyword">typeof</span> d()));</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">d</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> &#123;</span><br><span class="line">		str: <span class="string">&quot;string&quot;</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;함수 d 는 어떻게 출력될까요? &quot;</span> + d);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;함수 d 를 &#x27;실행&#x27;시키면 어떻 뭐가 출력 될까요? &quot;</span> + d());</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;함수 d 의 타입은? &quot;</span> + (<span class="keyword">typeof</span> d));</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;함수 d 가 &#x27;실행&#x27;시키면 그 타입은? &quot;</span> + (<span class="keyword">typeof</span> d()));</span><br></pre></td></tr></table></figure>
 <p><strong>결과</strong><br><img src="/img/qa/2.jpg" alt=""></p>
 <p>함수안에 객체(Object)를 리턴하게 되면 객체가 되므로 객체의 프로퍼티 또는 메서드를 사용할 수 있게 됩니다.<br><script src="//gist.github.com/e12f71602764a044e6b4d994717c4dad.js"></script></p>
 <p><img src="/img/qa/3.jpg" alt=""></p>
@@ -257,7 +253,7 @@ ga('send', 'pageview');
 
 
 
-    <!-- <a data-url="https://recoveryman.github.io/2017/12/26/%ED%95%A8%EC%88%98-%EB%8B%A8%EC%9C%84-%EC%BD%94%EB%94%A9vs%ED%81%B4%EB%9E%98%EC%8A%A4-%EB%8B%A8%EC%9C%84-%EC%BD%94%EB%94%A9/" data-id="ckj28riu70006387kbp7hb3yz" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
+    <!-- <a data-url="https://recoveryman.github.io/2017/12/26/%ED%95%A8%EC%88%98-%EB%8B%A8%EC%9C%84-%EC%BD%94%EB%94%A9vs%ED%81%B4%EB%9E%98%EC%8A%A4-%EB%8B%A8%EC%9C%84-%EC%BD%94%EB%94%A9/" data-id="ckjgn8kiy0009yw7k3q5y4wam" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -325,7 +321,7 @@ ga('send', 'pageview');
     
         
     <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
 
     
@@ -537,7 +533,7 @@ ga('send', 'pageview');
             <ul>
                 
                     <li>
-                        <a href="http://recoveryman.tistory.com" target="_blank" rel="noopener">Tistory</a>
+                        <a target="_blank" rel="noopener" href="http://recoveryman.tistory.com">Tistory</a>
                     </li>
                 
             </ul>
@@ -560,7 +556,7 @@ ga('send', 'pageview');
                 <h1 class="logo-wrap">
                     <a href="/" class="logo"></a>
                 </h1>
-                <p>&copy; 2020 회복맨</p>
+                <p>&copy; 2021 회복맨</p>
                 <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
             </div>
         </div>

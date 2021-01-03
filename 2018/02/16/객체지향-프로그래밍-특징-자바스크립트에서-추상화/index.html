@@ -75,7 +75,7 @@ ga('send', 'pageview');
     
 
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 5.3.0"></head>
 
 <body>
     <div id="wrap">
@@ -87,10 +87,6 @@ ga('send', 'pageview');
                     <h1 class="logo-wrap">
                         <a href="/" class="logo"></a>
                     </h1>
-                    
-                        <h2 class="subtitle-wrap">
-                            <p class="subtitle">Wellcome ..!</p>
-                        </h2>
                     
                 </div>
                 <div id="header-inner" class="nav-container">
@@ -113,7 +109,7 @@ ga('send', 'pageview');
                                 </li>
                             
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="http://recoveryman.tistory.com" target="_blank" rel="noopener">Tistory</a>
+                                    <a class="main-nav-list-link" target="_blank" rel="noopener" href="http://recoveryman.tistory.com">Tistory</a>
                                 </li>
                             
                         </ul>
@@ -223,7 +219,7 @@ ga('send', 'pageview');
 <h3 id="탭메뉴를-추상화하기"><a href="#탭메뉴를-추상화하기" class="headerlink" title="탭메뉴를 추상화하기"></a>탭메뉴를 추상화하기</h3><p>탭메뉴 클래스 이름은 뭐로 할 것인지, 그리고 기능과 속성까지 추상화 해보겠습니다.</p>
 <p><strong>풀이</strong><br><img src="/img/postimgs/12.jpg" alt=""></p>
 <p><strong>설명</strong><br>소스로 표현하면 다음과 같습니다.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">TabMenu</span>(<span class="params">selector</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.selectIndex;</span><br><span class="line">	<span class="keyword">this</span>.$menuItems;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TabMenu.prototype.setMenuItemAt = <span class="function"><span class="keyword">function</span>(<span class="params">index</span>) </span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TabMenu.prototype.setMenuItem = <span class="function"><span class="keyword">function</span>(<span class="params">$menuItems</span>) </span>&#123;</span><br><span class="line">	<span class="comment">//..</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TabMenu.prototype.getSelectIndex = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">//..</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">TabMenu</span>(<span class="params">selector</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">this</span>.selectIndex;</span><br><span class="line">	<span class="built_in">this</span>.$menuItems;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TabMenu.prototype.setMenuItemAt = <span class="function"><span class="keyword">function</span>(<span class="params">index</span>) </span>&#123;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TabMenu.prototype.setMenuItem = <span class="function"><span class="keyword">function</span>(<span class="params">$menuItems</span>) </span>&#123;</span><br><span class="line">	<span class="comment">//..</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TabMenu.prototype.getSelectIndex = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">//..</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>이처럼 추상화란 특정 기능을 하는 그룹의 공통된 기능(프로퍼티와 메서드)을 정의하는 작업을 말합니다.</p>
 <p><br><br></p>
 <ul>
@@ -255,7 +251,7 @@ ga('send', 'pageview');
 
 
 
-    <!-- <a data-url="https://recoveryman.github.io/2018/02/16/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8A%B9%EC%A7%95-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%97%90%EC%84%9C-%EC%B6%94%EC%83%81%ED%99%94/" data-id="ckj28riug000i387ke06s9srt" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
+    <!-- <a data-url="https://recoveryman.github.io/2018/02/16/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8A%B9%EC%A7%95-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%97%90%EC%84%9C-%EC%B6%94%EC%83%81%ED%99%94/" data-id="ckjgn8kjb000vyw7k3u799mkg" class="article-share-link"><i class="fa fa-share"></i>공유하기</a> -->
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -323,7 +319,7 @@ ga('send', 'pageview');
     
         
     <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
 
     
@@ -535,7 +531,7 @@ ga('send', 'pageview');
             <ul>
                 
                     <li>
-                        <a href="http://recoveryman.tistory.com" target="_blank" rel="noopener">Tistory</a>
+                        <a target="_blank" rel="noopener" href="http://recoveryman.tistory.com">Tistory</a>
                     </li>
                 
             </ul>
@@ -558,7 +554,7 @@ ga('send', 'pageview');
                 <h1 class="logo-wrap">
                     <a href="/" class="logo"></a>
                 </h1>
-                <p>&copy; 2020 회복맨</p>
+                <p>&copy; 2021 회복맨</p>
                 <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
             </div>
         </div>
